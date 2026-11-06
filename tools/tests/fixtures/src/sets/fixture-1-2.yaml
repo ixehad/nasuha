@@ -1,0 +1,5 @@
+# Test fixture. Placeholder strings only. No story: shows nothing.
+id: fixture-1-2
+topics: [hope]
+ayah: "1:2"
+context: { before: ["1:1"], after: ["1:3"] }

@@ -1,0 +1,15 @@
+.DS_Store
+*.xcodeproj/
+build/
+DerivedData/
+.build/
+.swiftpm/
+__pycache__/
+*.pyc
+# Built by tools/build_content.py. Rebuild it, don't edit it.
+Nasuha/Resources/nasuha.sqlite
+.build-ios/
+# Design source files are kept outside the repository
+design/
+# Apple Team ID (see Config/Signing.xcconfig)
+Config/Signing.local.xcconfig

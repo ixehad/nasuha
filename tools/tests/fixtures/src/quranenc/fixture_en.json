@@ -1,0 +1,58 @@
+{
+ "key": "fixture_en",
+ "language": "en",
+ "title": "Fixture en",
+ "version": "9.9.9",
+ "last_update": "0",
+ "kind": "translation",
+ "ayahs": [
+  {
+   "sura": 1,
+   "aya": 1,
+   "translation": "FIXTURE en 1:1",
+   "footnotes": ""
+  },
+  {
+   "sura": 1,
+   "aya": 2,
+   "translation": "FIXTURE en 1:2",
+   "footnotes": ""
+  },
+  {
+   "sura": 1,
+   "aya": 3,
+   "translation": "FIXTURE en 1:3",
+   "footnotes": ""
+  },
+  {
+   "sura": 2,
+   "aya": 1,
+   "translation": "FIXTURE en 2:1",
+   "footnotes": ""
+  },
+  {
+   "sura": 2,
+   "aya": 2,
+   "translation": "FIXTURE en 2:2",
+   "footnotes": ""
+  },
+  {
+   "sura": 2,
+   "aya": 3,
+   "translation": "FIXTURE en 2:3",
+   "footnotes": ""
+  },
+  {
+   "sura": 2,
+   "aya": 4,
+   "translation": "FIXTURE en 2:4",
+   "footnotes": ""
+  },
+  {
+   "sura": 2,
+   "aya": 5,
+   "translation": "FIXTURE en 2:5",
+   "footnotes": ""
+  }
+ ]
+}

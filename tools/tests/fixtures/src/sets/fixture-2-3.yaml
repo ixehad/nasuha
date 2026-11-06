@@ -1,0 +1,22 @@
+# Test fixture. Placeholder strings only.
+id: fixture-2-3
+topics: [hope, why]
+ayah: "2:3"
+context: { before: ["2:1", "2:2"], after: ["2:4", "2:5"] }
+story:
+  steps:
+    - { text: "FIXTURE STEP 1", lang: en }
+    - { text: "FIXTURE STEP 2", lang: en }
+  one_line: { text: "FIXTURE ONE LINE", lang: en }
+  refs:
+    - { book: "Sahih al-Bukhari", number: "0000", numbering: "sunnah.com", grade: "sahih" }
+when:
+  place: madinah
+  order: 87
+  period_text: "FIXTURE PERIOD"
+  age_min: 53
+  age_max: 54
+  approx: true
+  scholars_differ: true
+  refs: [ { book: "Tafsir Ibn Kathir", location: "2:3" } ]
+tafsir_refs: [ { book: "Al-Mukhtasar fi Tafsir", ayah: "2:3" } ]

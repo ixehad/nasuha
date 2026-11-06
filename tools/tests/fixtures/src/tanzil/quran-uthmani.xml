@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<quran>
+<sura index="1" name="FIXTURE-NAME-1">
+<aya index="1" text="FIXTURE 1:1" />
+<aya index="2" text="FIXTURE 1:2" />
+<aya index="3" text="FIXTURE 1:3" />
+</sura>
+<sura index="2" name="FIXTURE-NAME-2">
+<aya index="1" text="FIXTURE 2:1" bismillah="FIXTURE BISMILLAH" />
+<aya index="2" text="FIXTURE 2:2" />
+<aya index="3" text="FIXTURE 2:3" />
+<aya index="4" text="FIXTURE 2:4" />
+<aya index="5" text="FIXTURE 2:5" />
+</sura>
+</quran>
+<!-- Fixture for tests. Version: 0.0 -->

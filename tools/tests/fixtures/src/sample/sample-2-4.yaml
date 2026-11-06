@@ -1,0 +1,6 @@
+# SAMPLE – replace from source
+# Test fixture. Placeholder strings only.
+id: sample-2-4
+topics: [mercy]
+ayah: "2:4"
+context: { before: ["2:3"], after: ["2:5"] }

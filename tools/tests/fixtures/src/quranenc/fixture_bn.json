@@ -1,0 +1,58 @@
+{
+ "key": "fixture_bn",
+ "language": "bn",
+ "title": "Fixture bn",
+ "version": "9.9.9",
+ "last_update": "0",
+ "kind": "translation",
+ "ayahs": [
+  {
+   "sura": 1,
+   "aya": 1,
+   "translation": "FIXTURE bn 1:1",
+   "footnotes": ""
+  },
+  {
+   "sura": 1,
+   "aya": 2,
+   "translation": "FIXTURE bn 1:2",
+   "footnotes": ""
+  },
+  {
+   "sura": 1,
+   "aya": 3,
+   "translation": "FIXTURE bn 1:3",
+   "footnotes": ""
+  },
+  {
+   "sura": 2,
+   "aya": 1,
+   "translation": "FIXTURE bn 2:1",
+   "footnotes": ""
+  },
+  {
+   "sura": 2,
+   "aya": 2,
+   "translation": "FIXTURE bn 2:2",
+   "footnotes": ""
+  },
+  {
+   "sura": 2,
+   "aya": 3,
+   "translation": "FIXTURE bn 2:3",
+   "footnotes": ""
+  },
+  {
+   "sura": 2,
+   "aya": 4,
+   "translation": "FIXTURE bn 2:4",
+   "footnotes": ""
+  },
+  {
+   "sura": 2,
+   "aya": 5,
+   "translation": "FIXTURE bn 2:5",
+   "footnotes": ""
+  }
+ ]
+}

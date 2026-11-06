@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<quran type="metadata"><suras>
+<sura index="1" ayas="3" name="FIXTURE-NAME-1" tname="Fixture-One" ename="Fixture One" type="Meccan" order="5" />
+<sura index="2" ayas="5" name="FIXTURE-NAME-2" tname="Fixture-Two" ename="Fixture Two" type="Medinan" order="87" />
+</suras></quran>

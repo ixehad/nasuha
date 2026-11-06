@@ -1,0 +1,677 @@
+{
+  "sourceLanguage": "en",
+  "strings": {
+    "A du'a from the Qur'an": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "কুরআনের একটি দুআ"
+          }
+        }
+      }
+    },
+    "Akhirah & Jannah": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "আখিরাত ও জান্নাত"
+          }
+        }
+      }
+    },
+    "Ayah about family": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "পরিবার নিয়ে আয়াত"
+          }
+        }
+      }
+    },
+    "Ayah about honesty": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "সততা নিয়ে আয়াত"
+          }
+        }
+      }
+    },
+    "Ayah about justice": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "ন্যায়বিচার নিয়ে আয়াত"
+          }
+        }
+      }
+    },
+    "Ayah about marriage": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "বিয়ে নিয়ে আয়াত"
+          }
+        }
+      }
+    },
+    "Ayah about salah": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "সালাত নিয়ে আয়াত"
+          }
+        }
+      }
+    },
+    "Ayah about the Akhirah": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "আখিরাত নিয়ে আয়াত"
+          }
+        }
+      }
+    },
+    "Ayah about the Prophet ﷺ": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "নবী ﷺ সম্পর্কে আয়াত"
+          }
+        }
+      }
+    },
+    "Ayah for Jumu'ah": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "জুমআর আয়াত"
+          }
+        }
+      }
+    },
+    "Ayah for grief": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "শোকের সময়ের আয়াত"
+          }
+        }
+      }
+    },
+    "Ayah for when you feel alone": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "একা লাগলে পড়ার আয়াত"
+          }
+        }
+      }
+    },
+    "Ayah of Hajj": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "হজের আয়াত"
+          }
+        }
+      }
+    },
+    "Ayah of Laylat al-Qadr": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "লাইলাতুল কদরের আয়াত"
+          }
+        }
+      }
+    },
+    "Ayah of Ramadan": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "রমাদানের আয়াত"
+          }
+        }
+      }
+    },
+    "Ayah of good character": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "উত্তম চরিত্রের আয়াত"
+          }
+        }
+      }
+    },
+    "Ayah of gratitude": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "কৃতজ্ঞতার আয়াত"
+          }
+        }
+      }
+    },
+    "Ayah of hope": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "আশার আয়াত"
+          }
+        }
+      }
+    },
+    "Ayah of mercy": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "রহমতের আয়াত"
+          }
+        }
+      }
+    },
+    "Ayah of patience": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "ধৈর্যের আয়াত"
+          }
+        }
+      }
+    },
+    "Ayah of taqwa": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "তাকওয়ার আয়াত"
+          }
+        }
+      }
+    },
+    "Ayah of tawbah": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "তাওবার আয়াত"
+          }
+        }
+      }
+    },
+    "Ayah of trust in Allah": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "আল্লাহর উপর ভরসার আয়াত"
+          }
+        }
+      }
+    },
+    "Ayah to purify the soul": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "আত্মশুদ্ধির আয়াত"
+          }
+        }
+      }
+    },
+    "Daily life": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "দৈনন্দিন জীবন"
+          }
+        }
+      }
+    },
+    "Du'a & Akhirah": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "দুআ ও আখিরাত"
+          }
+        }
+      }
+    },
+    "Du'as of the Qur'an": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "কুরআনের দুআ"
+          }
+        }
+      }
+    },
+    "Family & parents": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "পরিবার ও বাবা-মা"
+          }
+        }
+      }
+    },
+    "Feeling alone": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "একাকীত্ব"
+          }
+        }
+      }
+    },
+    "For your heart": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "আপনার হৃদয়ের জন্য"
+          }
+        }
+      }
+    },
+    "From the prophets' stories": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "নবীদের ঘটনা থেকে"
+          }
+        }
+      }
+    },
+    "Good character": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "উত্তম চরিত্র"
+          }
+        }
+      }
+    },
+    "Gratitude": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "কৃতজ্ঞতা"
+          }
+        }
+      }
+    },
+    "Grief & loss": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "শোক ও হারানো"
+          }
+        }
+      }
+    },
+    "Hajj & Eid al-Adha": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "হজ ও ঈদুল আযহা"
+          }
+        }
+      }
+    },
+    "Hardships of the prophets": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "নবীদের কষ্ট ও পরীক্ষা"
+          }
+        }
+      }
+    },
+    "Hope": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "আশা"
+          }
+        }
+      }
+    },
+    "Jumu'ah (Friday)": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "জুমআ (শুক্রবার)"
+          }
+        }
+      }
+    },
+    "Justice & people": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "ন্যায়বিচার ও মানুষ"
+          }
+        }
+      }
+    },
+    "Laylat al-Qadr": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "লাইলাতুল কদর"
+          }
+        }
+      }
+    },
+    "Lessons from past nations": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "পূর্ববর্তী জাতিদের শিক্ষা"
+          }
+        }
+      }
+    },
+    "Marriage": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "বিয়ে"
+          }
+        }
+      }
+    },
+    "Mercy & forgiveness": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "রহমত ও ক্ষমা"
+          }
+        }
+      }
+    },
+    "Money & honesty": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "অর্থ ও সততা"
+          }
+        }
+      }
+    },
+    "Nasuha": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "নাসূহা"
+          }
+        }
+      }
+    },
+    "Patience in hardship": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "কষ্টে ধৈর্য"
+          }
+        }
+      }
+    },
+    "Prophet Muhammad ﷺ": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "নবী মুহাম্মাদ ﷺ"
+          }
+        }
+      }
+    },
+    "Prophets' stories": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "নবীদের ঘটনা"
+          }
+        }
+      }
+    },
+    "Purify the soul": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "আত্মশুদ্ধি"
+          }
+        }
+      }
+    },
+    "Ramadan & fasting": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "রমাদান ও সিয়াম"
+          }
+        }
+      }
+    },
+    "Ramadan & special days": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "রমাদান ও বিশেষ দিন"
+          }
+        }
+      }
+    },
+    "Return & grow": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "ফিরে আসা ও বেড়ে ওঠা"
+          }
+        }
+      }
+    },
+    "Salah & worship": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "সালাত ও ইবাদত"
+          }
+        }
+      }
+    },
+    "Signs in creation": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "সৃষ্টির নিদর্শন"
+          }
+        }
+      }
+    },
+    "Stories": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "ঘটনা"
+          }
+        }
+      }
+    },
+    "Taqwa": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "তাকওয়া"
+          }
+        }
+      }
+    },
+    "Tawbah": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "তাওবা"
+          }
+        }
+      }
+    },
+    "What Ramadan is, why we fast, and the night of Qadr. During Ramadan these come first.": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "রমাদান কী, কেন আমরা রোযা রাখি, আর কদরের রাত। রমাদানে এগুলো আগে আসবে।"
+          }
+        }
+      }
+    },
+    "Why it was revealed": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "কেন নাজিল হয়েছিল"
+          }
+        }
+      }
+    },
+    "Women of the Qur'an": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "কুরআনের নারীরা"
+          }
+        }
+      }
+    },
+    "Worry & trust in Allah": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "দুশ্চিন্তা ও আল্লাহর উপর ভরসা"
+          }
+        }
+      }
+    }
+  },
+  "version": "1.0"
+}

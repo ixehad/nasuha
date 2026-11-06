@@ -1,0 +1,15 @@
+{
+ "key": "fixture_mukhtasar_en",
+ "language": "en",
+ "title": "Fixture tafsir",
+ "version": "1.0",
+ "kind": "tafsir",
+ "book": "Al-Mukhtasar fi Tafsir al-Qur'an",
+ "ayahs": [
+  {
+   "sura": 2,
+   "aya": 3,
+   "translation": "FIXTURE TAFSIR 2:3"
+  }
+ ]
+}
