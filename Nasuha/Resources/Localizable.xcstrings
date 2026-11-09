@@ -23,6 +23,28 @@
         }
       }
     },
+    "Alhamdulillah. Pick new topics, or at your next reminder we start again from the first ayah.": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "আলহামদুলিল্লাহ। নতুন বিষয় বেছে নিন, অথবা পরের রিমাইন্ডার থেকে আমরা আবার প্রথম আয়াত থেকে শুরু করব।"
+          }
+        }
+      }
+    },
+    "Alhamdulillah. Pick new topics, or tomorrow we start again from the first ayah.": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "আলহামদুলিল্লাহ। নতুন বিষয় বেছে নিন, অথবা কাল থেকে আমরা আবার প্রথম আয়াত থেকে শুরু করব।"
+          }
+        }
+      }
+    },
     "Ayah about family": {
       "extractionState": "manual",
       "localizations": {
@@ -452,6 +474,17 @@
         }
       }
     },
+    "Listen": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "শুনুন"
+          }
+        }
+      }
+    },
     "Marriage": {
       "extractionState": "manual",
       "localizations": {
@@ -562,6 +595,17 @@
         }
       }
     },
+    "Remind me in 1 hour": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "১ ঘণ্টা পরে মনে করিয়ে দিন"
+          }
+        }
+      }
+    },
     "Return & grow": {
       "extractionState": "manual",
       "localizations": {
@@ -580,6 +624,17 @@
           "stringUnit": {
             "state": "needs_review",
             "value": "সালাত ও ইবাদত"
+          }
+        }
+      }
+    },
+    "Save": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "সংরক্ষণ করুন"
           }
         }
       }
@@ -650,6 +705,17 @@
         }
       }
     },
+    "Why it was revealed: %@": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "কেন নাজিল হয়েছিল: %@"
+          }
+        }
+      }
+    },
     "Women of the Qur'an": {
       "extractionState": "manual",
       "localizations": {
@@ -668,6 +734,17 @@
           "stringUnit": {
             "state": "needs_review",
             "value": "দুশ্চিন্তা ও আল্লাহর উপর ভরসা"
+          }
+        }
+      }
+    },
+    "You've read all %@ ayahs": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "আপনি সব %@টি আয়াত পড়েছেন"
           }
         }
       }

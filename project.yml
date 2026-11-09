@@ -40,6 +40,11 @@ targets:
         UILaunchScreen: {}
         UISupportedInterfaceOrientations: [UIInterfaceOrientationPortrait]
         ITSAppUsesNonExemptEncryption: false
+        CFBundleURLTypes:
+          - CFBundleURLName: app.nasuha.ios
+            CFBundleURLSchemes: [nasuha]
+        UIBackgroundModes: [fetch]
+        BGTaskSchedulerPermittedIdentifiers: [app.nasuha.ios.refill]
         UIAppFonts:
           - AmiriQuran-Regular.ttf
           - HindSiliguri-Regular.ttf

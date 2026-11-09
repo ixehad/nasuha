@@ -14,6 +14,8 @@ public final class UserSettings {
     public var reminderMinute: Int        // 0, 15, 30, 45
     public var frequencyRaw: String
     public var pausedUntil: Date?
+    /// First day of the "every 2 days" rhythm. Set once, so refills don't shift it.
+    public var scheduleAnchor: Date?
     public var endOfQueueRaw: String
 
     // Language
@@ -39,6 +41,7 @@ public final class UserSettings {
         reminderMinute = 30
         frequencyRaw = ReminderFrequency.daily.rawValue
         pausedUntil = nil
+        scheduleAnchor = nil
         endOfQueueRaw = EndOfQueueBehaviour.askThenRestart.rawValue
         readingTranslations = ["english_saheeh"]
         reminderLanguage = "en"
@@ -98,37 +101,32 @@ public final class TopicChoice {
     }
 }
 
-/// One slot in the reminder queue.
+/// The reminder queue and schedule, stored as one encoded `ReminderState`. Single record.
 @Model
-public final class QueueEntry {
-    public var index: Int
-    public var ayahSetID: String
-    public var topicID: String
-    public var scheduledFor: Date?
-    public var sentAt: Date?
+public final class ReminderRecord {
+    public var stateData: Data
+    public var updatedAt: Date
 
-    public init(index: Int, ayahSetID: String, topicID: String) {
-        self.index = index
-        self.ayahSetID = ayahSetID
-        self.topicID = topicID
+    public init(state: ReminderState = ReminderState(), updatedAt: Date = .now) {
+        stateData = (try? JSONEncoder().encode(state)) ?? Data()
+        self.updatedAt = updatedAt
     }
-}
 
-/// Where the user is in the queue. Single record.
-@Model
-public final class QueueState {
-    /// Index of the next entry to send.
-    public var position: Int
-    /// The topic IDs (sorted, joined) the queue was built from.
-    public var topicsKey: String
-    public var builtAt: Date
-    /// Set when the last ayah was sent; cleared when AllRead is answered or the queue restarts.
-    public var finishedAt: Date?
+    public var state: ReminderState {
+        get { (try? JSONDecoder().decode(ReminderState.self, from: stateData)) ?? ReminderState() }
+        set {
+            stateData = (try? JSONEncoder().encode(newValue)) ?? stateData
+            updatedAt = .now
+        }
+    }
 
-    public init(position: Int = 0, topicsKey: String = "", builtAt: Date = .now) {
-        self.position = position
-        self.topicsKey = topicsKey
-        self.builtAt = builtAt
+    @MainActor
+    public static func current(in context: ModelContext) throws -> ReminderRecord {
+        if let existing = try context.fetch(FetchDescriptor<ReminderRecord>()).first { return existing }
+        let fresh = ReminderRecord()
+        context.insert(fresh)
+        try context.save()
+        return fresh
     }
 }
 
@@ -193,7 +191,7 @@ public final class ReadingProgress {
 public enum NasuhaSchema {
     public static var schema: Schema {
         Schema([
-            UserSettings.self, TopicChoice.self, QueueEntry.self, QueueState.self,
+            UserSettings.self, TopicChoice.self, ReminderRecord.self,
             ReadRecord.self, SavedAyah.self, ReadingProgress.self,
         ])
     }

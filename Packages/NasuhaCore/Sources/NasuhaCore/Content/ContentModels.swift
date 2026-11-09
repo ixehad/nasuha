@@ -70,6 +70,8 @@ public struct Story: Hashable, Sendable {
     public let steps: [StoryStep]
     /// Only present when the source itself gives a one-line summary.
     public let oneLine: String?
+    /// Language of `oneLine`, e.g. "en".
+    public let oneLineLanguage: String?
     public let refs: [SourceRef]
 }
 

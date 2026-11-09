@@ -127,6 +127,14 @@ public final class ContentStore: Sendable {
         }
     }
 
+    /// One translation of `key` in `language`, from the first of `preferring` that has it,
+    /// else from any source in that language.
+    public func translation(for key: AyahKey, language: String, preferring: [String] = []) throws -> Translation? {
+        let inLanguage = try translationSources().filter { $0.language == language }.map(\.key)
+        let ordered = preferring.filter(inLanguage.contains) + inLanguage.filter { !preferring.contains($0) }
+        return try translations(for: [key], sources: ordered)[key]?.first
+    }
+
     // MARK: Tafsir
 
     public func tafsir(for key: AyahKey, languages: [String]) throws -> [TafsirExcerpt] {
@@ -178,7 +186,7 @@ public final class ContentStore: Sendable {
             if row["has_story"] == true {
                 let steps = try Row.fetchAll(db, sql: "SELECT * FROM story_step WHERE set_id = ? ORDER BY position", arguments: [id])
                     .map { StoryStep(text: $0["text"], language: $0["lang"]) }
-                story = Story(steps: steps, oneLine: row["story_one_line"], refs: refsFor("story"))
+                story = Story(steps: steps, oneLine: row["story_one_line"], oneLineLanguage: row["story_one_line_lang"], refs: refsFor("story"))
             }
             var when: RevelationInfo?
             if row["has_when"] == true {

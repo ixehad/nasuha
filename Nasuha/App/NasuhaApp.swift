@@ -1,47 +1,36 @@
 import NasuhaCore
 import SwiftData
 import SwiftUI
+import UIKit
 
 @main
 struct NasuhaApp: App {
-    private let container: ModelContainer
-    @State private var content = ContentLoader()
+    @UIApplicationDelegateAdaptor(AppDelegate.self) private var appDelegate
+    @Environment(\.scenePhase) private var scenePhase
 
-    init() {
-        if let onDisk = try? NasuhaSchema.container() {
-            container = onDisk
-        } else if let inMemory = try? NasuhaSchema.container(inMemory: true) {
-            // The on-device store could not open. Keep the app usable for this session
-            // rather than crashing; settings are kept in memory until the next launch.
-            container = inMemory
-        } else {
-            // Only reachable if the schema itself is invalid, which the tests rule out.
-            preconditionFailure("The data model could not be created.")
-        }
-    }
+    private var services: AppServices { AppServices.shared }
 
     var body: some Scene {
         WindowGroup {
             RootView()
-                .environment(content)
+                .environment(services.content)
+                .environment(services.router)
+                .onOpenURL { url in
+                    if let link = DeepLink(url: url) { services.router.open(link) }
+                }
+                .onReceive(NotificationCenter.default.publisher(for: .NSSystemTimeZoneDidChange)) { _ in
+                    Task { await services.refillReminders() }
+                }
+                .onReceive(NotificationCenter.default.publisher(for: UIApplication.significantTimeChangeNotification)) { _ in
+                    Task { await services.refillReminders() }
+                }
         }
-        .modelContainer(container)
-    }
-}
-
-/// Opens the bundled content database once.
-@Observable
-final class ContentLoader {
-    let store: ContentStore?
-    let error: Error?
-
-    init() {
-        do {
-            store = try ContentStore.bundled()
-            error = nil
-        } catch {
-            store = nil
-            self.error = error
+        .modelContainer(services.container)
+        .onChange(of: scenePhase) { _, phase in
+            if phase == .active { Task { await services.refillReminders() } }
+        }
+        .backgroundTask(.appRefresh(AppServices.refreshTaskID)) {
+            await AppServices.shared.refillReminders()
         }
     }
 }
