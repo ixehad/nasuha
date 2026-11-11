@@ -2,10 +2,11 @@ import NasuhaCore
 import SwiftData
 import SwiftUI
 
-/// The setup screens.
-enum SetupRoute: Hashable {
+/// Screens pushed from Home: the two setup steps and the Qur'an reader.
+enum AppRoute: Hashable {
     case topics
     case time
+    case reader(ReaderTarget)
 }
 
 /// Choices made on the setup screens, kept until "Start my daily ayah" saves them.

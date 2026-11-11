@@ -1,0 +1,12 @@
+{
+  "defaultReciter": "ghamdi",
+  "reciters": [
+    {
+      "id": "ghamdi",
+      "name": "Saad al-Ghamdi",
+      "riwayah": "Hafs 'an 'Asim",
+      "baseURL": "https://everyayah.com/data/Ghamadi_40kbps/",
+      "licenceCleared": false
+    }
+  ]
+}

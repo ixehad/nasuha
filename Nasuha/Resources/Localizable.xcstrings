@@ -12,6 +12,17 @@
         }
       }
     },
+    "%@ · ayah %lld": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "%1$@ · আয়াত %2$lld"
+          }
+        }
+      }
+    },
     "%@, version %@": {
       "extractionState": "manual",
       "localizations": {
@@ -351,6 +362,28 @@
         }
       }
     },
+    "Arabic + translation": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "আরবি + অনুবাদ"
+          }
+        }
+      }
+    },
+    "Arabic only": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "শুধু আরবি"
+          }
+        }
+      }
+    },
     "Arabic text and translation": {
       "extractionState": "manual",
       "localizations": {
@@ -380,6 +413,28 @@
           "stringUnit": {
             "state": "needs_review",
             "value": "আসসালামু আলাইকুম, %@"
+          }
+        }
+      }
+    },
+    "Ayah %lld": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "আয়াত %lld"
+          }
+        }
+      }
+    },
+    "Ayah %lld is today's ayah.": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "%lld নম্বর আয়াতটি আজকের আয়াত।"
           }
         }
       }
@@ -725,6 +780,17 @@
         }
       }
     },
+    "Close": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "বন্ধ করুন"
+          }
+        }
+      }
+    },
     "Close and go home": {
       "extractionState": "manual",
       "localizations": {
@@ -743,6 +809,28 @@
           "stringUnit": {
             "state": "needs_review",
             "value": "এগিয়ে যান"
+          }
+        }
+      }
+    },
+    "Continue: %@, ayah %lld": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "যেখান থেকে পড়বেন: %1$@, আয়াত %2$lld"
+          }
+        }
+      }
+    },
+    "Couldn't load the recitation. Check your connection.": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "তিলাওয়াত লোড করা যায়নি। ইন্টারনেট সংযোগ দেখে নিন।"
           }
         }
       }
@@ -875,6 +963,28 @@
           "stringUnit": {
             "state": "needs_review",
             "value": "একাকীত্ব"
+          }
+        }
+      }
+    },
+    "Find a surah": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "সূরা খুঁজুন"
+          }
+        }
+      }
+    },
+    "Follows along, ayah by ayah": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "তিলাওয়াতের সাথে আয়াত ধরে ধরে এগোয়"
           }
         }
       }
@@ -1143,6 +1253,28 @@
         }
       }
     },
+    "Listen to this ayah": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "এই আয়াতটি শুনুন"
+          }
+        }
+      }
+    },
+    "Madani": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "মাদানি"
+          }
+        }
+      }
+    },
     "Madinah": {
       "extractionState": "manual",
       "localizations": {
@@ -1161,6 +1293,17 @@
           "stringUnit": {
             "state": "needs_review",
             "value": "মক্কা"
+          }
+        }
+      }
+    },
+    "Makki": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "মাক্কি"
           }
         }
       }
@@ -1216,6 +1359,17 @@
           "stringUnit": {
             "state": "needs_review",
             "value": "নাসূহা"
+          }
+        }
+      }
+    },
+    "Next": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "পরের"
           }
         }
       }
@@ -1308,6 +1462,17 @@
         }
       }
     },
+    "Opens the list of surahs": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "সূরার তালিকা খোলে"
+          }
+        }
+      }
+    },
     "Order revealed": {
       "extractionState": "manual",
       "localizations": {
@@ -1326,6 +1491,17 @@
           "stringUnit": {
             "state": "needs_review",
             "value": "কষ্টে ধৈর্য"
+          }
+        }
+      }
+    },
+    "Pause": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "থামান"
           }
         }
       }
@@ -1418,6 +1594,61 @@
         }
       }
     },
+    "Play %@": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "%@ শুনুন"
+          }
+        }
+      }
+    },
+    "Play ayah %lld": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "%lld নম্বর আয়াত শুনুন"
+          }
+        }
+      }
+    },
+    "Play recitation": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "তিলাওয়াত শুনুন"
+          }
+        }
+      }
+    },
+    "Play the whole surah": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "পুরো সূরা শুনুন"
+          }
+        }
+      }
+    },
+    "Previous": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "আগের"
+          }
+        }
+      }
+    },
     "Prophet Muhammad ﷺ": {
       "extractionState": "manual",
       "localizations": {
@@ -1473,6 +1704,17 @@
         }
       }
     },
+    "Read full surah": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "পুরো সূরা পড়ুন"
+          }
+        }
+      }
+    },
     "Read in": {
       "extractionState": "manual",
       "localizations": {
@@ -1517,6 +1759,17 @@
         }
       }
     },
+    "Read the Qur'an": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "কুরআন পড়ুন"
+          }
+        }
+      }
+    },
     "Read the next ayah, %@": {
       "extractionState": "manual",
       "localizations": {
@@ -1535,6 +1788,17 @@
           "stringUnit": {
             "state": "needs_review",
             "value": "একই আয়াতগুলো আবার প্রথম থেকে পড়ুন"
+          }
+        }
+      }
+    },
+    "Recitation": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "তিলাওয়াত"
           }
         }
       }
@@ -1572,6 +1836,17 @@
         }
       }
     },
+    "Remove ayah %lld from saved": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "%lld নম্বর আয়াত সংরক্ষিত থেকে সরান"
+          }
+        }
+      }
+    },
     "Remove from saved": {
       "extractionState": "manual",
       "localizations": {
@@ -1579,6 +1854,17 @@
           "stringUnit": {
             "state": "needs_review",
             "value": "সংরক্ষিত থেকে সরান"
+          }
+        }
+      }
+    },
+    "Repeat 3×": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "৩ বার"
           }
         }
       }
@@ -1634,6 +1920,17 @@
           "stringUnit": {
             "state": "needs_review",
             "value": "সংরক্ষণ করুন"
+          }
+        }
+      }
+    },
+    "Save ayah %lld": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "%lld নম্বর আয়াত সংরক্ষণ করুন"
           }
         }
       }
@@ -1759,6 +2056,17 @@
         }
       }
     },
+    "Stop": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "বন্ধ করুন"
+          }
+        }
+      }
+    },
     "Stories": {
       "extractionState": "manual",
       "localizations": {
@@ -1788,6 +2096,28 @@
           "stringUnit": {
             "state": "needs_review",
             "value": "সূরা %1$@ · %2$@"
+          }
+        }
+      }
+    },
+    "Surah name or number": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "সূরার নাম বা নম্বর"
+          }
+        }
+      }
+    },
+    "Surahs": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "সূরাসমূহ"
           }
         }
       }
@@ -1832,6 +2162,17 @@
           "stringUnit": {
             "state": "needs_review",
             "value": "এই আয়াতটি পাওয়া যাচ্ছে না।"
+          }
+        }
+      }
+    },
+    "Today": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "আজ"
           }
         }
       }
@@ -2074,6 +2415,28 @@
           "stringUnit": {
             "state": "needs_review",
             "value": "আনুমানিক"
+          }
+        }
+      }
+    },
+    "ayah you have read": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "আয়াত আপনি পড়েছেন"
+          }
+        }
+      }
+    },
+    "ayah you now understand with its story": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "আয়াত আপনি এখন ঘটনাসহ বোঝেন"
           }
         }
       }

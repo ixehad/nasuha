@@ -12,6 +12,7 @@ struct AyahFlow: View {
     @State private var detail: AyahDetail?
     @State private var didLoad = false
     @State private var showsDone = false
+    @State private var reader: ReaderTarget?
 
     init(setID: String) {
         _setID = State(initialValue: setID)
@@ -21,8 +22,11 @@ struct AyahFlow: View {
         NavigationStack {
             Group {
                 if let detail {
-                    AyahScreen(detail: detail, onClose: { dismiss() }, onContinue: { showsDone = true })
-                        .id(detail.id)
+                    AyahScreen(detail: detail, onClose: { dismiss() }, onContinue: { showsDone = true }, onReadSurah: {
+                        reader = ReaderTarget(surah: detail.ayahSet.ayah.surah, ayah: detail.ayahSet.ayah.ayah,
+                                              todaySetID: detail.id)
+                    })
+                    .id(detail.id)
                 } else if didLoad {
                     missing
                 } else {
@@ -30,6 +34,13 @@ struct AyahFlow: View {
                 }
             }
             .toolbar(.hidden, for: .navigationBar)
+            .navigationDestination(item: $reader) { target in
+                QuranScreen(target: target, onBack: { reader = nil }) { id in
+                    reader = nil
+                    setID = id
+                }
+                .toolbar(.hidden, for: .navigationBar)
+            }
             .navigationDestination(isPresented: $showsDone) {
                 if let detail {
                     DoneScreen(detail: detail, onNext: { next in
@@ -41,6 +52,7 @@ struct AyahFlow: View {
             }
         }
         .task(id: setID) { load() }
+        .onDisappear { AppServices.shared.player.stop() }
         .preferredColorScheme(settings.first?.appearance.colorScheme)
     }
 
@@ -69,14 +81,17 @@ struct AyahFlow: View {
 /// One ayah with its story, its timing, the ayahs around it and its sources.
 struct AyahScreen: View {
     @Environment(\.modelContext) private var context
+    @Environment(RecitationPlayer.self) private var player
     @Query private var saved: [SavedAyah]
     @Query private var reads: [ReadRecord]
 
     let detail: AyahDetail
     let onClose: () -> Void
     let onContinue: () -> Void
+    let onReadSurah: () -> Void
 
     @State private var showsMore = false
+    @State private var repeatsThree = false
     @State private var justRead = false
 
     private var isSaved: Bool { saved.contains { $0.ayahKey == detail.ayahSet.ayah.description } }
@@ -85,6 +100,9 @@ struct AyahScreen: View {
         ScrollView {
             VStack(alignment: .leading, spacing: 22) {
                 ayah
+                if player.isAvailable, let reciter = player.reciter {
+                    recitation(reciter)
+                }
                 if !detail.storySteps.isEmpty || detail.oneLine != nil {
                     story
                 }
@@ -175,6 +193,45 @@ struct AyahScreen: View {
             .padding(.vertical, 5)
             .foregroundStyle(Palette.dawnInk)
             .background(Palette.dawnTint, in: Capsule())
+    }
+
+    // MARK: 3. Recitation
+
+    private func recitation(_ reciter: Reciter) -> some View {
+        let plan = PlaybackPlan(keys: [detail.ayahSet.ayah], repeatCount: repeatsThree ? PlaybackPlan.repeatChoice : 1)
+        return HStack(spacing: 12) {
+            PlayButton(plan: plan, label: String(localized: "Play recitation"), diameter: 46, filled: true)
+            VStack(alignment: .leading, spacing: 1) {
+                Text("Listen")
+                    .font(.subheadline.weight(.semibold))
+                    .foregroundStyle(Palette.ink)
+                Text(player.status == .failed
+                     ? String(localized: "Couldn't load the recitation. Check your connection.")
+                     : reciter.name)
+                    .font(.caption)
+                    .foregroundStyle(Palette.muted)
+            }
+            Spacer(minLength: 0)
+            Button {
+                repeatsThree.toggle()
+            } label: {
+                Text("Repeat 3×")
+                    .font(.footnote.weight(repeatsThree ? .semibold : .medium))
+                    .padding(.horizontal, 12)
+                    .frame(minHeight: 44)
+                    .foregroundStyle(repeatsThree ? Palette.tintInk : Palette.ink)
+                    .background(repeatsThree ? Palette.tint : Palette.fill, in: Capsule())
+                    .overlay(Capsule().stroke(repeatsThree ? Palette.accent : Palette.line, lineWidth: 1))
+                    .contentShape(Capsule())
+            }
+            .buttonStyle(.plain)
+            .accessibilityAddTraits(repeatsThree ? .isSelected : [])
+        }
+        .padding(.leading, 8)
+        .padding(.trailing, 10)
+        .padding(.vertical, 6)
+        .background(Palette.surface, in: Capsule())
+        .overlay(Capsule().stroke(Palette.line, lineWidth: 1))
     }
 
     // MARK: 4. Why it was revealed
@@ -317,10 +374,54 @@ struct AyahScreen: View {
             }
             VStack(spacing: 8) {
                 ForEach(showsMore ? detail.more : detail.near) { row in
-                    ContextRowView(row: row, sources: detail.translations.map(\.source))
+                    ContextRowView(row: row, sources: detail.translations.map(\.source), audioAvailable: player.isAvailable)
                 }
             }
+            HStack(spacing: 8) {
+                if player.isAvailable {
+                    rangeButton
+                }
+                Button(action: onReadSurah) {
+                    Text("Read full surah")
+                        .font(.subheadline.weight(.semibold))
+                        .frame(maxWidth: .infinity, minHeight: 48)
+                        .foregroundStyle(Palette.tintInk)
+                        .background(Palette.tint, in: RoundedRectangle(cornerRadius: 14, style: .continuous))
+                        .contentShape(Rectangle())
+                }
+                .buttonStyle(.plain)
+            }
         }
+    }
+
+    /// "Play 93:1–5": the ayahs shown, one after another.
+    private var rangeButton: some View {
+        let rows = showsMore ? detail.more : detail.near
+        let plan = PlaybackPlan(keys: rows.map(\.key))
+        let active = player.isActive(plan) && player.isPlaying
+        return Button {
+            player.toggle(plan)
+        } label: {
+            HStack(spacing: 8) {
+                Image(systemName: active ? "pause.fill" : "play.fill")
+                    .font(.footnote)
+                    .accessibilityHidden(true)
+                Text(active ? String(localized: "Pause") : String(localized: "Play \(rangeText(rows))"))
+            }
+            .font(.subheadline.weight(.semibold))
+            .frame(maxWidth: .infinity, minHeight: 48)
+            .foregroundStyle(Palette.accent)
+            .background(Palette.surface, in: RoundedRectangle(cornerRadius: 14, style: .continuous))
+            .overlay(RoundedRectangle(cornerRadius: 14, style: .continuous).stroke(Palette.line, lineWidth: 1))
+            .contentShape(Rectangle())
+        }
+        .buttonStyle(.plain)
+    }
+
+    private func rangeText(_ rows: [ContextRow]) -> String {
+        guard let first = rows.first?.key, let last = rows.last?.key else { return "" }
+        if first == last { return first.description }
+        return first.surah == last.surah ? "\(first.description)\u{2013}\(last.ayah)" : "\(first.description)\u{2013}\(last.description)"
     }
 
     private func legend(_ text: String, fill: Color, edge: Color) -> some View {
@@ -421,6 +522,10 @@ struct AyahScreen: View {
         }
         if !text.isEmpty {
             rows.append(ReferenceRow(id: "text", title: String(localized: "Arabic text and translation"), lines: text))
+        }
+        if let reciter = player.reciter {
+            rows.append(ReferenceRow(id: "recitation", title: String(localized: "Recitation"),
+                                     lines: ["\(reciter.name), \(reciter.riwayah)"]))
         }
         return rows
     }
@@ -526,6 +631,7 @@ struct AyahScreen: View {
 struct ContextRowView: View {
     let row: ContextRow
     let sources: [TranslationSource]
+    var audioAvailable = false
 
     var body: some View {
         HStack(spacing: 0) {
@@ -533,9 +639,16 @@ struct ContextRowView: View {
                 .fill(bar)
                 .frame(width: row.role == .today ? 5 : 3)
             VStack(alignment: .leading, spacing: 6) {
-                Text(verbatim: "\(row.key.description) · \(label)")
-                    .font(.caption.weight(.bold))
-                    .foregroundStyle(ink)
+                HStack {
+                    Text(verbatim: "\(row.key.description) · \(label)")
+                        .font(.caption.weight(.bold))
+                        .foregroundStyle(ink)
+                    Spacer(minLength: 0)
+                    if audioAvailable {
+                        PlayButton(plan: PlaybackPlan(keys: [row.key]),
+                                   label: String(localized: "Play \(row.key.description)"), diameter: 36)
+                    }
+                }
                 ArabicText(row.arabic, size: 22, style: .title3)
                 ForEach(row.translations, id: \.sourceKey) { translation in
                     let language = sources.first { $0.key == translation.sourceKey }?.language ?? "en"
@@ -551,7 +664,7 @@ struct ContextRowView: View {
         .fixedSize(horizontal: false, vertical: true)
         .background(fill)
         .clipShape(RoundedRectangle(cornerRadius: 14, style: .continuous))
-        .accessibilityElement(children: .combine)
+        .accessibilityElement(children: .contain)
     }
 
     private var label: String {

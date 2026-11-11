@@ -14,12 +14,14 @@ struct HomeScreen: View {
     @Query private var reads: [ReadRecord]
     @Query private var records: [ReminderRecord]
 
-    let openSetup: (SetupRoute) -> Void
+    let open: (AppRoute) -> Void
 
     @State private var selectedTopic: String?
     @State private var card: AyahDetail?
     @State private var topics: [Topic] = []
     @State private var notificationsAllowed = true
+    @State private var readerSurah: (number: Int, name: String, ayah: Int)?
+    @Query private var progress: [ReadingProgress]
 
     private var isSetUp: Bool { settings.first?.hasCompletedSetup ?? false }
     private var state: ReminderState { records.first?.state ?? ReminderState() }
@@ -41,6 +43,9 @@ struct HomeScreen: View {
                         .font(.subheadline)
                         .foregroundStyle(Palette.muted)
                         .frame(maxWidth: .infinity, minHeight: 120)
+                }
+                if readerSurah != nil {
+                    readTile
                 }
                 if isSetUp {
                     topicsAndTime
@@ -71,6 +76,8 @@ struct HomeScreen: View {
         .onChange(of: reads.count) { loadCard() }
         .onChange(of: settings.first?.readingTranslations) { loadCard() }
         .onChange(of: selectedTopic) { loadCard() }
+        .onChange(of: progress.first?.lastAyah) { loadReaderPlace() }
+        .onChange(of: progress.first?.lastSurah) { loadReaderPlace() }
     }
 
     // MARK: Header
@@ -151,19 +158,34 @@ struct HomeScreen: View {
     // MARK: Rows
 
     private var topicsAndTime: some View {
-        Button {
-            openSetup(.topics)
-        } label: {
+        tile(icon: "clock", title: "Topics & time",
+             note: String(localized: "\(choices.count) topics · \(reminderTime)")) {
+            open(.topics)
+        }
+    }
+
+    /// "Read the Qur'an", continuing from the last place.
+    private var readTile: some View {
+        tile(icon: "book", title: "Read the Qur'an",
+             note: readerSurah.map { String(localized: "Continue: \($0.name), ayah \($0.ayah)") } ?? "") {
+            guard let readerSurah else { return }
+            open(.reader(ReaderTarget(surah: readerSurah.number, ayah: readerSurah.ayah)))
+        }
+    }
+
+    private func tile(icon: String, title: LocalizedStringKey, note: String, action: @escaping () -> Void) -> some View {
+        Button(action: action) {
             HStack(spacing: 12) {
-                Image(systemName: "clock")
+                Image(systemName: icon)
                     .font(.title3)
                     .foregroundStyle(Palette.accent)
+                    .frame(width: 28)
                     .accessibilityHidden(true)
                 VStack(alignment: .leading, spacing: 2) {
-                    Text("Topics & time")
+                    Text(title)
                         .font(.subheadline.weight(.semibold))
                         .foregroundStyle(Palette.ink)
-                    Text("\(choices.count) topics · \(reminderTime)")
+                    Text(verbatim: note)
                         .font(.caption)
                         .foregroundStyle(Palette.muted)
                 }
@@ -183,7 +205,7 @@ struct HomeScreen: View {
 
     private func nextReminder(_ slot: PlannedSlot) -> some View {
         Button {
-            openSetup(.time)
+            open(.time)
         } label: {
             HStack(spacing: 12) {
                 Image(systemName: "bell")
@@ -240,7 +262,7 @@ struct HomeScreen: View {
 
     private var setUpPrompt: some View {
         Button {
-            openSetup(.topics)
+            open(.topics)
         } label: {
             HStack(spacing: 12) {
                 Image(systemName: "bell")
@@ -295,6 +317,19 @@ struct HomeScreen: View {
         topics = chosen.isEmpty ? available : chosen
         if let selectedTopic, !topics.contains(where: { $0.id == selectedTopic }) { self.selectedTopic = nil }
         loadCard()
+        loadReaderPlace()
+    }
+
+    /// Where "Read the Qur'an" continues from: the last place read, else the first surah in the content.
+    private func loadReaderPlace() {
+        guard let store = content.store else {
+            readerSurah = nil
+            return
+        }
+        let last = progress.first
+        let surah = (last.flatMap { try? store.surah($0.lastSurah) }) ?? (try? store.surahs())?.first
+        readerSurah = surah.map { (number: $0.number, name: $0.nameTransliterated,
+                                   ayah: $0.number == last?.lastSurah ? min(max(last?.lastAyah ?? 1, 1), $0.ayahCount) : 1) }
     }
 
     private func loadCard() {
@@ -318,6 +353,7 @@ struct HomeScreen: View {
 
 /// The card with one ayah: Arabic, translation, the story box and "Read in context".
 struct TodayCard: View {
+    @Environment(RecitationPlayer.self) private var player
     let detail: AyahDetail
     let topic: Topic
     let isToday: Bool
@@ -344,14 +380,21 @@ struct TodayCard: View {
             if let story = StoryBox(detail: detail) {
                 story
             }
-            Button(action: onRead) {
-                HStack(spacing: 8) {
-                    Text("Read in context")
-                    Image(systemName: "arrow.forward")
-                        .accessibilityHidden(true)
+            HStack(spacing: 10) {
+                if player.isAvailable {
+                    PlayButton(plan: PlaybackPlan(keys: [detail.ayahSet.ayah]),
+                               label: String(localized: "Listen to this ayah"), diameter: 48)
+                        .overlay(Circle().stroke(Palette.line, lineWidth: 1).frame(width: 48, height: 48))
                 }
+                Button(action: onRead) {
+                    HStack(spacing: 8) {
+                        Text("Read in context")
+                        Image(systemName: "arrow.forward")
+                            .accessibilityHidden(true)
+                    }
+                }
+                .buttonStyle(PrimaryButtonStyle(minHeight: 48))
             }
-            .buttonStyle(PrimaryButtonStyle(minHeight: 48))
         }
         .padding(18)
         .background(Palette.surface, in: RoundedRectangle(cornerRadius: 22, style: .continuous))

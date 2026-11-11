@@ -20,6 +20,13 @@ struct DoneScreen: View {
 
     private var storyCount: Int { reads.filter(\.hadStory).count }
 
+    private var countLabel: LocalizedStringKey {
+        if storyCount > 0 {
+            return storyCount == 1 ? "ayah you now understand with its story" : "ayahs you now understand with their story"
+        }
+        return reads.count == 1 ? "ayah you have read" : "ayahs you have read"
+    }
+
     var body: some View {
         ScrollView {
             VStack(spacing: 18) {
@@ -46,9 +53,7 @@ struct DoneScreen: View {
                 HStack(spacing: 10) {
                     Text(verbatim: (storyCount > 0 ? storyCount : reads.count).formatted())
                         .font(.title.bold())
-                    Text(storyCount > 0
-                         ? LocalizedStringKey("ayahs you now understand with their story")
-                         : LocalizedStringKey("ayahs you have read"))
+                    Text(countLabel)
                         .font(.subheadline)
                         .multilineTextAlignment(.leading)
                 }

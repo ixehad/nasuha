@@ -14,6 +14,7 @@ final class AppServices {
     let content: ContentLoader
     let router = AppRouter()
     let notifications = UserNotificationScheduler()
+    let player = RecitationPlayer(catalog: .bundled())
     /// Nil only when the content database is missing.
     let reminders: ReminderController?
 
@@ -37,15 +38,25 @@ final class AppServices {
                 context: context,
                 service: ReminderService(source: store, notifications: scheduler, localizer: CatalogLocalizer()))
         }
+        if let store = loader.store {
+            player.titleFor = { key in
+                [(try? store.surah(key.surah))?.nameTransliterated, key.description].compactMap { $0 }.joined(separator: " ")
+            }
+        }
+        player.onListened = { seconds in
+            guard let progress = try? ReadingProgress.current(in: context) else { return }
+            progress.listeningSeconds += seconds
+            try? context.save()
+        }
     }
 
-    /// Registers the notification actions. "Listen" appears once recitation is available.
+    /// Registers the notification actions. "Listen" appears only when recitation is available.
     func registerNotificationActions() {
         notifications.registerCategories(
             listenTitle: String(localized: "Listen"),
             snoozeTitle: String(localized: "Remind me in 1 hour"),
             saveTitle: String(localized: "Save"),
-            audioAvailable: false)
+            audioAvailable: player.isAvailable)
     }
 
     /// Brings reminders up to date and asks iOS for the next background refresh.

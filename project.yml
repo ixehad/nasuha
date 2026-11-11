@@ -43,7 +43,7 @@ targets:
         CFBundleURLTypes:
           - CFBundleURLName: app.nasuha.ios
             CFBundleURLSchemes: [nasuha]
-        UIBackgroundModes: [fetch]
+        UIBackgroundModes: [fetch, audio]
         BGTaskSchedulerPermittedIdentifiers: [app.nasuha.ios.refill]
         UIAppFonts:
           - AmiriQuran-Regular.ttf
@@ -66,6 +66,11 @@ schemes:
     build:
       targets:
         Nasuha: all
+    run:
+      commandLineArguments:
+        # Tick this in Xcode (Product > Scheme > Edit Scheme > Arguments) to try audio
+        # in a debug build before a reciter's licence is cleared. Release builds ignore it.
+        "-audioPreview YES": false
     test:
       targets:
         - package: NasuhaCore/NasuhaCoreTests

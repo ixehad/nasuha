@@ -10,7 +10,7 @@ struct RootView: View {
     @Environment(\.modelContext) private var context
     @Query private var settings: [UserSettings]
 
-    @State private var path: [SetupRoute] = []
+    @State private var path: [AppRoute] = []
     @State private var draft = SetupDraft()
     @State private var isLookingAround = false
 
@@ -23,19 +23,23 @@ struct RootView: View {
         NavigationStack(path: $path) {
             Group {
                 if showsHome {
-                    HomeScreen(openSetup: openSetup)
+                    HomeScreen(open: open)
                 } else {
-                    MainScreen(onSetUp: { openSetup(.topics) }, onLookAround: { isLookingAround = true })
+                    MainScreen(onSetUp: { open(.topics) }, onLookAround: { isLookingAround = true })
                 }
             }
             .toolbar(.hidden, for: .navigationBar)
-            .navigationDestination(for: SetupRoute.self) { route in
+            .navigationDestination(for: AppRoute.self) { route in
                 Group {
                     switch route {
                     case .topics:
                         SetupTopicsScreen(onNext: { path.append(.time) }, onBack: back)
                     case .time:
                         SetupTimeScreen(onFinished: { path = [] }, onBack: back)
+                    case let .reader(target):
+                        QuranScreen(target: target, onBack: back) { setID in
+                            self.router.ayah = AyahTarget(setID: setID)
+                        }
                     }
                 }
                 .toolbar(.hidden, for: .navigationBar)
@@ -46,6 +50,7 @@ struct RootView: View {
             AyahFlow(setID: target.setID)
                 .environment(content)
                 .environment(self.router)
+                .environment(AppServices.shared.player)
         }
         .fullScreenCover(isPresented: $router.showAllRead) {
             AllReadScreen(onChoice: finishAllRead)
@@ -55,7 +60,11 @@ struct RootView: View {
         .preferredColorScheme(settings.first?.appearance.colorScheme)
     }
 
-    private func openSetup(_ route: SetupRoute) {
+    private func open(_ route: AppRoute) {
+        if case .reader = route {
+            path = [route]
+            return
+        }
         draft.load(from: context, store: content.store)
         path = [route]
     }
@@ -67,8 +76,8 @@ struct RootView: View {
     private func finishAllRead(_ choice: AllReadChoice) {
         router.showAllRead = false
         switch choice {
-        case .pickNewTopics: openSetup(.topics)
-        case .changeTime: openSetup(.time)
+        case .pickNewTopics: open(.topics)
+        case .changeTime: open(.time)
         case .startAgain: break
         }
     }

@@ -28,6 +28,9 @@ final class AppDelegate: NSObject, UIApplicationDelegate, UNUserNotificationCent
         await MainActor.run {
             let services = AppServices.shared
             switch response.actionIdentifier {
+            case ReminderAction.listen:
+                guard let ayahKey, let key = AyahKey(ayahKey) else { return }
+                services.player.play(PlaybackPlan(keys: [key]))
             case ReminderAction.snooze:
                 guard let setID, let topicID else { return }
                 Task { try? await services.reminders?.snooze(setID: setID, topicID: topicID) }

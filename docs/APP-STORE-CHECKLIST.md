@@ -7,7 +7,7 @@ Check this list before every submission. Guideline numbers refer to Apple's App 
 - [x] `ITSAppUsesNonExemptEncryption = NO` in Info.plist (export compliance).
 - [x] App icon is 1024 × 1024 PNG with no transparency (Any, Dark, Tinted).
 - [x] `PrivacyInfo.xcprivacy`: no tracking, no collected data, UserDefaults reason CA92.1.
-- [ ] Add reason codes for any other required-reason API used later (for example file timestamps for the audio cache: C617.1).
+- [x] The audio cache reads only whether a file exists and its size, so it needs no extra reason code. Add one (C617.1) if file timestamps are ever read.
 - [x] No third-party SDKs except GRDB (which ships its own privacy manifest).
 
 ## Content and completeness
@@ -22,6 +22,7 @@ Check this list before every submission. Guideline numbers refer to Apple's App 
 - [ ] **5.1.1 Privacy policy URL:** required for every app. Host the Legal page (for example on GitHub Pages) and put the URL in App Store Connect.
 - [ ] App Privacy label in App Store Connect: "Data Not Collected".
 - [x] No accounts, so the account-deletion rule (5.1.1(v)) does not apply.
+- [ ] Recitation downloads audio files from the reciter's host when the user presses play. Nothing about the user is sent, but the host sees the request like any web server does. Say this in the privacy text.
 - [ ] Ask for notification permission only after "Start my daily ayah", and the app must still work if the user says no.
 
 ## Payments
@@ -30,7 +31,8 @@ Check this list before every submission. Guideline numbers refer to Apple's App 
 - [ ] Tips need the Paid Apps agreement, plus banking and tax details, in App Store Connect.
 
 ## Background modes
-- [ ] **2.5.4:** declare `audio` only once background playback exists, and `fetch` only once the refresh task exists. Don't declare modes the app doesn't use.
+- [x] **2.5.4:** `fetch` is used by the reminder refresh task.
+- [ ] **2.5.4:** `audio` is declared for background recitation. If a release ships with no cleared reciter (audio hidden), remove `audio` from `UIBackgroundModes` in `project.yml` for that release, because the app would declare a mode it doesn't use.
 
 ## App Store Connect
 - [ ] Apple Developer Program membership ($99 a year) on the account that will publish.
