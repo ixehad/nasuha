@@ -84,17 +84,23 @@ final class ContentLoader {
     }
 }
 
+/// An ayah set to open on the Ayah screen.
+struct AyahTarget: Identifiable, Hashable {
+    let setID: String
+    var id: String { setID }
+}
+
 /// Where the app should go next: a notification tap, a `nasuha://` link, or AllRead.
 /// Set on cold start too; the screens read it once they appear.
 @Observable
 final class AppRouter {
-    var pending: DeepLink?
+    var ayah: AyahTarget?
     var showAllRead = false
 
     func open(_ link: DeepLink) {
         switch link {
         case .allRead: showAllRead = true
-        case .ayah: pending = link
+        case let .ayah(setID): ayah = AyahTarget(setID: setID)
         }
     }
 }

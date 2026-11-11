@@ -1,6 +1,235 @@
 {
   "sourceLanguage": "en",
   "strings": {
+    "%@ surah": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "%@ সূরা"
+          }
+        }
+      }
+    },
+    "%@, version %@": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "%1$@, সংস্করণ %2$@"
+          }
+        }
+      }
+    },
+    "%lld ayahs": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "%lldটি আয়াত"
+          }
+        },
+        "en": {
+          "variations": {
+            "plural": {
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld ayah"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld ayahs"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "%lld minutes": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "%lld মিনিট"
+          }
+        },
+        "en": {
+          "variations": {
+            "plural": {
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld minute"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld minutes"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "%lld o'clock": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "%lldটা"
+          }
+        }
+      }
+    },
+    "%lld saved": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "%lldটি সংরক্ষিত"
+          }
+        }
+      }
+    },
+    "%lld stories": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "%lldটি ঘটনা"
+          }
+        },
+        "en": {
+          "variations": {
+            "plural": {
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld story"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld stories"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "%lld topics picked · change anytime on Home": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "%lldটি বিষয় বেছেছেন · হোম থেকে যেকোনো সময় বদলাতে পারবেন"
+          }
+        },
+        "en": {
+          "variations": {
+            "plural": {
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld topic picked · change anytime on Home"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld topics picked · change anytime on Home"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "%lld topics you haven't tried yet": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "%lldটি বিষয় এখনো পড়া হয়নি"
+          }
+        },
+        "en": {
+          "variations": {
+            "plural": {
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld topic you haven't tried yet"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld topics you haven't tried yet"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "%lld topics · %@": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "%1$lldটি বিষয় · %2$@"
+          }
+        },
+        "en": {
+          "variations": {
+            "plural": {
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%1$lld topic · %2$@"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%1$lld topics · %2$@"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "2 before · 2 after": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "আগের ২ · পরের ২"
+          }
+        }
+      }
+    },
     "A du'a from the Qur'an": {
       "extractionState": "manual",
       "localizations": {
@@ -12,6 +241,39 @@
         }
       }
     },
+    "About %@": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "প্রায় %@"
+          }
+        }
+      }
+    },
+    "After": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "পরে"
+          }
+        }
+      }
+    },
+    "Age of the Prophet ﷺ": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "নবী ﷺ-এর বয়স"
+          }
+        }
+      }
+    },
     "Akhirah & Jannah": {
       "extractionState": "manual",
       "localizations": {
@@ -19,6 +281,28 @@
           "stringUnit": {
             "state": "needs_review",
             "value": "আখিরাত ও জান্নাত"
+          }
+        }
+      }
+    },
+    "Alhamdulillah": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "আলহামদুলিল্লাহ"
+          }
+        }
+      }
+    },
+    "Alhamdulillah, all done": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "আলহামদুলিল্লাহ, সব পড়া শেষ"
           }
         }
       }
@@ -41,6 +325,72 @@
           "stringUnit": {
             "state": "needs_review",
             "value": "আলহামদুলিল্লাহ। নতুন বিষয় বেছে নিন, অথবা কাল থেকে আমরা আবার প্রথম আয়াত থেকে শুরু করব।"
+          }
+        }
+      }
+    },
+    "An ayah of hope for you": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "আপনার জন্য আশার একটি আয়াত"
+          }
+        }
+      }
+    },
+    "And Allah knows best. May Allah forgive us for any mistake in what we share.": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "আল্লাহই ভালো জানেন। আমাদের যেকোনো ভুল আল্লাহ ক্ষমা করুন।"
+          }
+        }
+      }
+    },
+    "Arabic text and translation": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "আরবি পাঠ ও অনুবাদ"
+          }
+        }
+      }
+    },
+    "Assalamu alaikum": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "আসসালামু আলাইকুম"
+          }
+        }
+      }
+    },
+    "Assalamu alaikum, %@": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "আসসালামু আলাইকুম, %@"
+          }
+        }
+      }
+    },
+    "Ayah %lld of %lld in your topics": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "আপনার বিষয়গুলোর %2$lldটি আয়াতের মধ্যে %1$lld নম্বর"
           }
         }
       }
@@ -287,6 +637,116 @@
         }
       }
     },
+    "Back": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "পেছনে"
+          }
+        }
+      }
+    },
+    "Back to home": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "হোমে ফিরে যান"
+          }
+        }
+      }
+    },
+    "Before": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "আগে"
+          }
+        }
+      }
+    },
+    "Change": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "বদলান"
+          }
+        }
+      }
+    },
+    "Change time": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "সময় বদলান"
+          }
+        }
+      }
+    },
+    "Change time or how often": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "সময় বা কত ঘন ঘন তা বদলান"
+          }
+        }
+      }
+    },
+    "Choose a different mix of topics": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "অন্যভাবে বিষয় বেছে নিন"
+          }
+        }
+      }
+    },
+    "Clock: tap an hour": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "ঘড়ি: একটি ঘণ্টা বেছে নিন"
+          }
+        }
+      }
+    },
+    "Close and go home": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "বন্ধ করে হোমে যান"
+          }
+        }
+      }
+    },
+    "Continue": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "এগিয়ে যান"
+          }
+        }
+      }
+    },
     "Daily life": {
       "extractionState": "manual",
       "localizations": {
@@ -294,6 +754,17 @@
           "stringUnit": {
             "state": "needs_review",
             "value": "দৈনন্দিন জীবন"
+          }
+        }
+      }
+    },
+    "Done": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "হয়ে গেছে"
           }
         }
       }
@@ -316,6 +787,72 @@
           "stringUnit": {
             "state": "needs_review",
             "value": "কুরআনের দুআ"
+          }
+        }
+      }
+    },
+    "Every 2 days": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "২ দিন পরপর"
+          }
+        }
+      }
+    },
+    "Every 2 days at %@ · change anytime": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "২ দিন পরপর %@ · যেকোনো সময় বদলাতে পারবেন"
+          }
+        }
+      }
+    },
+    "Every Friday at %@ · change anytime": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "প্রতি শুক্রবার %@ · যেকোনো সময় বদলাতে পারবেন"
+          }
+        }
+      }
+    },
+    "Every day": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "প্রতিদিন"
+          }
+        }
+      }
+    },
+    "Every day at %@ · change anytime": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "প্রতিদিন %@ · যেকোনো সময় বদলাতে পারবেন"
+          }
+        }
+      }
+    },
+    "Explanation": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "ব্যাখ্যা"
           }
         }
       }
@@ -353,6 +890,28 @@
         }
       }
     },
+    "Free · No account · No ads": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "বিনামূল্যে · অ্যাকাউন্ট লাগে না · বিজ্ঞাপন নেই"
+          }
+        }
+      }
+    },
+    "Fridays": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "শুক্রবার"
+          }
+        }
+      }
+    },
     "From the prophets' stories": {
       "extractionState": "manual",
       "localizations": {
@@ -360,6 +919,17 @@
           "stringUnit": {
             "state": "needs_review",
             "value": "নবীদের ঘটনা থেকে"
+          }
+        }
+      }
+    },
+    "Get one ayah a day": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "প্রতিদিন একটি আয়াত পান"
           }
         }
       }
@@ -397,6 +967,17 @@
         }
       }
     },
+    "Hadith numbers follow the sunnah.com numbering": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "হাদিসের নম্বর sunnah.com-এর নম্বর অনুযায়ী"
+          }
+        }
+      }
+    },
     "Hajj & Eid al-Adha": {
       "extractionState": "manual",
       "localizations": {
@@ -430,6 +1011,50 @@
         }
       }
     },
+    "How often": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "কত ঘন ঘন"
+          }
+        }
+      }
+    },
+    "I've read it": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "পড়েছি"
+          }
+        }
+      }
+    },
+    "If you don't choose, we start again from the first ayah at your next reminder.": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "কিছু না বাছলে পরের রিমাইন্ডার থেকে আমরা আবার প্রথম আয়াত থেকে শুরু করব।"
+          }
+        }
+      }
+    },
+    "In one line": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "এক লাইনে"
+          }
+        }
+      }
+    },
     "Jumu'ah (Friday)": {
       "extractionState": "manual",
       "localizations": {
@@ -441,6 +1066,17 @@
         }
       }
     },
+    "Just look around": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "আগে ঘুরে দেখি"
+          }
+        }
+      }
+    },
     "Justice & people": {
       "extractionState": "manual",
       "localizations": {
@@ -448,6 +1084,28 @@
           "stringUnit": {
             "state": "needs_review",
             "value": "ন্যায়বিচার ও মানুষ"
+          }
+        }
+      }
+    },
+    "Keep your topics, read them again at a new time": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "বিষয় একই থাকবে, নতুন সময়ে আবার পড়ুন"
+          }
+        }
+      }
+    },
+    "Language on the lock screen": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "লক স্ক্রিনের ভাষা"
           }
         }
       }
@@ -485,6 +1143,28 @@
         }
       }
     },
+    "Madinah": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "মদিনা"
+          }
+        }
+      }
+    },
+    "Makkah": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "মক্কা"
+          }
+        }
+      }
+    },
     "Marriage": {
       "extractionState": "manual",
       "localizations": {
@@ -503,6 +1183,17 @@
           "stringUnit": {
             "state": "needs_review",
             "value": "রহমত ও ক্ষমা"
+          }
+        }
+      }
+    },
+    "Missed a day? It's okay. Your ayahs wait for you here.": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "একদিন বাদ পড়েছে? সমস্যা নেই। আপনার আয়াতগুলো এখানেই আছে।"
           }
         }
       }
@@ -529,6 +1220,105 @@
         }
       }
     },
+    "Next, iOS will ask to allow notifications. That is how your ayah reaches you.": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "এরপর iOS নোটিফিকেশনের অনুমতি চাইবে। এভাবেই আয়াত আপনার কাছে পৌঁছাবে।"
+          }
+        }
+      }
+    },
+    "Next: %@ at %@": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "পরেরটি: %1$@, %2$@"
+          }
+        }
+      }
+    },
+    "Next: pick a time": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "এরপর: সময় বেছে নিন"
+          }
+        }
+      }
+    },
+    "Next: today at %@": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "পরেরটি: আজ %@"
+          }
+        }
+      }
+    },
+    "Next: tomorrow at %@": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "পরেরটি: আগামীকাল %@"
+          }
+        }
+      }
+    },
+    "No topics are available yet.": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "এখনো কোনো বিষয় নেই।"
+          }
+        }
+      }
+    },
+    "Notifications are off": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "নোটিফিকেশন বন্ধ আছে"
+          }
+        }
+      }
+    },
+    "One ayah a day, chosen by you": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "প্রতিদিন একটি আয়াত, আপনার পছন্দের বিষয়ে"
+          }
+        }
+      }
+    },
+    "Order revealed": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "নাজিলের ক্রম"
+          }
+        }
+      }
+    },
     "Patience in hardship": {
       "extractionState": "manual",
       "localizations": {
@@ -536,6 +1326,94 @@
           "stringUnit": {
             "state": "needs_review",
             "value": "কষ্টে ধৈর্য"
+          }
+        }
+      }
+    },
+    "Period": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "সময়কাল"
+          }
+        }
+      }
+    },
+    "Pick as many as you like. We mix them, one ayah a day.": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "যত খুশি বেছে নিন। আমরা মিলিয়ে প্রতিদিন একটি আয়াত পাঠাব।"
+          }
+        }
+      }
+    },
+    "Pick at least one topic": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "অন্তত একটি বিষয় বেছে নিন"
+          }
+        }
+      }
+    },
+    "Pick new topics": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "নতুন বিষয় বেছে নিন"
+          }
+        }
+      }
+    },
+    "Pick one or more. Each translation is shown word for word from its source.": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "এক বা একাধিক বেছে নিন। প্রতিটি অনুবাদ উৎস থেকে হুবহু দেখানো হয়।"
+          }
+        }
+      }
+    },
+    "Pick what your heart needs: hope, tawbah, or the story behind an ayah. We send it at a quiet time.": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "আপনার মনের যা দরকার তা বেছে নিন: আশা, তাওবা, বা আয়াতের পেছনের ঘটনা। আমরা নিরিবিলি সময়ে পাঠাব।"
+          }
+        }
+      }
+    },
+    "Pick your topics and a time. It takes 30 seconds.": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "বিষয় ও সময় বেছে নিন। ৩০ সেকেন্ড লাগবে।"
+          }
+        }
+      }
+    },
+    "Place": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "স্থান"
           }
         }
       }
@@ -595,6 +1473,83 @@
         }
       }
     },
+    "Read in": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "যে ভাষায় পড়বেন"
+          }
+        }
+      }
+    },
+    "Read in context": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "প্রসঙ্গসহ পড়ুন"
+          }
+        }
+      }
+    },
+    "Read in: %@": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "পড়ার ভাষা: %@"
+          }
+        }
+      }
+    },
+    "Read it with the ayahs around it": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "আগে-পরের আয়াতসহ পড়ুন"
+          }
+        }
+      }
+    },
+    "Read the next ayah, %@": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "পরের আয়াত পড়ুন, %@"
+          }
+        }
+      }
+    },
+    "Read the same ayahs again, from the first one": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "একই আয়াতগুলো আবার প্রথম থেকে পড়ুন"
+          }
+        }
+      }
+    },
+    "References and sources": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "তথ্যসূত্র ও উৎস"
+          }
+        }
+      }
+    },
     "Remind me in 1 hour": {
       "extractionState": "manual",
       "localizations": {
@@ -602,6 +1557,28 @@
           "stringUnit": {
             "state": "needs_review",
             "value": "১ ঘণ্টা পরে মনে করিয়ে দিন"
+          }
+        }
+      }
+    },
+    "Reminders in: %@": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "রিমাইন্ডারের ভাষা: %@"
+          }
+        }
+      }
+    },
+    "Remove from saved": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "সংরক্ষিত থেকে সরান"
           }
         }
       }
@@ -617,6 +1594,17 @@
         }
       }
     },
+    "Revealed in %@": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "%@-এ নাজিল হয়েছে"
+          }
+        }
+      }
+    },
     "Salah & worship": {
       "extractionState": "manual",
       "localizations": {
@@ -624,6 +1612,17 @@
           "stringUnit": {
             "state": "needs_review",
             "value": "সালাত ও ইবাদত"
+          }
+        }
+      }
+    },
+    "Sample content": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "নমুনা কনটেন্ট"
           }
         }
       }
@@ -639,6 +1638,61 @@
         }
       }
     },
+    "Scholars differ on the exact time, so it is shown as a range.": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "সঠিক সময় নিয়ে আলেমদের মতভেদ আছে, তাই একটি পরিসর দেখানো হয়েছে।"
+          }
+        }
+      }
+    },
+    "Set up in 30 seconds": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "৩০ সেকেন্ডে সেট করুন"
+          }
+        }
+      }
+    },
+    "Share": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "শেয়ার করুন"
+          }
+        }
+      }
+    },
+    "Share with family": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "পরিবারের সাথে শেয়ার করুন"
+          }
+        }
+      }
+    },
+    "Show more": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "আরও দেখুন"
+          }
+        }
+      }
+    },
     "Signs in creation": {
       "extractionState": "manual",
       "localizations": {
@@ -650,6 +1704,61 @@
         }
       }
     },
+    "Source: %@": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "উৎস: %@"
+          }
+        }
+      }
+    },
+    "Start again": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "আবার শুরু করুন"
+          }
+        }
+      }
+    },
+    "Start again from the first": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "প্রথম থেকে আবার শুরু করুন"
+          }
+        }
+      }
+    },
+    "Start my daily ayah": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "আমার প্রতিদিনের আয়াত শুরু করুন"
+          }
+        }
+      }
+    },
+    "Step %lld of %lld": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "%2$lld ধাপের মধ্যে %1$lld"
+          }
+        }
+      }
+    },
     "Stories": {
       "extractionState": "manual",
       "localizations": {
@@ -657,6 +1766,39 @@
           "stringUnit": {
             "state": "needs_review",
             "value": "ঘটনা"
+          }
+        }
+      }
+    },
+    "Story": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "ঘটনা"
+          }
+        }
+      }
+    },
+    "Surah %@ · %@": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "সূরা %1$@ · %2$@"
+          }
+        }
+      }
+    },
+    "Tap an hour on the clock, then pick minutes.": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "ঘড়িতে একটি ঘণ্টায় চাপুন, তারপর মিনিট বেছে নিন।"
           }
         }
       }
@@ -683,6 +1825,72 @@
         }
       }
     },
+    "This ayah isn't available.": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "এই আয়াতটি পাওয়া যাচ্ছে না।"
+          }
+        }
+      }
+    },
+    "Today's ayah": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "আজকের আয়াত"
+          }
+        }
+      }
+    },
+    "Today's ayah · %@": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "আজকের আয়াত · %@"
+          }
+        }
+      }
+    },
+    "Topics & time": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "বিষয় ও সময়"
+          }
+        }
+      }
+    },
+    "Translation and explanation": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "অনুবাদ ও ব্যাখ্যা"
+          }
+        }
+      }
+    },
+    "Turn them on in Settings to get your daily ayah. Your ayahs are always here too.": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "প্রতিদিনের আয়াত পেতে সেটিংস থেকে চালু করুন। আপনার আয়াতগুলো এখানেও সবসময় আছে।"
+          }
+        }
+      }
+    },
     "What Ramadan is, why we fast, and the night of Qadr. During Ramadan these come first.": {
       "extractionState": "manual",
       "localizations": {
@@ -690,6 +1898,61 @@
           "stringUnit": {
             "state": "needs_review",
             "value": "রমাদান কী, কেন আমরা রোযা রাখি, আর কদরের রাত। রমাদানে এগুলো আগে আসবে।"
+          }
+        }
+      }
+    },
+    "What does your heart need today?": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "আজ আপনার মনের কী দরকার?"
+          }
+        }
+      }
+    },
+    "What does your heart need?": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "আপনার মনের কী দরকার?"
+          }
+        }
+      }
+    },
+    "What next?": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "এরপর কী?"
+          }
+        }
+      }
+    },
+    "What time suits you?": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "কোন সময় আপনার জন্য ভালো?"
+          }
+        }
+      }
+    },
+    "When it was revealed": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "কখন নাজিল হয়েছে"
           }
         }
       }
@@ -738,6 +2001,50 @@
         }
       }
     },
+    "You read every ayah in %@.": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "আপনি %@ বিষয়ের সব আয়াত পড়েছেন।"
+          }
+        }
+      }
+    },
+    "You read today's ayah and its story.": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "আপনি আজকের আয়াত ও তার ঘটনা পড়েছেন।"
+          }
+        }
+      }
+    },
+    "You read today's ayah and the story behind it.": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "আপনি আজকের আয়াত ও তার পেছনের ঘটনা পড়েছেন।"
+          }
+        }
+      }
+    },
+    "You read today's ayah.": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "আপনি আজকের আয়াত পড়েছেন।"
+          }
+        }
+      }
+    },
     "You've read all %@ ayahs": {
       "extractionState": "manual",
       "localizations": {
@@ -745,6 +2052,61 @@
           "stringUnit": {
             "state": "needs_review",
             "value": "আপনি সব %@টি আয়াত পড়েছেন"
+          }
+        }
+      }
+    },
+    "Your ayahs will appear here.": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "আপনার আয়াতগুলো এখানে দেখা যাবে।"
+          }
+        }
+      }
+    },
+    "approximate": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "আনুমানিক"
+          }
+        }
+      }
+    },
+    "ayahs you have read": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "আয়াত আপনি পড়েছেন"
+          }
+        }
+      }
+    },
+    "ayahs you now understand with their story": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "আয়াত আপনি এখন ঘটনাসহ বোঝেন"
+          }
+        }
+      }
+    },
+    "the Prophet ﷺ was about %@ (approx.)": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "নবী ﷺ-এর বয়স তখন প্রায় %@ (আনুমানিক)"
           }
         }
       }

@@ -2,35 +2,74 @@ import NasuhaCore
 import SwiftData
 import SwiftUI
 
-/// Start screen: the logo and app name. Debug builds also show a notice when the content database is missing.
+/// The top of the app: the first-open screen until setup is done (or the person
+/// chooses to look around), then Home. Setup, Ayah and AllRead open from here.
 struct RootView: View {
     @Environment(ContentLoader.self) private var content
+    @Environment(AppRouter.self) private var router
+    @Environment(\.modelContext) private var context
     @Query private var settings: [UserSettings]
 
+    @State private var path: [SetupRoute] = []
+    @State private var draft = SetupDraft()
+    @State private var isLookingAround = false
+
+    private var showsHome: Bool {
+        isLookingAround || (settings.first?.hasCompletedSetup ?? false)
+    }
+
     var body: some View {
-        VStack(spacing: 16) {
-            Image("Logo")
-                .resizable()
-                .scaledToFit()
-                .frame(width: 96, height: 96)
-                .clipShape(RoundedRectangle(cornerRadius: 22, style: .continuous))
-                .accessibilityHidden(true)
-            Text("Nasuha")
-                .font(.largeTitle.bold())
-                .foregroundStyle(Palette.ink)
-            #if DEBUG
-            // Developer notice. Release builds never show tool names to users.
-            if content.store == nil {
-                Text(verbatim: "Content is missing. Run tools/build_content.py.")
-                    .font(.footnote)
-                    .foregroundStyle(Palette.muted)
-                    .multilineTextAlignment(.center)
+        @Bindable var router = router
+        NavigationStack(path: $path) {
+            Group {
+                if showsHome {
+                    HomeScreen(openSetup: openSetup)
+                } else {
+                    MainScreen(onSetUp: { openSetup(.topics) }, onLookAround: { isLookingAround = true })
+                }
             }
-            #endif
+            .toolbar(.hidden, for: .navigationBar)
+            .navigationDestination(for: SetupRoute.self) { route in
+                Group {
+                    switch route {
+                    case .topics:
+                        SetupTopicsScreen(onNext: { path.append(.time) }, onBack: back)
+                    case .time:
+                        SetupTimeScreen(onFinished: { path = [] }, onBack: back)
+                    }
+                }
+                .toolbar(.hidden, for: .navigationBar)
+            }
         }
-        .padding(22)
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(Palette.bg)
+        .environment(draft)
+        .fullScreenCover(item: $router.ayah) { target in
+            AyahFlow(setID: target.setID)
+                .environment(content)
+                .environment(self.router)
+        }
+        .fullScreenCover(isPresented: $router.showAllRead) {
+            AllReadScreen(onChoice: finishAllRead)
+                .environment(content)
+        }
+        .tint(Palette.accent)
         .preferredColorScheme(settings.first?.appearance.colorScheme)
+    }
+
+    private func openSetup(_ route: SetupRoute) {
+        draft.load(from: context, store: content.store)
+        path = [route]
+    }
+
+    private func back() {
+        if !path.isEmpty { path.removeLast() }
+    }
+
+    private func finishAllRead(_ choice: AllReadChoice) {
+        router.showAllRead = false
+        switch choice {
+        case .pickNewTopics: openSetup(.topics)
+        case .changeTime: openSetup(.time)
+        case .startAgain: break
+        }
     }
 }
