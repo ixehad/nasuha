@@ -74,7 +74,8 @@ struct AyahFlow: View {
         defer { didLoad = true }
         guard let store = content.store else { return }
         detail = try? AyahDetailLoader(store: store)
-            .load(setID: setID, preferredTranslations: settings.first?.readingTranslations ?? [])
+            .load(setID: setID, preferredTranslations: settings.first?.readingTranslations ?? [],
+                  extraTafsirLanguages: settings.first?.extraTafsirLanguages ?? [])
     }
 }
 
@@ -234,11 +235,11 @@ struct AyahScreen: View {
         .overlay(Capsule().stroke(Palette.line, lineWidth: 1))
     }
 
-    // MARK: 4. Why it was revealed
+    // MARK: 4. The story of its revelation
 
     private var story: some View {
         VStack(alignment: .leading, spacing: 14) {
-            sectionTitle("Why it was revealed")
+            sectionTitle("The story of its revelation")
             VStack(alignment: .leading, spacing: 0) {
                 ForEach(Array(detail.storySteps.enumerated()), id: \.offset) { index, step in
                     let isLast = index == detail.storySteps.count - 1
@@ -445,8 +446,13 @@ struct AyahScreen: View {
                 VStack(alignment: .leading, spacing: 4) {
                     Text(verbatim: excerpt.text)
                         .font(excerpt.language == "bn" ? Fonts.bangla(16, relativeTo: .callout) : .callout)
-                        .lineSpacing(3)
+                        .lineSpacing(excerpt.language == "ar" ? 8 : 3)
                         .foregroundStyle(Palette.ink2)
+                        .multilineTextAlignment(.leading)
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                        // Arabic reads right to left, whatever the app's language.
+                        .environment(\.layoutDirection, excerpt.language == "ar" ? .rightToLeft : .leftToRight)
+                        .environment(\.locale, Locale(identifier: excerpt.language))
                     Text(verbatim: excerpt.book)
                         .font(.caption)
                         .foregroundStyle(Palette.muted)

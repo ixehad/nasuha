@@ -1,3 +1,4 @@
+import SwiftData
 import XCTest
 @testable import NasuhaCore
 
@@ -145,5 +146,60 @@ final class ClockTimeTests: XCTestCase {
 
     func testMinuteChoices() {
         XCTAssertEqual(ClockTime.minuteChoices, [0, 15, 30, 45])
+    }
+}
+
+final class LanguageOfferTests: XCTestCase {
+    func testEnglishAndArabicAreOfferedEverywhere() {
+        for region in ["BD", "GB", "SA", "US", nil] {
+            XCTAssertTrue(LanguageOffer.isOffered("en", region: region, preferredLanguages: []))
+            XCTAssertTrue(LanguageOffer.isOffered("ar", region: region, preferredLanguages: []))
+        }
+    }
+
+    func testBanglaIsOfferedInBangladesh() {
+        XCTAssertTrue(LanguageOffer.isOffered("bn", region: "BD", preferredLanguages: ["en-BD"]))
+        XCTAssertTrue(LanguageOffer.isOffered("bn", region: "bd", preferredLanguages: []))
+    }
+
+    func testBanglaIsNotOfferedElsewhereByDefault() {
+        XCTAssertFalse(LanguageOffer.isOffered("bn", region: "GB", preferredLanguages: ["en-GB"]))
+        XCTAssertFalse(LanguageOffer.isOffered("bn", region: nil, preferredLanguages: []))
+    }
+
+    func testBanglaSpeakerAbroadStillGetsBangla() {
+        XCTAssertTrue(LanguageOffer.isOffered("bn", region: "GB", preferredLanguages: ["en-GB", "bn-GB"]))
+        XCTAssertTrue(LanguageOffer.isOffered("bn", region: "IN", preferredLanguages: ["bn_IN"]))
+    }
+
+    func testSourcesAreFilteredButAChosenOneIsKept() {
+        let en = TranslationSource(key: "e", language: "en", title: "E", version: "1", lastUpdate: nil)
+        let bn = TranslationSource(key: "b", language: "bn", title: "B", version: "1", lastUpdate: nil)
+        XCTAssertEqual(LanguageOffer.offered([bn, en], region: "US", preferredLanguages: ["en-US"]).map(\.key), ["e"])
+        XCTAssertEqual(LanguageOffer.offered([bn, en], region: "BD", preferredLanguages: ["en-BD"]).map(\.key), ["b", "e"])
+        XCTAssertEqual(LanguageOffer.offered([bn, en], keeping: ["b"], region: "US", preferredLanguages: ["en-US"]).map(\.key),
+                       ["b", "e"], "a translation the person already reads with is not taken away")
+    }
+}
+
+final class ExtraTafsirTests: XCTestCase {
+    func testExplanationInAnExtraLanguage() throws {
+        let url = try XCTUnwrap(Bundle.module.url(forResource: "content-fixture", withExtension: "sqlite", subdirectory: "Fixtures"))
+        let store = try ContentStore(path: url.path)
+        let loader = AyahDetailLoader(store: store)
+        XCTAssertEqual(try store.tafsirLanguages(), ["en"])
+        let without = try XCTUnwrap(loader.load(setID: "fixture-2-3", preferredTranslations: ["fixture_bn"]))
+        XCTAssertTrue(without.tafsir.isEmpty, "the fixture has no Bangla explanation")
+        let with = try XCTUnwrap(loader.load(setID: "fixture-2-3", preferredTranslations: ["fixture_bn"],
+                                             extraTafsirLanguages: ["en"]))
+        XCTAssertFalse(with.tafsir.isEmpty)
+        XCTAssertEqual(Set(with.tafsir.map(\.language)), ["en"])
+    }
+
+    func testArabicExplanationIsOffByDefault() {
+        let settings = UserSettings()
+        XCTAssertEqual(settings.extraTafsirLanguages, [])
+        settings.showArabicTafsir = true
+        XCTAssertEqual(settings.extraTafsirLanguages, ["ar"])
     }
 }

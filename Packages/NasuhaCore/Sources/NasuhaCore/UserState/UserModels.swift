@@ -33,6 +33,8 @@ public final class UserSettings {
     public var showTransliteration: Bool
     /// On by default: no Arabic in notification text.
     public var keepArabicOffLockScreen: Bool
+    /// Also show the Arabic explanation (Al-Mukhtasar) on the Ayah screen.
+    public var showArabicTafsir: Bool = false
 
     public init() {
         name = ""
@@ -51,7 +53,11 @@ public final class UserSettings {
         reciterID = nil
         showTransliteration = false
         keepArabicOffLockScreen = true
+        showArabicTafsir = false
     }
+
+    /// Languages of explanation to show besides those of the chosen translations.
+    public var extraTafsirLanguages: [String] { showArabicTafsir ? ["ar"] : [] }
 
     public var frequency: ReminderFrequency {
         get { ReminderFrequency(rawValue: frequencyRaw) ?? .daily }

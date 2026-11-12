@@ -403,7 +403,7 @@ struct TodayCard: View {
     }
 }
 
-/// "Why it was revealed" on Home. Built only from what the set provides; absent when it has neither story nor timing.
+/// The story of the ayah's revelation on Home. Built only from what the set provides; absent when it has neither story nor timing.
 struct StoryBox: View {
     let story: String?
     let when: String?
@@ -422,7 +422,7 @@ struct StoryBox: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 4) {
             if let story {
-                Text("Why it was revealed")
+                Text("The story of its revelation")
                     .font(.caption.weight(.bold))
                     .textCase(.uppercase)
                     .tracking(0.4)

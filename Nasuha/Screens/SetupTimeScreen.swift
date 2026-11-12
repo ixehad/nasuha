@@ -334,6 +334,35 @@ struct ReadingLanguagesSheet: View {
                 } footer: {
                     Text("Pick one or more. Each translation is shown word for word from its source.")
                 }
+                if draft.hasArabicTafsir {
+                    Section {
+                        Button {
+                            draft.showArabicTafsir.toggle()
+                        } label: {
+                            HStack {
+                                VStack(alignment: .leading, spacing: 2) {
+                                    Text("Arabic explanation")
+                                        .font(.body.weight(.medium))
+                                        .foregroundStyle(Palette.ink)
+                                    Text(verbatim: "Al-Mukhtasar fi Tafsir al-Qur'an")
+                                        .font(.footnote)
+                                        .foregroundStyle(Palette.muted)
+                                }
+                                Spacer()
+                                if draft.showArabicTafsir {
+                                    Image(systemName: "checkmark")
+                                        .foregroundStyle(Palette.accent)
+                                        .accessibilityHidden(true)
+                                }
+                            }
+                            .contentShape(Rectangle())
+                        }
+                        .buttonStyle(.plain)
+                        .accessibilityAddTraits(draft.showArabicTafsir ? .isSelected : [])
+                    } footer: {
+                        Text("Shows Al-Mukhtasar fi Tafsir al-Qur'an in Arabic under each ayah.")
+                    }
+                }
             }
             .navigationTitle("Read in")
             .navigationBarTitleDisplayMode(.inline)

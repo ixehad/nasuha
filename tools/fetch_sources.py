@@ -12,23 +12,27 @@ QuranEnc: the ayah's Arabic in QuranEnc responses is dropped; Arabic comes from 
 
 import argparse
 import json
+import re
 import sys
 import time
+import urllib.error
 import urllib.request
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 SRC = ROOT / "content-src"
-UA = {"User-Agent": "Nasuha-content-fetch/1.0"}
+UA = {"User-Agent": "content-fetch/1.0"}
 
 TANZIL_TEXT = ("https://tanzil.net/pub/download/index.php?"
-               "marks=true&sajdah=true&rub=true&tatweel=true&quranType=uthmani&outType=xml&agree=true")
+               "marks=true&sajdah=true&tatweel=true&quranType=uthmani&outType=xml&agree=true")
+# No "rub" option: Tanzil then leaves out the rub el hizb sign, which marks a page division, not part of an ayah.
 TANZIL_META = "https://tanzil.net/res/text/metadata/quran-data.xml"
 QURANENC_LIST = "https://quranenc.com/api/v1/translations/list"
+QURANENC_INDEX = "https://quranenc.com/en/home"
 QURANENC_SURA = "https://quranenc.com/api/v1/translation/sura/{key}/{sura}"
 
 TRANSLATIONS = {"english_saheeh": "en", "bengali_zakaria": "bn"}
-MUKHTASAR = {"english_mokhtasar": "en", "bengali_mokhtasar": "bn"}
+MUKHTASAR = {"arabic_mokhtasar": "ar", "english_mokhtasar": "en", "bengali_mokhtasar": "bn"}
 
 
 def get(url):
@@ -44,14 +48,46 @@ def fetch_tanzil():
     print("Tanzil text and metadata saved to", out)
 
 
+def page_text(url):
+    """A web page as plain text."""
+    html = urllib.request.urlopen(
+        urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"}), timeout=60).read().decode("utf-8", "replace")
+    title = re.search(r"<title>(.*?)</title>", html, re.S)
+    body = re.sub(r"<script.*?</script>|<style.*?</style>", "", html, flags=re.S)
+    body = re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", body))
+    return (title.group(1).strip() if title else ""), body
+
+
+def site_info(key):
+    """Title, version and date of a translation that the API serves but leaves out of its list.
+
+    They are read from QuranEnc's own pages: the title from the translation's page, and the
+    version and date from the index, where each entry reads "22/05/2021 - V1.1.1 <title>".
+    """
+    try:
+        title, _ = page_text(f"https://quranenc.com/en/browse/{key}")
+    except urllib.error.HTTPError:
+        return None
+    title = title.replace(" - Encyclopedia of the Noble Quran", "").strip()
+    _, index = page_text(QURANENC_INDEX)
+    found = re.search(r"(\d\d/\d\d/\d{4}) - V(\d+(?:\.\d+)+) " + re.escape(title), index) if title else None
+    if not found:
+        return None
+    return {"title": title, "version": found.group(2), "last_update": found.group(1)}
+
+
 def fetch_quranenc(keys, kind):
     catalogue = {t["key"]: t for t in json.loads(get(QURANENC_LIST))["translations"]}
     out = SRC / "quranenc"
     out.mkdir(parents=True, exist_ok=True)
     for key, lang in keys.items():
-        info = catalogue.get(key)
+        info = catalogue.get(key) or site_info(key)
         if not info:
-            sys.exit(f"QuranEnc has no translation {key!r}")
+            if kind == "tafsir":
+                # Not published on QuranEnc in this language: leave it out.
+                print(f"{key}: not published on QuranEnc, skipped")
+                continue
+            sys.exit(f"QuranEnc has no translation {key!r}, or its version could not be read")
         ayahs = []
         for sura in range(1, 115):
             for a in json.loads(get(QURANENC_SURA.format(key=key, sura=sura)))["result"]:

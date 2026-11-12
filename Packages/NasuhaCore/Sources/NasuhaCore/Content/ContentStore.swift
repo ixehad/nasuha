@@ -151,6 +151,11 @@ public final class ContentStore: Sendable {
         }
     }
 
+    /// Languages that have at least one explanation, e.g. ["ar", "bn"].
+    public func tafsirLanguages() throws -> [String] {
+        try db.read { try String.fetchAll($0, sql: "SELECT DISTINCT lang FROM tafsir ORDER BY lang") }
+    }
+
     // MARK: Curated sets
 
     /// Set IDs for one topic, in curated order.

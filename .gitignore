@@ -13,3 +13,6 @@ Nasuha/Resources/nasuha.sqlite
 design/
 # Apple Team ID (see Config/Signing.xcconfig)
 Config/Signing.local.xcconfig
+# Downloaded by tools/fetch_sources.py. Fetch them again instead of committing copies.
+content-src/tanzil/*.xml
+content-src/quranenc/*.json

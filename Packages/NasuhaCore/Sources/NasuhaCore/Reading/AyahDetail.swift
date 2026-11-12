@@ -70,7 +70,8 @@ public struct AyahDetailLoader {
         return Array(all.prefix(1))
     }
 
-    public func load(setID: String, preferredTranslations: [String]) throws -> AyahDetail? {
+    /// `extraTafsirLanguages` adds explanations in languages that have no chosen translation, such as Arabic.
+    public func load(setID: String, preferredTranslations: [String], extraTafsirLanguages: [String] = []) throws -> AyahDetail? {
         guard let set = try store.ayahSet(id: setID), let ayah = try store.ayah(set.ayah) else { return nil }
         let sources = try resolveSources(preferred: preferredTranslations)
         let sourceKeys = sources.map(\.key)
@@ -119,7 +120,7 @@ public struct AyahDetailLoader {
             ayahSet: set, surah: surah, arabic: ayah.arabic, translations: translations,
             near: try rows(nearKeys), more: try rows(wideKeys),
             storySteps: steps, oneLine: oneLine,
-            tafsir: try store.tafsir(for: set.ayah, languages: Array(Set(languages))),
+            tafsir: try store.tafsir(for: set.ayah, languages: Array(Set(languages + extraTafsirLanguages))),
             contentVersion: meta.contentVersion, textCredit: meta.values["tanzil_credit"])
     }
 }

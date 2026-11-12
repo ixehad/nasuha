@@ -16,7 +16,7 @@ Check this list before every submission. Guideline numbers refer to Apple's App 
 - [ ] **2.1:** recitation stays hidden until `licenceCleared` is true for the reciter.
 - [ ] **1.1.5 Accurate religious quotation:** Arabic from Tanzil and translations from QuranEnc, unchanged, with their versions shown. Check each asbab reference against the printed source before release.
 - [ ] **5.2 Intellectual property:** keep the Tanzil credit (CC BY 3.0), follow QuranEnc's terms, keep the font licences, and get written permission for any recitation before it ships.
-- [ ] **4.2 Minimum functionality / 4.3 Spam:** there are many Qur'an apps. The description and screenshots must lead with what is different: why and when each ayah was revealed, the ayahs around it, and topic-based reminders.
+- [ ] **4.2 Minimum functionality / 4.3 Spam:** there are many Qur'an apps. The description and screenshots must lead with what is different: the story and time of each ayah's revelation, the ayahs around it, and topic-based reminders.
 
 ## Privacy
 - [ ] **5.1.1 Privacy policy URL:** required for every app. Host the Legal page (for example on GitHub Pages) and put the URL in App Store Connect.

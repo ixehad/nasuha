@@ -38,7 +38,7 @@ public enum TopicCatalog {
             Topic(id: "taqwa", label: "Taqwa", reminderTitle: "Ayah of taqwa"),
         ]),
         TopicGroup(id: "stories", title: "Stories", note: nil, topics: [
-            Topic(id: "why", label: "Why it was revealed", reminderTitle: "Why it was revealed"),
+            Topic(id: "why", label: "Stories of revelation", reminderTitle: "A story of revelation"),
             Topic(id: "prophets", label: "Prophets' stories", reminderTitle: "From the prophets' stories"),
             Topic(id: "seerah", label: "Prophet Muhammad ﷺ", reminderTitle: "Ayah about the Prophet ﷺ"),
             Topic(id: "trials", label: "Hardships of the prophets", reminderTitle: "Hardships of the prophets"),

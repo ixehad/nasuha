@@ -18,6 +18,10 @@ final class SetupDraft {
     var frequency: ReminderFrequency = .daily
     var readingTranslations: [String] = []
     var reminderLanguage = "en"
+    /// Also show the Arabic explanation on the Ayah screen.
+    var showArabicTafsir = false
+    /// True when the content has an Arabic explanation to offer.
+    private(set) var hasArabicTafsir = false
     /// True when changing an existing setup.
     var isEditing = false
 
@@ -35,7 +39,13 @@ final class SetupDraft {
     func load(from context: ModelContext, store: ContentStore?) {
         let settings = try? UserSettings.current(in: context)
         let choices = (try? context.fetch(FetchDescriptor<TopicChoice>(sortBy: [SortDescriptor(\.order)]))) ?? []
-        sources = (try? store?.translationSources()) ?? []
+        let chosen = settings?.readingTranslations ?? []
+        // English is offered everywhere; a regional language where it is spoken.
+        sources = LanguageOffer.offered((try? store?.translationSources()) ?? [], keeping: chosen,
+                                        region: Locale.current.region?.identifier,
+                                        preferredLanguages: Locale.preferredLanguages)
+        hasArabicTafsir = ((try? store?.tafsirLanguages()) ?? []).contains("ar")
+        showArabicTafsir = hasArabicTafsir && (settings?.showArabicTafsir ?? false)
         let available = Set(TopicCatalog.available(setCounts: (try? store?.topicSetCounts()) ?? [:]).flatMap(\.topics).map(\.id))
 
         topics = choices.map(\.topicID).filter(available.contains)
@@ -45,9 +55,11 @@ final class SetupDraft {
 
         let keys = Set(sources.map(\.key))
         readingTranslations = (settings?.readingTranslations ?? []).filter(keys.contains)
-        if readingTranslations.isEmpty, let store,
-           let fallback = try? AyahDetailLoader(store: store).resolveSources(preferred: []) {
-            readingTranslations = fallback.map(\.key)
+        if readingTranslations.isEmpty {
+            // Start with the phone's own language when it is offered, else English.
+            let own = Locale.current.language.languageCode?.identifier
+            let first = sources.first { $0.language == own } ?? sources.first { $0.language == "en" } ?? sources.first
+            readingTranslations = first.map { [$0.key] } ?? []
         }
         let language = settings?.reminderLanguage ?? "en"
         reminderLanguage = reminderLanguages.contains(language) ? language : (reminderLanguages.first ?? language)
@@ -79,6 +91,7 @@ final class SetupDraft {
         settings.frequency = frequency
         if !readingTranslations.isEmpty { settings.readingTranslations = readingTranslations }
         settings.reminderLanguage = reminderLanguage
+        settings.showArabicTafsir = showArabicTafsir
         settings.hasCompletedSetup = true
 
         let existing = try context.fetch(FetchDescriptor<TopicChoice>())

@@ -1,6 +1,6 @@
 # Nasuha
 
-A free iOS app, with its source code published, that sends one Qur'an ayah a day on the topics you pick, with why and when it was revealed, a translation, and the ayahs around it.
+A free iOS app, with its source code published, that sends one Qur'an ayah a day on the topics you pick, with the story and time of its revelation, a translation, and the ayahs around it.
 
 No accounts, no analytics, no ads. Everything stays on the phone.
 

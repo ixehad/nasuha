@@ -278,7 +278,7 @@ final class ReminderContentTests: XCTestCase {
         let settings = ReminderSettings(topics: ["hope"], language: "en", preferredTranslations: ["fixture_en"])
         let text = try XCTUnwrap(builder().ayah(setID: "fixture-2-3", topicID: "hope", settings: settings))
         XCTAssertEqual(text.title, "[en] Ayah of hope")
-        XCTAssertEqual(text.body, "\u{201C}FIXTURE en 2:3\u{201D} Fixture-Two 2:3\n[en] Why it was revealed: FIXTURE ONE LINE")
+        XCTAssertEqual(text.body, "\u{201C}FIXTURE en 2:3\u{201D} Fixture-Two 2:3\n[en] The story of its revelation: FIXTURE ONE LINE")
         XCTAssertEqual(text.threadID, "hope")
         XCTAssertEqual(text.category, ReminderCategory.ayah)
         XCTAssertEqual(text.userInfo[ReminderUserInfo.ayahSetID], "fixture-2-3")
@@ -299,7 +299,7 @@ final class ReminderContentTests: XCTestCase {
         let text = try XCTUnwrap(builder().ayah(setID: "fixture-2-3", topicID: "hope", settings: settings))
         XCTAssertEqual(text.title, "[bn] Ayah of hope")
         XCTAssertTrue(text.body.contains("FIXTURE bn 2:3"))
-        XCTAssertFalse(text.body.contains("Why it was revealed"), "the one-line story is in English only")
+        XCTAssertFalse(text.body.contains("The story of its revelation"), "the one-line story is in English only")
     }
 
     func testNoStoryMeansNoStoryLine() throws {

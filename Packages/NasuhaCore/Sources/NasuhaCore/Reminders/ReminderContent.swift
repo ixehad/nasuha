@@ -46,14 +46,14 @@ public enum ReminderUserInfo {
 
 /// String Catalog keys used in reminders.
 public enum ReminderStrings {
-    public static let whyRevealed = "Why it was revealed: %@"
+    public static let storyOfRevelation = "The story of its revelation: %@"
     public static let allReadTitle = "You've read all %@ ayahs"
     public static let allReadBodyTomorrow = "Alhamdulillah. Pick new topics, or tomorrow we start again from the first ayah."
     public static let allReadBodyNext = "Alhamdulillah. Pick new topics, or at your next reminder we start again from the first ayah."
 }
 
 public struct ReminderContentBuilder {
-    /// Above this length the optional "Why it was revealed" line is left out, so the
+    /// Above this length the optional "The story of its revelation" line is left out, so the
     /// notification shows in full. Source text is never shortened.
     public static let fullDisplayLimit = 240
 
@@ -73,7 +73,7 @@ public struct ReminderContentBuilder {
     }
 
     /// Title: the topic's reminder title. Body: the translation in quotes, a space, the
-    /// reference, then "Why it was revealed: …" when the source gives a one-line summary
+    /// reference, then "The story of its revelation: …" when the source gives a one-line summary
     /// in the reminder language. Arabic is added only when the lock-screen setting is off.
     public func ayah(setID: String, topicID: String, settings: ReminderSettings) throws -> ReminderText? {
         guard let set = try source.ayahSet(id: setID) else { return nil }
@@ -93,7 +93,7 @@ public struct ReminderContentBuilder {
             lines.append(reference)
         }
         if let story = set.story, let oneLine = story.oneLine, story.oneLineLanguage == lang {
-            let line = String(format: localizer.string(ReminderStrings.whyRevealed, language: lang), oneLine)
+            let line = String(format: localizer.string(ReminderStrings.storyOfRevelation, language: lang), oneLine)
             if (lines + [line]).joined(separator: "\n").count <= Self.fullDisplayLimit {
                 lines.append(line)
             }

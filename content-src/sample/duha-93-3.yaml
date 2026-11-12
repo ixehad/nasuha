@@ -1,0 +1,7 @@
+# SAMPLE – replace from source
+# Ayah and context only, for testing the screens. It has no story, timing or tafsir
+# references: those must be added from the sources before this becomes a real set.
+id: duha-93-3
+topics: [hope]
+ayah: "93:3"
+context: { before: ["93:1", "93:2"], after: ["93:4", "93:5"] }

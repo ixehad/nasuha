@@ -252,6 +252,17 @@
         }
       }
     },
+    "A story of revelation": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "নাজিলের প্রেক্ষাপট"
+          }
+        }
+      }
+    },
     "About %@": {
       "extractionState": "manual",
       "localizations": {
@@ -369,6 +380,17 @@
           "stringUnit": {
             "state": "needs_review",
             "value": "আরবি + অনুবাদ"
+          }
+        }
+      }
+    },
+    "Arabic explanation": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "আরবি ব্যাখ্যা"
           }
         }
       }
@@ -1990,6 +2012,17 @@
         }
       }
     },
+    "Shows Al-Mukhtasar fi Tafsir al-Qur'an in Arabic under each ayah.": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "প্রতিটি আয়াতের নিচে আরবিতে আল-মুখতাসার ফি তাফসিরিল কুরআন দেখায়।"
+          }
+        }
+      }
+    },
     "Signs in creation": {
       "extractionState": "manual",
       "localizations": {
@@ -2078,6 +2111,17 @@
         }
       }
     },
+    "Stories of revelation": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "নাজিলের প্রেক্ষাপট"
+          }
+        }
+      }
+    },
     "Story": {
       "extractionState": "manual",
       "localizations": {
@@ -2151,6 +2195,28 @@
           "stringUnit": {
             "state": "needs_review",
             "value": "তাওবা"
+          }
+        }
+      }
+    },
+    "The story of its revelation": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "নাজিলের প্রেক্ষাপট"
+          }
+        }
+      }
+    },
+    "The story of its revelation: %@": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "নাজিলের প্রেক্ষাপট: %@"
           }
         }
       }
@@ -2294,28 +2360,6 @@
           "stringUnit": {
             "state": "needs_review",
             "value": "কখন নাজিল হয়েছে"
-          }
-        }
-      }
-    },
-    "Why it was revealed": {
-      "extractionState": "manual",
-      "localizations": {
-        "bn": {
-          "stringUnit": {
-            "state": "needs_review",
-            "value": "কেন নাজিল হয়েছিল"
-          }
-        }
-      }
-    },
-    "Why it was revealed: %@": {
-      "extractionState": "manual",
-      "localizations": {
-        "bn": {
-          "stringUnit": {
-            "state": "needs_review",
-            "value": "কেন নাজিল হয়েছিল: %@"
           }
         }
       }
