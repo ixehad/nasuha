@@ -10,6 +10,7 @@ struct ProfileScreen: View {
     @Environment(TipStore.self) private var tips
     @Environment(\.modelContext) private var context
     @Environment(\.openURL) private var openURL
+    @Environment(\.dynamicTypeSize) private var textSize
     @Query private var allSettings: [UserSettings]
     @Query(sort: \TopicChoice.order) private var choices: [TopicChoice]
     @Query private var reads: [ReadRecord]
@@ -149,7 +150,9 @@ struct ProfileScreen: View {
 
     private var stats: some View {
         let items = statItems
-        return LazyVGrid(columns: [GridItem(.flexible(), spacing: 8), GridItem(.flexible(), spacing: 8)], spacing: 8) {
+        // Two columns, or one when the text is very large.
+        let columns = Array(repeating: GridItem(.flexible(), spacing: 8), count: textSize.isAccessibilitySize ? 1 : 2)
+        return LazyVGrid(columns: columns, spacing: 8) {
             ForEach(items, id: \.label) { item in
                 VStack(alignment: .leading, spacing: 2) {
                     Text(verbatim: item.value)

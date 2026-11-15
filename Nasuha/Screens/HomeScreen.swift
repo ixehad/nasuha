@@ -6,6 +6,7 @@ import UserNotifications
 
 /// The single dashboard: today's ayah, topic chips and the next reminder.
 struct HomeScreen: View {
+    @Environment(\.dynamicTypeSize) private var textSize
     @Environment(ContentLoader.self) private var content
     @Environment(AppRouter.self) private var router
     @Environment(\.scenePhase) private var scenePhase
@@ -89,41 +90,64 @@ struct HomeScreen: View {
     // MARK: Header
 
     private var header: some View {
-        HStack(spacing: 10) {
-            LogoMark(size: 34)
-            VStack(alignment: .leading, spacing: 1) {
-                Text(greeting)
-                    .font(.headline)
-                    .foregroundStyle(Palette.ink)
-                Text(verbatim: dateLine)
-                    .font(.caption)
-                    .foregroundStyle(Palette.muted)
-            }
-            .accessibilityElement(children: .combine)
-            Spacer(minLength: 0)
-            Button {
-                open(.profile)
-            } label: {
-                Text(verbatim: initial)
-                    .font(.subheadline.weight(.bold))
-                    .foregroundStyle(Palette.tintInk)
-                    .frame(width: 34, height: 34)
-                    .background(Palette.tint, in: Circle())
-                    .overlay {
-                        if initial.isEmpty {
-                            Image(systemName: "person")
-                                .font(.footnote.weight(.semibold))
-                                .foregroundStyle(Palette.tintInk)
-                        }
+        Group {
+            if textSize.isAccessibilitySize {
+                // Very large text: the buttons get their own line and the greeting the full width.
+                VStack(alignment: .leading, spacing: 6) {
+                    HStack(spacing: 10) {
+                        LogoMark(size: 34)
+                        Spacer(minLength: 0)
+                        headerButtons
                     }
-                    .frame(width: 44, height: 44)
-                    .contentShape(Rectangle())
+                    greetingLines
+                }
+            } else {
+                HStack(spacing: 10) {
+                    LogoMark(size: 34)
+                    greetingLines
+                    Spacer(minLength: 0)
+                    headerButtons
+                }
             }
-            .buttonStyle(.plain)
-            .accessibilityLabel("Your profile")
-            IconButton(systemName: "gearshape", label: "Settings") { open(.settings) }
-                .padding(.trailing, -8)
         }
+    }
+
+    private var greetingLines: some View {
+        VStack(alignment: .leading, spacing: 1) {
+            Text(greeting)
+                .font(.headline)
+                .foregroundStyle(Palette.ink)
+            Text(verbatim: dateLine)
+                .font(.caption)
+                .foregroundStyle(Palette.muted)
+        }
+        .accessibilityElement(children: .combine)
+    }
+
+    @ViewBuilder private var headerButtons: some View {
+        Button {
+            open(.profile)
+        } label: {
+            Text(verbatim: initial)
+                .font(.subheadline.weight(.bold))
+                .foregroundStyle(Palette.tintInk)
+                .frame(width: 34, height: 34)
+                .background(Palette.tint, in: Circle())
+                .overlay {
+                    if initial.isEmpty {
+                        Image(systemName: "person")
+                            .font(.footnote.weight(.semibold))
+                            .foregroundStyle(Palette.tintInk)
+                    }
+                }
+                .dynamicTypeSize(...DynamicTypeSize.accessibility1)
+                .frame(width: 44, height: 44)
+                .contentShape(Rectangle())
+        }
+        .buttonStyle(.plain)
+        .accessibilityLabel("Your profile")
+        IconButton(systemName: "gearshape", label: "Settings") { open(.settings) }
+            .padding(.trailing, -8)
     }
 
     private var initial: String {
@@ -386,6 +410,7 @@ struct HomeScreen: View {
 /// The card with one ayah: Arabic, translation, the story box and "Read in context".
 struct TodayCard: View {
     @Environment(RecitationPlayer.self) private var player
+    @Environment(\.dynamicTypeSize) private var textSize
     let detail: AyahDetail
     let topic: Topic
     let isToday: Bool
@@ -393,14 +418,14 @@ struct TodayCard: View {
 
     var body: some View {
         VStack(alignment: .leading, spacing: 12) {
-            HStack(alignment: .firstTextBaseline) {
+            AdaptiveStack(rowAlignment: .firstTextBaseline) {
                 Text(isToday ? String(localized: "Today's ayah · \(topic.localizedLabel)") : topic.localizedLabel)
                     .font(.caption.weight(.semibold))
                     .padding(.horizontal, 10)
                     .padding(.vertical, 5)
                     .foregroundStyle(Palette.dawnInk)
                     .background(Palette.dawnTint, in: Capsule())
-                Spacer(minLength: 8)
+                if !textSize.isAccessibilitySize { Spacer(minLength: 8) }
                 Text(verbatim: detail.reference)
                     .font(.caption)
                     .foregroundStyle(Palette.muted)

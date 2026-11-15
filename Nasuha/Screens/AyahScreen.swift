@@ -400,7 +400,7 @@ struct AyahScreen: View {
     private var around: some View {
         VStack(alignment: .leading, spacing: 12) {
             sectionTitle("Read it with the ayahs around it")
-            HStack(spacing: 14) {
+            FlowLayout(spacing: 14) {
                 legend(String(localized: "Before"), fill: Palette.before, edge: Palette.beforeInk)
                 legend(String(localized: "Today's ayah"), fill: Palette.tint, edge: Palette.accent)
                 legend(String(localized: "After"), fill: Palette.dawnTint, edge: Palette.dawn)

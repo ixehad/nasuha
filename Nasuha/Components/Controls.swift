@@ -87,8 +87,13 @@ struct SegmentedBar<Value: Hashable>: View {
     let options: [(value: Value, title: String)]
     @Binding var selection: Value
 
+    @Environment(\.dynamicTypeSize) private var textSize
+
     var body: some View {
-        HStack(spacing: 3) {
+        // Side by side, or one under the other when the text is very large.
+        let layout = textSize.isAccessibilitySize
+            ? AnyLayout(VStackLayout(spacing: 3)) : AnyLayout(HStackLayout(spacing: 3))
+        layout {
             ForEach(options, id: \.value) { option in
                 let isOn = option.value == selection
                 Button {
@@ -132,6 +137,21 @@ struct GroupLabel: View {
     }
 }
 
+/// A row at ordinary text sizes and a column at the accessibility sizes, so large text has room.
+struct AdaptiveStack<Content: View>: View {
+    @Environment(\.dynamicTypeSize) private var textSize
+    var rowAlignment: VerticalAlignment = .center
+    var spacing: CGFloat = 8
+    @ViewBuilder let content: Content
+
+    var body: some View {
+        let layout = textSize.isAccessibilitySize
+            ? AnyLayout(VStackLayout(alignment: .leading, spacing: spacing))
+            : AnyLayout(HStackLayout(alignment: rowAlignment, spacing: spacing))
+        layout { content }
+    }
+}
+
 /// The app logo, rounded like the icon.
 struct LogoMark: View {
     var size: CGFloat = 44
@@ -156,6 +176,7 @@ struct IconButton: View {
         Button(action: action) {
             Image(systemName: systemName)
                 .font(.body.weight(.semibold))
+                .dynamicTypeSize(...DynamicTypeSize.accessibility1)
                 .foregroundStyle(Palette.ink)
                 .frame(width: 44, height: 44)
                 .contentShape(Rectangle())

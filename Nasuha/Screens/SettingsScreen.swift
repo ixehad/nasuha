@@ -10,6 +10,7 @@ struct SettingsScreen: View {
     @Environment(SetupDraft.self) private var draft
     @Environment(\.modelContext) private var context
     @Environment(\.openURL) private var openURL
+    @Environment(\.dynamicTypeSize) private var textSize
     @Query private var allSettings: [UserSettings]
     @Query(sort: \TopicChoice.order) private var choices: [TopicChoice]
     @Query private var records: [ReminderRecord]
@@ -82,7 +83,7 @@ struct SettingsScreen: View {
             ], selection: Binding(get: { settings.frequency }, set: { settings.frequency = $0; remindersChanged() }))
             if state.total > 0 {
                 RowDivider()
-                HStack(spacing: 10) {
+                AdaptiveStack(spacing: 10) {
                     VStack(alignment: .leading, spacing: 2) {
                         Text("When all ayahs are read")
                             .font(.callout)
@@ -91,7 +92,7 @@ struct SettingsScreen: View {
                             .font(.caption)
                             .foregroundStyle(Palette.muted)
                     }
-                    Spacer(minLength: 8)
+                    if !textSize.isAccessibilitySize { Spacer(minLength: 8) }
                     Button("Start again") { confirmsStartAgain = true }
                         .font(.subheadline.weight(.semibold))
                         .foregroundStyle(Palette.accent)
@@ -99,7 +100,7 @@ struct SettingsScreen: View {
                 }
                 .padding(.horizontal, 14)
                 .padding(.vertical, 4)
-                .frame(minHeight: 52)
+                .frame(maxWidth: .infinity, minHeight: 52, alignment: .leading)
             }
             RowDivider()
             pauseRow(settings)
@@ -215,7 +216,7 @@ struct SettingsScreen: View {
     }
 
     private func hijriRow(_ settings: UserSettings) -> some View {
-        HStack(spacing: 10) {
+        AdaptiveStack(spacing: 4) {
             VStack(alignment: .leading, spacing: 2) {
                 Text("Hijri date")
                     .font(.callout)
@@ -224,25 +225,28 @@ struct SettingsScreen: View {
                     .font(.caption)
                     .foregroundStyle(Palette.muted)
             }
-            Spacer(minLength: 8)
-            stepButton("minus", label: "One day earlier", enabled: settings.hijriOffset > -2) {
-                settings.setHijriOffset(settings.hijriOffset - 1)
-                remindersChanged()
+            if !textSize.isAccessibilitySize { Spacer(minLength: 8) }
+            HStack(spacing: 0) {
+                stepButton("minus", label: "One day earlier", enabled: settings.hijriOffset > -2) {
+                    settings.setHijriOffset(settings.hijriOffset - 1)
+                    remindersChanged()
+                }
+                Text(verbatim: hijriText(settings.hijriOffset))
+                    .font(.subheadline.weight(.semibold))
+                    .monospacedDigit()
+                    .foregroundStyle(Palette.ink)
+                    .frame(minWidth: 64)
+                stepButton("plus", label: "One day later", enabled: settings.hijriOffset < 2) {
+                    settings.setHijriOffset(settings.hijriOffset + 1)
+                    remindersChanged()
+                }
             }
-            Text(verbatim: hijriText(settings.hijriOffset))
-                .font(.subheadline.weight(.semibold))
-                .monospacedDigit()
-                .foregroundStyle(Palette.ink)
-                .frame(minWidth: 64)
-            stepButton("plus", label: "One day later", enabled: settings.hijriOffset < 2) {
-                settings.setHijriOffset(settings.hijriOffset + 1)
-                remindersChanged()
-            }
+            .fixedSize()
         }
         .padding(.leading, 14)
         .padding(.trailing, 6)
         .padding(.vertical, 4)
-        .frame(minHeight: 52)
+        .frame(maxWidth: .infinity, minHeight: 52, alignment: .leading)
     }
 
     private func stepButton(_ icon: String, label: LocalizedStringKey, enabled: Bool, action: @escaping () -> Void) -> some View {

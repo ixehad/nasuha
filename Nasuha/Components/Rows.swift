@@ -41,7 +41,11 @@ struct RowLabel: View {
     var value: String?
     var showsChevron = true
 
+    @Environment(\.dynamicTypeSize) private var textSize
+
     var body: some View {
+        // With very large text the value moves under the title instead of squeezing it.
+        let stacked = textSize.isAccessibilitySize
         HStack(spacing: 10) {
             VStack(alignment: .leading, spacing: 2) {
                 Text(title)
@@ -54,9 +58,15 @@ struct RowLabel: View {
                         .foregroundStyle(Palette.muted)
                         .multilineTextAlignment(.leading)
                 }
+                if stacked, let value, !value.isEmpty {
+                    Text(verbatim: value)
+                        .font(.subheadline)
+                        .foregroundStyle(Palette.muted)
+                        .multilineTextAlignment(.leading)
+                }
             }
             Spacer(minLength: 8)
-            if let value, !value.isEmpty {
+            if !stacked, let value, !value.isEmpty {
                 Text(verbatim: value)
                     .font(.subheadline)
                     .foregroundStyle(Palette.muted)
@@ -176,6 +186,8 @@ struct ScreenHeader: View {
             Text(title)
                 .font(.headline)
                 .foregroundStyle(Palette.ink)
+                .multilineTextAlignment(.center)
+                .padding(.horizontal, 48)
                 .accessibilityAddTraits(.isHeader)
             HStack {
                 IconButton(systemName: "chevron.backward", label: "Back", action: onBack)

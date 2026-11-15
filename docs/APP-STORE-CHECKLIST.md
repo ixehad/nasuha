@@ -9,6 +9,7 @@ Check this list before every submission. Guideline numbers refer to Apple's App 
 - [x] `PrivacyInfo.xcprivacy`: no tracking, no collected data, UserDefaults reason CA92.1.
 - [x] The audio cache reads only whether a file exists and its size, so it needs no extra reason code. Add one (C617.1) if file timestamps are ever read.
 - [x] No third-party SDKs except GRDB (which ships its own privacy manifest).
+- [x] Accessibility: every icon button has a spoken label, and layouts were checked in light and dark at the default text size and at AX3. Re-check any new screen the same way.
 
 ## Content and completeness
 - [ ] **2.1 App completeness:** the app must have real content. With no curated sets every topic is hidden, and an empty app will be rejected. Ship 3–5 real sets per visible topic.
@@ -39,7 +40,7 @@ Check this list before every submission. Guideline numbers refer to Apple's App 
 - [ ] Register the bundle ID `app.nasuha.ios`.
 - [ ] Age rating questionnaire, including the newer questions (answers are required for new apps and updates). Expected: 4+.
 - [ ] Name "Nasuha: Daily Quran Ayah" (30-character limit), subtitle "Reminders by Topic You Choose" (30), plus the Bangla localisation.
-- [ ] Screenshots from the real app: 6.9" and 6.5" iPhone, light and dark.
+- [ ] Screenshots from the real app: 6.9" and 6.5" iPhone, light and dark. Take them after the real content is in: screenshots must not show sample content.
 - [ ] Support URL (for example the GitHub repo's issues page) and contact email.
 - [ ] EU Digital Services Act: declare trader or non-trader status. Selling tips usually counts as trader, which means a public address and phone number.
 - [ ] Review notes: explain that reminders are local, there's no login, and where the content comes from.
