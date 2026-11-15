@@ -74,6 +74,10 @@ struct RootView: View {
         .tint(Palette.accent)
         .dynamicTypeSize(textSize)
         .preferredColorScheme(settings.first?.appearance.colorScheme)
+        // The recitation follows the reciter chosen in Settings.
+        .onChange(of: settings.first?.reciterID, initial: true) { _, id in
+            AppServices.shared.player.selectReciter(id: id)
+        }
     }
 
     /// The phone's text size, moved up or down by the Text size setting.

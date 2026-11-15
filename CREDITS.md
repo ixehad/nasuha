@@ -10,4 +10,4 @@
 | Amiri Quran font | The Amiri Project Authors | SIL Open Font License 1.1 (`Nasuha/Resources/Fonts/OFL-amiriquran.txt`) |
 | Hind Siliguri font | Indian Type Foundry | SIL Open Font License 1.1 (`Nasuha/Resources/Fonts/OFL-hindsiliguri.txt`) |
 | GRDB.swift | Gwendal Roué | MIT |
-| Recitation | Not yet cleared. Audio stays hidden until written permission or an open licence is on file. Candidate: the King Fahd Glorious Qur'an Printing Complex recordings (Ali al-Hudhaify, Maher al-Muaiqly, Muhammad Ayyub, Khalid al-Muhanna, Ibrahim al-Akhdar), which its recitations page offers for free general use in apps. | — |
+| Recitation | Not yet cleared. Audio stays hidden until written permission or an open licence is on file. Chosen reciters: Muhammad Ayyub and Maher al-Muaiqly, in the King Fahd Glorious Qur'an Printing Complex recordings, which its recitations page offers for free general use in apps. Still needed: the Complex's own per-ayah files for both, hosted where the app can reach them. | — |

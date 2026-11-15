@@ -64,6 +64,9 @@ final class RecitationPlayer {
 
     var isPlaying: Bool { status == .playing || status == .loading }
 
+    /// The reciters the person can choose between.
+    var choices: [Reciter] { catalog.playable(includeUncleared: includeUncleared) }
+
     func selectReciter(id: String?) {
         let next = catalog.reciter(preferred: id, includeUncleared: includeUncleared)
         if next != reciter {

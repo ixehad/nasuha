@@ -205,7 +205,14 @@ struct SettingsScreen: View {
             hijriRow(settings)
             if player.isAvailable, let reciter = player.reciter {
                 RowDivider()
-                RowLabel(title: "Reciter", value: reciter.name, showsChevron: false)
+                if player.choices.count > 1 {
+                    ChoiceRow(title: "Reciter",
+                              options: player.choices.map { ($0.id, $0.name) },
+                              selection: Binding(get: { reciter.id },
+                                                 set: { settings.reciterID = $0; try? context.save() }))
+                } else {
+                    RowLabel(title: "Reciter", value: reciter.name, showsChevron: false)
+                }
             }
             RowDivider()
             SwitchRow(title: "Keep Arabic off the lock screen",

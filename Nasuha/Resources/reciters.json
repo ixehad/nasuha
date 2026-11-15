@@ -1,11 +1,18 @@
 {
-  "defaultReciter": "ghamdi",
+  "defaultReciter": "ayyub",
   "reciters": [
     {
-      "id": "ghamdi",
-      "name": "Saad al-Ghamdi",
+      "id": "ayyub",
+      "name": "Muhammad Ayyub",
       "riwayah": "Hafs 'an 'Asim",
-      "baseURL": "https://everyayah.com/data/Ghamadi_40kbps/",
+      "baseURL": "https://everyayah.com/data/Muhammad_Ayyoub_64kbps/",
+      "licenceCleared": false
+    },
+    {
+      "id": "muaiqly",
+      "name": "Maher al-Muaiqly",
+      "riwayah": "Hafs 'an 'Asim",
+      "baseURL": "https://everyayah.com/data/MaherAlMuaiqly128kbps/",
       "licenceCleared": false
     }
   ]
