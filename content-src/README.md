@@ -6,13 +6,21 @@ Everything in this folder goes into the app through `tools/build_content.py`, un
 |---|---|---|
 | `tanzil/` | `quran-uthmani.xml`, `quran-data.xml` | `tools/fetch_sources.py --agree-tanzil-terms` |
 | `quranenc/` | `english_saheeh.json`, `bengali_zakaria.json`, optional Al-Mukhtasar | `tools/fetch_sources.py --quranenc` |
-| `meta/revelation_order_cairo1924.csv` | `surah,order` | 1924 Cairo mushaf chronology |
+| `meta/revelation_order_cairo1924.csv` | `surah,order` (optional) | 1924 Cairo mushaf chronology, checked against the printed edition. Without this file the build uses the order in Tanzil's `quran-data.xml`. |
 | `sets/*.yaml` | Curated ayah sets, one per file | Written by hand |
 | `sample/*.yaml` | Sample sets. First line: `# SAMPLE – replace from source` | Written by hand |
 | `tafsir/*.yaml` | Tafsir Ibn Kathir and Tafsir as-Sa'di excerpts | Written by hand |
 | `topic_order.yaml` | `{topic: [set ids]}`: the reading order within each topic | Written by hand |
 
 Sets not listed in `topic_order.yaml` follow in mushaf order.
+
+## Starting a set
+
+```bash
+python3 tools/new_set.py hope 93:3
+```
+
+This writes `sets/ad-dhuhaa-93-3.yaml` with the ayah, the two ayahs before and after it, and the topic. The story and timing blocks are commented out. Fill them in from the books in `CONTENT-POLICY.md`, word for word, then remove the `#`. Leave a block out when the sources have nothing sound to say.
 
 ## Ayah set format
 
@@ -54,5 +62,5 @@ tafsir_refs: [ { book: "Al-Mukhtasar fi Tafsir", ayah: "93:3" } ]
 - an ayah or context key does not exist, or a context ayah is on the wrong side
 - a set has no context ayahs
 - an age or period is not marked `approx: true`
-- a revelation order differs from the 1924 Cairo chronology
+- a revelation order differs from the list in use
 - a sample file is missing its first-line marker, or `--release` is used while samples are present

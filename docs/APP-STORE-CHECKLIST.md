@@ -14,7 +14,7 @@ Check this list before every submission. Guideline numbers refer to Apple's App 
 ## Content and completeness
 - [ ] **2.1 App completeness:** the app must have real content. With no curated sets every topic is hidden, and an empty app will be rejected. Ship 3–5 real sets per visible topic.
 - [ ] **2.1:** no placeholder text, no "coming soon", no dead buttons. Run `python3 tools/build_content.py --release`: it fails if any sample set is still included.
-- [ ] **2.1:** recitation stays hidden until `licenceCleared` is true for the reciter.
+- [ ] **2.1:** recitation stays hidden until `licenceCleared` is true for the reciter. The King Fahd Complex offers its recordings for free general use in apps (usage licence on its recitations page, qurancomplex.gov.sa). Before switching: save a copy of that licence text, use the Complex's own files for the chosen reciter split by ayah, and host them where the app can reach them.
 - [ ] **1.1.5 Accurate religious quotation:** Arabic from Tanzil and translations from QuranEnc, unchanged, with their versions shown. Check each asbab reference against the printed source before release.
 - [ ] **5.2 Intellectual property:** keep the Tanzil credit (CC BY 3.0), follow QuranEnc's terms, keep the font licences, and get written permission for any recitation before it ships.
 - [ ] **4.2 Minimum functionality / 4.3 Spam:** there are many Qur'an apps. The description and screenshots must lead with what is different: the story and time of each ayah's revelation, the ayahs around it, and topic-based reminders.

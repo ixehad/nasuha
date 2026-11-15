@@ -13,7 +13,7 @@ Every line of religious content must come from a source on the list below, uncha
 | Asbab al-nuzul | al-Wahidi, as-Suyuti (Lubab an-Nuqul) | Only reports graded sahih or hasan. Check grades against Shaykh Muqbil's *as-Sahih al-Musnad min Asbab an-Nuzul*. |
 | Hadith | Sahih al-Bukhari, Sahih Muslim, then the Sunan with a stated grade | Show the number (sunnah.com numbering) and the grade every time |
 | Prophets' stories | Qur'an, authentic hadith, Tafsir Ibn Kathir | |
-| Revelation order | Chronology of the 1924 Cairo (al-Azhar) mushaf | Dates and ages are always marked "approx." |
+| Revelation order | The traditional order narrated from Ibn 'Abbas, as published by Tanzil (from al-Zanjani, *Tarikh al-Qur'an*). The chronology of the 1924 Cairo (al-Azhar) mushaf replaces it once a list checked against the printed edition is added. | The order is by the first ayahs of each surah. Dates and ages are always marked "approx." |
 | Recitation | Imams of the Haramain and well-known qurra', Hafs 'an 'Asim | Written permission or an open licence from the rights holder |
 
 ## Never add

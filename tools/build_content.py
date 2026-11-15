@@ -11,7 +11,7 @@ unchanged and refuses to build when a curated set breaks CONTENT-POLICY.md.
 Inputs (under --src):
     tanzil/quran-uthmani.xml          Tanzil Uthmani text (Arabic only)        required
     tanzil/quran-data.xml             Tanzil metadata (names, type, counts)    required
-    meta/revelation_order_cairo1924.csv   surah,order                          optional
+    meta/revelation_order_cairo1924.csv   surah,order; replaces Tanzil's order  optional
     quranenc/*.json                   QuranEnc translations and Al-Mukhtasar   optional
     tafsir/*.yaml                     curated Ibn Kathir / as-Sa'di excerpts    optional
     sets/*.yaml                       curated ayah sets (maintainer)           optional
@@ -80,6 +80,8 @@ def read_tanzil_meta(path):
             "name_en": sura.get("ename"),
             "place": "makkah" if t.startswith("mec") else "madinah" if t.startswith("med") else None,
             "ayah_count": int(sura.get("ayas")),
+            # Tanzil's traditional revelation order (see tanzil.net/docs/revelation_order).
+            "order": int(sura.get("order")) if sura.get("order") else None,
         }
     return out
 
@@ -240,7 +242,7 @@ def check_set(data, path, quran, chronology, errors):
             errors.append(f"{where}: dates and ages must be marked approx: true")
         order = w.get("order")
         if key and order is not None and chronology.get(key[0]) not in (None, order):
-            errors.append(f"{where}: when.order {order} differs from the 1924 Cairo chronology ({chronology[key[0]]})")
+            errors.append(f"{where}: when.order {order} differs from the revelation order in use ({chronology[key[0]]})")
         when = {
             "place": place,
             "order": order,
@@ -286,8 +288,13 @@ def build(src, out, release=False, include_samples=True):
     surahs = read_tanzil_meta(meta_path)
     chron_path = src / "meta" / "revelation_order_cairo1924.csv"
     chronology = read_chronology(chron_path)
+    chronology_source = "cairo1924"
     if chron_path.exists():
         inputs.append(chron_path)
+    else:
+        # No hand-checked list: use the order published with Tanzil's metadata.
+        chronology = {n: s["order"] for n, s in surahs.items() if s.get("order")}
+        chronology_source = "tanzil"
 
     for n, s in surahs.items():
         have = sum(1 for (sn, _) in quran if sn == n)
@@ -400,6 +407,7 @@ def build(src, out, release=False, include_samples=True):
             "tanzil_version": tanzil_version,
             "tanzil_credit": "Tanzil Quran Text (Uthmani), tanzil.net, CC BY 3.0",
             "has_chronology": "1" if chronology else "0",
+            "chronology_source": chronology_source if chronology else "",
             "sample_sets": str(sum(1 for s in sets if s["is_sample"])),
         }
         con.executemany("INSERT INTO meta VALUES (?, ?)", meta.items())

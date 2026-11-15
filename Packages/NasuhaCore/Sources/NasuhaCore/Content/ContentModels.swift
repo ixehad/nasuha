@@ -16,7 +16,7 @@ public struct Surah: Hashable, Sendable, Identifiable {
     public let nameEnglish: String
     public let place: RevelationPlace?
     public let ayahCount: Int
-    /// Position in the 1924 Cairo mushaf chronology. Nil when not loaded.
+    /// Position in the revelation order the content was built with. Nil when not loaded.
     public let revelationOrder: Int?
     /// The bismillah line as Tanzil gives it, when the surah has one before ayah 1.
     public let bismillah: String?

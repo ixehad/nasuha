@@ -180,7 +180,7 @@ class FailingBuilds(BuildTestCase):
         data = self.variant()
         data["when"]["order"] = 3
         self.write_set(data)
-        self.assertBuildFails(r"differs from the 1924 Cairo chronology")
+        self.assertBuildFails(r"differs from the revelation order in use")
 
     def test_sample_needs_marker(self):
         self.write_set(self.variant(), name="unmarked.yaml", folder="sample")
@@ -239,6 +239,44 @@ class SwiftFixture(unittest.TestCase):
         SWIFT_FIXTURE.parent.mkdir(parents=True, exist_ok=True)
         build_content.build(FIXTURE_SRC, SWIFT_FIXTURE)
         self.assertTrue(SWIFT_FIXTURE.exists())
+
+
+class RevelationOrder(BuildTestCase):
+    def test_uses_tanzil_order_without_a_checked_list(self):
+        chron = self.src / "meta" / "revelation_order_cairo1924.csv"
+        if chron.exists():
+            chron.unlink()
+        build_content.build(self.src, self.out)
+        con = sqlite3.connect(self.out)
+        self.assertEqual(con.execute("SELECT revelation_order FROM surah WHERE number=1").fetchone()[0], 5)
+        self.assertEqual(con.execute("SELECT value FROM meta WHERE key='chronology_source'").fetchone()[0], "tanzil")
+
+    def test_checked_list_replaces_tanzil_order(self):
+        (self.src / "meta").mkdir(exist_ok=True)
+        (self.src / "meta" / "revelation_order_cairo1924.csv").write_text("surah,order\n1,5\n2,87\n")
+        build_content.build(self.src, self.out)
+        con = sqlite3.connect(self.out)
+        self.assertEqual(con.execute("SELECT value FROM meta WHERE key='chronology_source'").fetchone()[0], "cairo1924")
+
+
+class NewSet(BuildTestCase):
+    def test_new_set_builds_and_holds_no_story(self):
+        import new_set
+        new_set.main(["hope", "2:1", "--src", str(self.src)])
+        path = self.src / "sets" / "fixture-two-2-1.yaml"
+        data = yaml.safe_load(path.read_text())
+        self.assertEqual(data["ayah"], "2:1")
+        self.assertEqual(data["context"], {"before": [], "after": ["2:2", "2:3"]})
+        self.assertNotIn("story", data)
+        self.assertNotIn("when", data)
+        build_content.build(self.src, self.out)
+
+    def test_new_set_refuses_unknown_topic_and_ayah(self):
+        import new_set
+        with self.assertRaises(SystemExit):
+            new_set.main(["nonsense", "2:1", "--src", str(self.src)])
+        with self.assertRaises(SystemExit):
+            new_set.main(["hope", "2:99", "--src", str(self.src)])
 
 
 if __name__ == "__main__":

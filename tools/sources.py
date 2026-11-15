@@ -28,6 +28,7 @@ BOOKS = {
     "Tafsir as-Sa'di": {"kind": "tafsir", "aliases": []},
     "Qur'an": {"kind": "quran", "aliases": ["Quran"], "policy_row": "Qur'an"},
     "1924 Cairo mushaf chronology": {"kind": "chronology", "aliases": [], "policy_row": "1924 Cairo"},
+    "Tanzil revelation order": {"kind": "chronology", "aliases": [], "policy_row": "published by Tanzil"},
 }
 
 ACCEPTED_GRADES = {"sahih", "hasan", "hasan sahih"}
