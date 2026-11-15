@@ -15,6 +15,7 @@ final class AppServices {
     let router = AppRouter()
     let notifications = UserNotificationScheduler()
     let player = RecitationPlayer(catalog: .bundled())
+    let tips = TipStore()
     /// Nil only when the content database is missing.
     let reminders: ReminderController?
 

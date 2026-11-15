@@ -19,6 +19,11 @@ public struct SourcedTranslation: Hashable, Sendable, Identifiable {
     public var id: String { source.key }
     public let source: TranslationSource
     public let translation: Translation
+
+    public init(source: TranslationSource, translation: Translation) {
+        self.source = source
+        self.translation = translation
+    }
 }
 
 /// Everything the Ayah screen shows for one curated set. Every string is read

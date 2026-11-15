@@ -2,11 +2,20 @@ import NasuhaCore
 import SwiftData
 import SwiftUI
 
-/// Screens pushed from Home: the two setup steps and the Qur'an reader.
+/// Screens pushed from Home.
 enum AppRoute: Hashable {
     case topics
     case time
     case reader(ReaderTarget)
+    case settings
+    case profile
+    case saved
+    case about
+    case legal
+    case support
+
+    /// The two setup steps.
+    var isSetup: Bool { self == .topics || self == .time }
 }
 
 /// Choices made on the setup screens, kept until "Start my daily ayah" saves them.
@@ -82,6 +91,15 @@ final class SetupDraft {
         }
     }
 
+    /// Saves only the reading choices, for the Translation row in Settings.
+    @MainActor
+    func commitReading(to context: ModelContext) throws {
+        let settings = try UserSettings.current(in: context)
+        if !readingTranslations.isEmpty { settings.readingTranslations = readingTranslations }
+        settings.showArabicTafsir = showArabicTafsir
+        try context.save()
+    }
+
     /// Saves the choices on this phone.
     @MainActor
     func commit(to context: ModelContext) throws {
@@ -93,6 +111,7 @@ final class SetupDraft {
         settings.reminderLanguage = reminderLanguage
         settings.showArabicTafsir = showArabicTafsir
         settings.hasCompletedSetup = true
+        if settings.joinedAt == nil { settings.joinedAt = .now }
 
         let existing = try context.fetch(FetchDescriptor<TopicChoice>())
         for choice in existing where !topics.contains(choice.topicID) { context.delete(choice) }

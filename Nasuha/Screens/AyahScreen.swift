@@ -83,6 +83,7 @@ struct AyahFlow: View {
 struct AyahScreen: View {
     @Environment(\.modelContext) private var context
     @Environment(RecitationPlayer.self) private var player
+    @Environment(\.openURL) private var openURL
     @Query private var saved: [SavedAyah]
     @Query private var reads: [ReadRecord]
 
@@ -93,6 +94,7 @@ struct AyahScreen: View {
 
     @State private var showsMore = false
     @State private var repeatsThree = false
+    @State private var showsFootnotes = false
     @State private var justRead = false
 
     private var isSaved: Bool { saved.contains { $0.ayahKey == detail.ayahSet.ayah.description } }
@@ -183,8 +185,45 @@ struct AyahScreen: View {
                 TranslationText(item, size: index == 0 ? 21 : 18, style: index == 0 ? .title3 : .body,
                                 color: index == 0 ? Palette.ink : Palette.ink2)
             }
+            footnotes
         }
         .padding(.top, 8)
+    }
+
+    /// The translators' own footnotes, exactly as published. Closed until asked for.
+    @ViewBuilder
+    private var footnotes: some View {
+        let notes = detail.translations.filter { !($0.translation.footnotes ?? "").isEmpty }
+        if !notes.isEmpty {
+            VStack(alignment: .leading, spacing: 8) {
+                Button {
+                    withAnimation(.snappy(duration: 0.2)) { showsFootnotes.toggle() }
+                } label: {
+                    HStack(spacing: 6) {
+                        Text("Translator's footnotes")
+                        Image(systemName: showsFootnotes ? "chevron.up" : "chevron.down")
+                            .font(.caption2.weight(.bold))
+                            .accessibilityHidden(true)
+                    }
+                    .font(.footnote.weight(.semibold))
+                    .foregroundStyle(Palette.accent)
+                    .frame(minHeight: 44)
+                    .contentShape(Rectangle())
+                }
+                .buttonStyle(.plain)
+                if showsFootnotes {
+                    ForEach(notes) { item in
+                        Text(verbatim: item.translation.footnotes ?? "")
+                            .font(item.source.language == "bn" ? Fonts.bangla(15, relativeTo: .footnote) : .footnote)
+                            .lineSpacing(3)
+                            .foregroundStyle(Palette.ink2)
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                            .padding(12)
+                            .background(Palette.fill, in: RoundedRectangle(cornerRadius: 12, style: .continuous))
+                    }
+                }
+            }
+        }
     }
 
     private func badge(_ text: String) -> some View {
@@ -497,6 +536,13 @@ struct AyahScreen: View {
                 }
             }
             .overlay(RoundedRectangle(cornerRadius: 14, style: .continuous).stroke(Palette.line, lineWidth: 1))
+            if let report = AppLinks.mistakeReport(ayahKey: detail.ayahSet.ayah.description, setID: detail.ayahSet.id,
+                                                   contentVersion: detail.contentVersion) {
+                Button("Report a mistake") { openURL(report) }
+                    .font(.footnote.weight(.semibold))
+                    .foregroundStyle(Palette.accent)
+                    .frame(minHeight: 44)
+            }
         }
     }
 

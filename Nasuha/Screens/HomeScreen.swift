@@ -22,6 +22,7 @@ struct HomeScreen: View {
     @State private var notificationsAllowed = true
     @State private var readerSurah: (number: Int, name: String, ayah: Int)?
     @Query private var progress: [ReadingProgress]
+    @Query private var saved: [SavedAyah]
 
     private var isSetUp: Bool { settings.first?.hasCompletedSetup ?? false }
     private var state: ReminderState { records.first?.state ?? ReminderState() }
@@ -46,6 +47,11 @@ struct HomeScreen: View {
                 }
                 if readerSurah != nil {
                     readTile
+                }
+                if !saved.isEmpty {
+                    tile(icon: "bookmark", title: "Saved", note: String(localized: "\(saved.count) ayahs you kept")) {
+                        open(.saved)
+                    }
                 }
                 if isSetUp {
                     topicsAndTime
@@ -93,9 +99,35 @@ struct HomeScreen: View {
                     .font(.caption)
                     .foregroundStyle(Palette.muted)
             }
+            .accessibilityElement(children: .combine)
             Spacer(minLength: 0)
+            Button {
+                open(.profile)
+            } label: {
+                Text(verbatim: initial)
+                    .font(.subheadline.weight(.bold))
+                    .foregroundStyle(Palette.tintInk)
+                    .frame(width: 34, height: 34)
+                    .background(Palette.tint, in: Circle())
+                    .overlay {
+                        if initial.isEmpty {
+                            Image(systemName: "person")
+                                .font(.footnote.weight(.semibold))
+                                .foregroundStyle(Palette.tintInk)
+                        }
+                    }
+                    .frame(width: 44, height: 44)
+                    .contentShape(Rectangle())
+            }
+            .buttonStyle(.plain)
+            .accessibilityLabel("Your profile")
+            IconButton(systemName: "gearshape", label: "Settings") { open(.settings) }
+                .padding(.trailing, -8)
         }
-        .accessibilityElement(children: .combine)
+    }
+
+    private var initial: String {
+        (settings.first?.name ?? "").trimmingCharacters(in: .whitespaces).first.map { String($0).uppercased() } ?? ""
     }
 
     private var greeting: String {

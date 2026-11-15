@@ -16,6 +16,7 @@ struct NasuhaApp: App {
                 .environment(services.content)
                 .environment(services.router)
                 .environment(services.player)
+                .environment(services.tips)
                 .onOpenURL { url in
                     if let link = DeepLink(url: url) { services.router.open(link) }
                 }

@@ -35,6 +35,8 @@ public final class UserSettings {
     public var keepArabicOffLockScreen: Bool
     /// Also show the Arabic explanation (Al-Mukhtasar) on the Ayah screen.
     public var showArabicTafsir: Bool = false
+    /// When the person finished setup for the first time. Shown on Profile.
+    public var joinedAt: Date?
 
     public init() {
         name = ""

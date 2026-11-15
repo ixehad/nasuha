@@ -1,0 +1,63 @@
+{
+  "identifier" : "A1B2C3D4",
+  "nonRenewingSubscriptions" : [
+
+  ],
+  "products" : [
+    {
+      "displayPrice" : "0.99",
+      "familyShareable" : false,
+      "internalID" : "6700000001",
+      "localizations" : [
+        {
+          "description" : "A small tip to support Nasuha.",
+          "displayName" : "Small tip",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "app.nasuha.ios.tip.small",
+      "referenceName" : "Small tip",
+      "type" : "Consumable"
+    },
+    {
+      "displayPrice" : "2.99",
+      "familyShareable" : false,
+      "internalID" : "6700000002",
+      "localizations" : [
+        {
+          "description" : "A tip to support Nasuha.",
+          "displayName" : "Tip",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "app.nasuha.ios.tip.medium",
+      "referenceName" : "Tip",
+      "type" : "Consumable"
+    },
+    {
+      "displayPrice" : "9.99",
+      "familyShareable" : false,
+      "internalID" : "6700000003",
+      "localizations" : [
+        {
+          "description" : "A generous tip to support Nasuha.",
+          "displayName" : "Generous tip",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "app.nasuha.ios.tip.large",
+      "referenceName" : "Generous tip",
+      "type" : "Consumable"
+    }
+  ],
+  "settings" : {
+
+  },
+  "subscriptionGroups" : [
+
+  ],
+  "version" : {
+    "major" : 3,
+    "minor" : 0
+  }
+}

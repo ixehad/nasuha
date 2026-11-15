@@ -24,6 +24,7 @@ targets:
       - path: Nasuha
         excludes:
           - "**/*.md"
+          - "**/*.storekit"
     dependencies:
       - package: NasuhaCore
     configFiles:
@@ -67,6 +68,8 @@ schemes:
       targets:
         Nasuha: all
     run:
+      # Test tips in Xcode without App Store Connect. It is not part of the shipped app.
+      storeKitConfiguration: Nasuha/Nasuha.storekit
       commandLineArguments:
         # Tick this in Xcode (Product > Scheme > Edit Scheme > Arguments) to try audio
         # in a debug build before a reciter's licence is cleared. Release builds ignore it.

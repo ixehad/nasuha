@@ -8,6 +8,7 @@ struct RootView: View {
     @Environment(ContentLoader.self) private var content
     @Environment(AppRouter.self) private var router
     @Environment(\.modelContext) private var context
+    @Environment(\.dynamicTypeSize) private var systemTextSize
     @Query private var settings: [UserSettings]
 
     @State private var path: [AppRoute] = []
@@ -35,7 +36,19 @@ struct RootView: View {
                     case .topics:
                         SetupTopicsScreen(onNext: { path.append(.time) }, onBack: back)
                     case .time:
-                        SetupTimeScreen(onFinished: { path = [] }, onBack: back)
+                        SetupTimeScreen(onFinished: { path.removeAll(where: \.isSetup) }, onBack: back)
+                    case .settings:
+                        SettingsScreen(open: open, onBack: back)
+                    case .profile:
+                        ProfileScreen(open: open, onBack: back)
+                    case .saved:
+                        SavedScreen(open: open, onBack: back)
+                    case .about:
+                        AboutScreen(open: open, onBack: back)
+                    case .legal:
+                        LegalScreen(onBack: back)
+                    case .support:
+                        SupportScreen(onBack: back)
                     case let .reader(target):
                         QuranScreen(target: target, onBack: back) { setID in
                             self.router.ayah = AyahTarget(setID: setID)
@@ -51,22 +64,33 @@ struct RootView: View {
                 .environment(content)
                 .environment(self.router)
                 .environment(AppServices.shared.player)
+                .dynamicTypeSize(textSize)
         }
         .fullScreenCover(isPresented: $router.showAllRead) {
             AllReadScreen(onChoice: finishAllRead)
                 .environment(content)
+                .dynamicTypeSize(textSize)
         }
         .tint(Palette.accent)
+        .dynamicTypeSize(textSize)
         .preferredColorScheme(settings.first?.appearance.colorScheme)
     }
 
+    /// The phone's text size, moved up or down by the Text size setting.
+    private var textSize: DynamicTypeSize {
+        let all = DynamicTypeSize.allCases
+        let index = all.firstIndex(of: systemTextSize) ?? 3
+        return all[(settings.first?.textSize ?? .standard).shifted(index, count: all.count)]
+    }
+
     private func open(_ route: AppRoute) {
-        if case .reader = route {
+        if route.isSetup { draft.load(from: context, store: content.store) }
+        // Setup started from Home replaces what is on screen; everything else is pushed on top.
+        if route == .topics, !path.contains(.settings) {
             path = [route]
-            return
+        } else if path.last != route {
+            path.append(route)
         }
-        draft.load(from: context, store: content.store)
-        path = [route]
     }
 
     private func back() {
