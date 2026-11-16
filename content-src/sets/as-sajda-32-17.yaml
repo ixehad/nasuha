@@ -1,26 +1,19 @@
 id: as-sajda-32-17
-topics: [akhirah]
-ayah: "32:17"
-context: { before: ["32:15", "32:16"], after: ["32:18", "32:19"] }
-
-# The story of its revelation. Leave this block out if there is no report
-# graded sahih or hasan. Copy the text from the source unchanged.
-# story:
-#   steps:
-#     - { text: "", lang: en }
-#   one_line: null
-#   refs:
-#     - { book: "", number: "", numbering: "sunnah.com", grade: "" }
-
-# When it was revealed. Leave this block out if the sources do not say.
-# when:
-#   place: makkah
-#   order: 75
-#   period_text: ""
-#   age_min:
-#   age_max:
-#   approx: true
-#   scholars_differ: false
-#   refs: [ { book: "", location: "" } ]
-
-tafsir_refs: [ { book: "Al-Mukhtasar fi Tafsir", ayah: "32:17" } ]
+topics:
+- akhirah
+ayah: '32:17'
+context:
+  before:
+  - '32:15'
+  - '32:16'
+  after:
+  - '32:18'
+  - '32:19'
+when:
+  place: madinah
+  approx: true
+  refs:
+  - book: Tanzil revelation order
+tafsir_refs:
+- book: Al-Mukhtasar fi Tafsir
+  ayah: '32:17'

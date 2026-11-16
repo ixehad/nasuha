@@ -1,26 +1,19 @@
 id: az-zalzala-99-7
-topics: [akhirah]
-ayah: "99:7"
-context: { before: ["99:5", "99:6"], after: ["99:8"] }
-
-# The story of its revelation. Leave this block out if there is no report
-# graded sahih or hasan. Copy the text from the source unchanged.
-# story:
-#   steps:
-#     - { text: "", lang: en }
-#   one_line: null
-#   refs:
-#     - { book: "", number: "", numbering: "sunnah.com", grade: "" }
-
-# When it was revealed. Leave this block out if the sources do not say.
-# when:
-#   place: madinah
-#   order: 93
-#   period_text: ""
-#   age_min:
-#   age_max:
-#   approx: true
-#   scholars_differ: false
-#   refs: [ { book: "", location: "" } ]
-
-tafsir_refs: [ { book: "Al-Mukhtasar fi Tafsir", ayah: "99:7" } ]
+topics:
+- akhirah
+ayah: '99:7'
+context:
+  before:
+  - '99:5'
+  - '99:6'
+  after:
+  - '99:8'
+when:
+  place: madinah
+  order: 93
+  approx: true
+  refs:
+  - book: Tanzil revelation order
+tafsir_refs:
+- book: Al-Mukhtasar fi Tafsir
+  ayah: '99:7'

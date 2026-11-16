@@ -1,26 +1,20 @@
 id: al-baqara-2-201
-topics: [dua]
-ayah: "2:201"
-context: { before: ["2:199", "2:200"], after: ["2:202", "2:203"] }
-
-# The story of its revelation. Leave this block out if there is no report
-# graded sahih or hasan. Copy the text from the source unchanged.
-# story:
-#   steps:
-#     - { text: "", lang: en }
-#   one_line: null
-#   refs:
-#     - { book: "", number: "", numbering: "sunnah.com", grade: "" }
-
-# When it was revealed. Leave this block out if the sources do not say.
-# when:
-#   place: madinah
-#   order: 87
-#   period_text: ""
-#   age_min:
-#   age_max:
-#   approx: true
-#   scholars_differ: false
-#   refs: [ { book: "", location: "" } ]
-
-tafsir_refs: [ { book: "Al-Mukhtasar fi Tafsir", ayah: "2:201" } ]
+topics:
+- dua
+ayah: 2:201
+context:
+  before:
+  - 2:199
+  - 2:200
+  after:
+  - 2:202
+  - 2:203
+when:
+  place: madinah
+  order: 87
+  approx: true
+  refs:
+  - book: Tanzil revelation order
+tafsir_refs:
+- book: Al-Mukhtasar fi Tafsir
+  ayah: 2:201

@@ -1,26 +1,30 @@
 id: al-baqara-2-184
-topics: [ramadan]
-ayah: "2:184"
-context: { before: ["2:182", "2:183"], after: ["2:185", "2:186"] }
-
-# The story of its revelation. Leave this block out if there is no report
-# graded sahih or hasan. Copy the text from the source unchanged.
-# story:
-#   steps:
-#     - { text: "", lang: en }
-#   one_line: null
-#   refs:
-#     - { book: "", number: "", numbering: "sunnah.com", grade: "" }
-
-# When it was revealed. Leave this block out if the sources do not say.
-# when:
-#   place: madinah
-#   order: 87
-#   period_text: ""
-#   age_min:
-#   age_max:
-#   approx: true
-#   scholars_differ: false
-#   refs: [ { book: "", location: "" } ]
-
-tafsir_refs: [ { book: "Al-Mukhtasar fi Tafsir", ayah: "2:184" } ]
+topics:
+- ramadan
+- why
+ayah: 2:184
+context:
+  before:
+  - 2:182
+  - 2:183
+  after:
+  - 2:185
+  - 2:186
+story:
+  steps:
+  - text: 'Narrated Salama: When the Divine Revelation: "For those who can fast, they had a choice either fast, or feed a poor for every day," (2.184) was revealed, it was permissible for one to give a ransom and give up fasting, till the Verse succeeding it was revealed and abrogated it.'
+    lang: en
+  refs:
+  - book: Sahih al-Bukhari
+    number: '4507'
+    numbering: sunnah.com
+    grade: sahih
+when:
+  place: madinah
+  order: 87
+  approx: true
+  refs:
+  - book: Tanzil revelation order
+tafsir_refs:
+- book: Al-Mukhtasar fi Tafsir
+  ayah: 2:184

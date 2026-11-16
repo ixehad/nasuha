@@ -1,26 +1,20 @@
 id: aal-i-imraan-3-190
-topics: [signs]
-ayah: "3:190"
-context: { before: ["3:188", "3:189"], after: ["3:191", "3:192"] }
-
-# The story of its revelation. Leave this block out if there is no report
-# graded sahih or hasan. Copy the text from the source unchanged.
-# story:
-#   steps:
-#     - { text: "", lang: en }
-#   one_line: null
-#   refs:
-#     - { book: "", number: "", numbering: "sunnah.com", grade: "" }
-
-# When it was revealed. Leave this block out if the sources do not say.
-# when:
-#   place: madinah
-#   order: 89
-#   period_text: ""
-#   age_min:
-#   age_max:
-#   approx: true
-#   scholars_differ: false
-#   refs: [ { book: "", location: "" } ]
-
-tafsir_refs: [ { book: "Al-Mukhtasar fi Tafsir", ayah: "3:190" } ]
+topics:
+- signs
+ayah: 3:190
+context:
+  before:
+  - 3:188
+  - 3:189
+  after:
+  - 3:191
+  - 3:192
+when:
+  place: madinah
+  order: 89
+  approx: true
+  refs:
+  - book: Tanzil revelation order
+tafsir_refs:
+- book: Al-Mukhtasar fi Tafsir
+  ayah: 3:190

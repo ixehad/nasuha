@@ -1,26 +1,30 @@
 id: ad-dhuhaa-93-3
-topics: [hope]
-ayah: "93:3"
-context: { before: ["93:1", "93:2"], after: ["93:4", "93:5"] }
-
-# The story of its revelation. Leave this block out if there is no report
-# graded sahih or hasan. Copy the text from the source unchanged.
-# story:
-#   steps:
-#     - { text: "", lang: en }
-#   one_line: null
-#   refs:
-#     - { book: "", number: "", numbering: "sunnah.com", grade: "" }
-
-# When it was revealed. Leave this block out if the sources do not say.
-# when:
-#   place: makkah
-#   order: 11
-#   period_text: ""
-#   age_min:
-#   age_max:
-#   approx: true
-#   scholars_differ: false
-#   refs: [ { book: "", location: "" } ]
-
-tafsir_refs: [ { book: "Al-Mukhtasar fi Tafsir", ayah: "93:3" } ]
+topics:
+- hope
+- why
+ayah: '93:3'
+context:
+  before:
+  - '93:1'
+  - '93:2'
+  after:
+  - '93:4'
+  - '93:5'
+story:
+  steps:
+  - text: 'Narrated Jundub bin Sufyan: Once Allah''s Messenger (ﷺ) became sick and could not offer his night prayer (Tahajjud) for two or three nights. Then a lady (the wife of Abu Lahab) came and said, "O Muhammad! I think that your Satan has forsaken you, for I have not seen him with you for two or three nights!" On that Allah revealed: ''By the fore-noon, and by the night when it darkens, your Lord (O Muhammad) has neither forsaken you, nor hated you.'' (93.1-3)'
+    lang: en
+  refs:
+  - book: Sahih al-Bukhari
+    number: '4950'
+    numbering: sunnah.com
+    grade: sahih
+when:
+  place: makkah
+  order: 11
+  approx: true
+  refs:
+  - book: Tanzil revelation order
+tafsir_refs:
+- book: Al-Mukhtasar fi Tafsir
+  ayah: '93:3'

@@ -1,26 +1,30 @@
 id: al-hujuraat-49-9
-topics: [justice]
-ayah: "49:9"
-context: { before: ["49:7", "49:8"], after: ["49:10", "49:11"] }
-
-# The story of its revelation. Leave this block out if there is no report
-# graded sahih or hasan. Copy the text from the source unchanged.
-# story:
-#   steps:
-#     - { text: "", lang: en }
-#   one_line: null
-#   refs:
-#     - { book: "", number: "", numbering: "sunnah.com", grade: "" }
-
-# When it was revealed. Leave this block out if the sources do not say.
-# when:
-#   place: madinah
-#   order: 106
-#   period_text: ""
-#   age_min:
-#   age_max:
-#   approx: true
-#   scholars_differ: false
-#   refs: [ { book: "", location: "" } ]
-
-tafsir_refs: [ { book: "Al-Mukhtasar fi Tafsir", ayah: "49:9" } ]
+topics:
+- justice
+- why
+ayah: '49:9'
+context:
+  before:
+  - '49:7'
+  - '49:8'
+  after:
+  - '49:10'
+  - '49:11'
+story:
+  steps:
+  - text: 'Narrated Anas: It was said to the Prophet (ﷺ) "Would that you see `Abdullah bin Ubai." So, the Prophet (ﷺ) went to him, riding a donkey, and the Muslims accompanied him, walking on salty barren land. When the Prophet (ﷺ) reached `Abdullah bin Ubai, the latter said, "Keep away from me! By Allah, the bad smell of your donkey has harmed me." On that an Ansari man said (to `Abdullah), "By Allah! The smell of the donkey of Allah''s Messenger (ﷺ) is better than your smell." On that a man from `Abdullah''s tribe got angry for `Abdullah''s sake, and the two men abused each other which caused the friends of the two men to get angry, and the two groups started fighting with sticks, shoes and hands. We were informed that the following Divine Verse was revealed (in this concern):-- "And if two groups of Believers fall to fighting then, make peace between them." (49.9)'
+    lang: en
+  refs:
+  - book: Sahih al-Bukhari
+    number: '2691'
+    numbering: sunnah.com
+    grade: sahih
+when:
+  place: madinah
+  order: 106
+  approx: true
+  refs:
+  - book: Tanzil revelation order
+tafsir_refs:
+- book: Al-Mukhtasar fi Tafsir
+  ayah: '49:9'

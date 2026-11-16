@@ -1,26 +1,28 @@
 id: al-jumu-a-62-11
-topics: [jumuah]
-ayah: "62:11"
-context: { before: ["62:9", "62:10"], after: [] }
-
-# The story of its revelation. Leave this block out if there is no report
-# graded sahih or hasan. Copy the text from the source unchanged.
-# story:
-#   steps:
-#     - { text: "", lang: en }
-#   one_line: null
-#   refs:
-#     - { book: "", number: "", numbering: "sunnah.com", grade: "" }
-
-# When it was revealed. Leave this block out if the sources do not say.
-# when:
-#   place: madinah
-#   order: 110
-#   period_text: ""
-#   age_min:
-#   age_max:
-#   approx: true
-#   scholars_differ: false
-#   refs: [ { book: "", location: "" } ]
-
-tafsir_refs: [ { book: "Al-Mukhtasar fi Tafsir", ayah: "62:11" } ]
+topics:
+- jumuah
+- why
+ayah: '62:11'
+context:
+  before:
+  - '62:9'
+  - '62:10'
+  after: []
+story:
+  steps:
+  - text: 'Narrated Jabir bin `Abdullah: A caravan of merchandise arrived at Medina on a Friday while we were with the Prophet (ﷺ) All the people left (the Prophet (ﷺ) and headed for the caravan) except twelve persons. Then Allah revealed:-- ''But when they see some bargain or some amusement they disperse headlong to it.'' ..(62.11)'
+    lang: en
+  refs:
+  - book: Sahih al-Bukhari
+    number: '4899'
+    numbering: sunnah.com
+    grade: sahih
+when:
+  place: madinah
+  order: 110
+  approx: true
+  refs:
+  - book: Tanzil revelation order
+tafsir_refs:
+- book: Al-Mukhtasar fi Tafsir
+  ayah: '62:11'

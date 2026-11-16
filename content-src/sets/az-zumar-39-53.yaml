@@ -1,26 +1,30 @@
 id: az-zumar-39-53
-topics: [hope]
-ayah: "39:53"
-context: { before: ["39:51", "39:52"], after: ["39:54", "39:55"] }
-
-# The story of its revelation. Leave this block out if there is no report
-# graded sahih or hasan. Copy the text from the source unchanged.
-# story:
-#   steps:
-#     - { text: "", lang: en }
-#   one_line: null
-#   refs:
-#     - { book: "", number: "", numbering: "sunnah.com", grade: "" }
-
-# When it was revealed. Leave this block out if the sources do not say.
-# when:
-#   place: makkah
-#   order: 59
-#   period_text: ""
-#   age_min:
-#   age_max:
-#   approx: true
-#   scholars_differ: false
-#   refs: [ { book: "", location: "" } ]
-
-tafsir_refs: [ { book: "Al-Mukhtasar fi Tafsir", ayah: "39:53" } ]
+topics:
+- hope
+- why
+ayah: '39:53'
+context:
+  before:
+  - '39:51'
+  - '39:52'
+  after:
+  - '39:54'
+  - '39:55'
+story:
+  steps:
+  - text: 'Narrated Ibn `Abbas: Some pagans who committed murders in great number and committed illegal sexual intercourse excessively, came to Muhammad and said, "O Muhammad! Whatever you say and invite people to, is good: but we wish if you could inform us whether we can make an expiration for our (past evil) deeds." So the Divine Verses came: ''Those who invoke not with Allah any other god, not kill such life as Allah has forbidden except for just cause, nor commit illegal sexual intercourse.'' (25.68) And there was also revealed:-- ''Say: O My slaves who have transgressed against their souls! Despair not of the Mercy of Allah.'' (39.53)'
+    lang: en
+  refs:
+  - book: Sahih al-Bukhari
+    number: '4810'
+    numbering: sunnah.com
+    grade: sahih
+when:
+  place: makkah
+  order: 59
+  approx: true
+  refs:
+  - book: Tanzil revelation order
+tafsir_refs:
+- book: Al-Mukhtasar fi Tafsir
+  ayah: '39:53'

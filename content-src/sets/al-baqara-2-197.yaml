@@ -1,26 +1,30 @@
 id: al-baqara-2-197
-topics: [hajj]
-ayah: "2:197"
-context: { before: ["2:195", "2:196"], after: ["2:198", "2:199"] }
-
-# The story of its revelation. Leave this block out if there is no report
-# graded sahih or hasan. Copy the text from the source unchanged.
-# story:
-#   steps:
-#     - { text: "", lang: en }
-#   one_line: null
-#   refs:
-#     - { book: "", number: "", numbering: "sunnah.com", grade: "" }
-
-# When it was revealed. Leave this block out if the sources do not say.
-# when:
-#   place: madinah
-#   order: 87
-#   period_text: ""
-#   age_min:
-#   age_max:
-#   approx: true
-#   scholars_differ: false
-#   refs: [ { book: "", location: "" } ]
-
-tafsir_refs: [ { book: "Al-Mukhtasar fi Tafsir", ayah: "2:197" } ]
+topics:
+- hajj
+- why
+ayah: 2:197
+context:
+  before:
+  - 2:195
+  - 2:196
+  after:
+  - 2:198
+  - 2:199
+story:
+  steps:
+  - text: 'Narrated Ibn `Abbas: The people of Yemen used to come for Hajj and used not to bring enough provisions with them and used to say that they depend on Allah. On their arrival in Medina they used to beg the people, and so Allah revealed, "And take a provision (with you) for the journey, but the best provision is the fear of Allah." (2.197).'
+    lang: en
+  refs:
+  - book: Sahih al-Bukhari
+    number: '1523'
+    numbering: sunnah.com
+    grade: sahih
+when:
+  place: madinah
+  order: 87
+  approx: true
+  refs:
+  - book: Tanzil revelation order
+tafsir_refs:
+- book: Al-Mukhtasar fi Tafsir
+  ayah: 2:197

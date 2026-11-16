@@ -1,26 +1,30 @@
 id: an-nisaa-4-19
-topics: [marriage]
-ayah: "4:19"
-context: { before: ["4:17", "4:18"], after: ["4:20", "4:21"] }
-
-# The story of its revelation. Leave this block out if there is no report
-# graded sahih or hasan. Copy the text from the source unchanged.
-# story:
-#   steps:
-#     - { text: "", lang: en }
-#   one_line: null
-#   refs:
-#     - { book: "", number: "", numbering: "sunnah.com", grade: "" }
-
-# When it was revealed. Leave this block out if the sources do not say.
-# when:
-#   place: madinah
-#   order: 92
-#   period_text: ""
-#   age_min:
-#   age_max:
-#   approx: true
-#   scholars_differ: false
-#   refs: [ { book: "", location: "" } ]
-
-tafsir_refs: [ { book: "Al-Mukhtasar fi Tafsir", ayah: "4:19" } ]
+topics:
+- marriage
+- why
+ayah: '4:19'
+context:
+  before:
+  - '4:17'
+  - '4:18'
+  after:
+  - '4:20'
+  - '4:21'
+story:
+  steps:
+  - text: 'Narrated Ibn `Abbas: regarding the Divine Verse: "O you who believe! You are forbidden to inherit women against their will, and you should not treat them with harshness that you may take back part of the (Mahr) dower you have given them." (4.19) (Before this revelation) if a man died, his relatives used to have the right to inherit his wife, and one of them could marry her if he would, or they would give her in marriage if they wished, or, if they wished, they would not give her in marriage at all, and they would be more entitled to dispose her, than her own relatives. So the above Verse was revealed in this connection.'
+    lang: en
+  refs:
+  - book: Sahih al-Bukhari
+    number: '4579'
+    numbering: sunnah.com
+    grade: sahih
+when:
+  place: madinah
+  order: 92
+  approx: true
+  refs:
+  - book: Tanzil revelation order
+tafsir_refs:
+- book: Al-Mukhtasar fi Tafsir
+  ayah: '4:19'
