@@ -1,0 +1,26 @@
+id: al-ahzaab-33-21
+topics: [seerah]
+ayah: "33:21"
+context: { before: ["33:19", "33:20"], after: ["33:22", "33:23"] }
+
+# The story of its revelation. Leave this block out if there is no report
+# graded sahih or hasan. Copy the text from the source unchanged.
+# story:
+#   steps:
+#     - { text: "", lang: en }
+#   one_line: null
+#   refs:
+#     - { book: "", number: "", numbering: "sunnah.com", grade: "" }
+
+# When it was revealed. Leave this block out if the sources do not say.
+# when:
+#   place: madinah
+#   order: 90
+#   period_text: ""
+#   age_min:
+#   age_max:
+#   approx: true
+#   scholars_differ: false
+#   refs: [ { book: "", location: "" } ]
+
+tafsir_refs: [ { book: "Al-Mukhtasar fi Tafsir", ayah: "33:21" } ]

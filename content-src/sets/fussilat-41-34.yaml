@@ -1,0 +1,26 @@
+id: fussilat-41-34
+topics: [character]
+ayah: "41:34"
+context: { before: ["41:32", "41:33"], after: ["41:35", "41:36"] }
+
+# The story of its revelation. Leave this block out if there is no report
+# graded sahih or hasan. Copy the text from the source unchanged.
+# story:
+#   steps:
+#     - { text: "", lang: en }
+#   one_line: null
+#   refs:
+#     - { book: "", number: "", numbering: "sunnah.com", grade: "" }
+
+# When it was revealed. Leave this block out if the sources do not say.
+# when:
+#   place: makkah
+#   order: 61
+#   period_text: ""
+#   age_min:
+#   age_max:
+#   approx: true
+#   scholars_differ: false
+#   refs: [ { book: "", location: "" } ]
+
+tafsir_refs: [ { book: "Al-Mukhtasar fi Tafsir", ayah: "41:34" } ]

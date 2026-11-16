@@ -1,0 +1,26 @@
+id: al-hashr-59-18
+topics: [taqwa]
+ayah: "59:18"
+context: { before: ["59:16", "59:17"], after: ["59:19", "59:20"] }
+
+# The story of its revelation. Leave this block out if there is no report
+# graded sahih or hasan. Copy the text from the source unchanged.
+# story:
+#   steps:
+#     - { text: "", lang: en }
+#   one_line: null
+#   refs:
+#     - { book: "", number: "", numbering: "sunnah.com", grade: "" }
+
+# When it was revealed. Leave this block out if the sources do not say.
+# when:
+#   place: madinah
+#   order: 101
+#   period_text: ""
+#   age_min:
+#   age_max:
+#   approx: true
+#   scholars_differ: false
+#   refs: [ { book: "", location: "" } ]
+
+tafsir_refs: [ { book: "Al-Mukhtasar fi Tafsir", ayah: "59:18" } ]

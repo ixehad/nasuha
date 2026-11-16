@@ -1,0 +1,26 @@
+id: at-tahrim-66-8
+topics: [tawbah]
+ayah: "66:8"
+context: { before: ["66:6", "66:7"], after: ["66:9", "66:10"] }
+
+# The story of its revelation. Leave this block out if there is no report
+# graded sahih or hasan. Copy the text from the source unchanged.
+# story:
+#   steps:
+#     - { text: "", lang: en }
+#   one_line: null
+#   refs:
+#     - { book: "", number: "", numbering: "sunnah.com", grade: "" }
+
+# When it was revealed. Leave this block out if the sources do not say.
+# when:
+#   place: madinah
+#   order: 107
+#   period_text: ""
+#   age_min:
+#   age_max:
+#   approx: true
+#   scholars_differ: false
+#   refs: [ { book: "", location: "" } ]
+
+tafsir_refs: [ { book: "Al-Mukhtasar fi Tafsir", ayah: "66:8" } ]

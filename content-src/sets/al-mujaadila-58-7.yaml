@@ -1,0 +1,26 @@
+id: al-mujaadila-58-7
+topics: [alone]
+ayah: "58:7"
+context: { before: ["58:5", "58:6"], after: ["58:8", "58:9"] }
+
+# The story of its revelation. Leave this block out if there is no report
+# graded sahih or hasan. Copy the text from the source unchanged.
+# story:
+#   steps:
+#     - { text: "", lang: en }
+#   one_line: null
+#   refs:
+#     - { book: "", number: "", numbering: "sunnah.com", grade: "" }
+
+# When it was revealed. Leave this block out if the sources do not say.
+# when:
+#   place: madinah
+#   order: 105
+#   period_text: ""
+#   age_min:
+#   age_max:
+#   approx: true
+#   scholars_differ: false
+#   refs: [ { book: "", location: "" } ]
+
+tafsir_refs: [ { book: "Al-Mukhtasar fi Tafsir", ayah: "58:7" } ]
