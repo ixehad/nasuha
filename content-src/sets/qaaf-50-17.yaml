@@ -1,0 +1,20 @@
+id: qaaf-50-17
+topics:
+- angels-roles
+ayah: '50:17'
+context:
+  before:
+  - '50:15'
+  - '50:16'
+  after:
+  - '50:18'
+  - '50:19'
+when:
+  place: makkah
+  order: 34
+  approx: true
+  refs:
+  - book: Tanzil revelation order
+tafsir_refs:
+- book: Al-Mukhtasar fi Tafsir
+  ayah: '50:17'

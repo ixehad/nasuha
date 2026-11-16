@@ -1,0 +1,20 @@
+id: an-naml-27-65
+topics:
+- unseen
+ayah: 27:65
+context:
+  before:
+  - 27:63
+  - 27:64
+  after:
+  - 27:66
+  - 27:67
+when:
+  place: makkah
+  order: 48
+  approx: true
+  refs:
+  - book: Tanzil revelation order
+tafsir_refs:
+- book: Al-Mukhtasar fi Tafsir
+  ayah: 27:65

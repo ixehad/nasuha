@@ -1,0 +1,20 @@
+id: ash-shu-araa-26-192
+topics:
+- revelation
+ayah: 26:192
+context:
+  before:
+  - 26:190
+  - 26:191
+  after:
+  - 26:193
+  - 26:194
+when:
+  place: makkah
+  order: 47
+  approx: true
+  refs:
+  - book: Tanzil revelation order
+tafsir_refs:
+- book: Al-Mukhtasar fi Tafsir
+  ayah: 26:192

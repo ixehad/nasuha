@@ -1,0 +1,18 @@
+id: al-jinn-72-1
+topics:
+- jinn
+ayah: '72:1'
+context:
+  before: []
+  after:
+  - '72:2'
+  - '72:3'
+when:
+  place: makkah
+  order: 40
+  approx: true
+  refs:
+  - book: Tanzil revelation order
+tafsir_refs:
+- book: Al-Mukhtasar fi Tafsir
+  ayah: '72:1'

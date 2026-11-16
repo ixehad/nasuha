@@ -1,0 +1,20 @@
+id: aal-i-imraan-3-85
+topics:
+- islam-truth
+ayah: 3:85
+context:
+  before:
+  - 3:83
+  - 3:84
+  after:
+  - 3:86
+  - 3:87
+when:
+  place: madinah
+  order: 89
+  approx: true
+  refs:
+  - book: Tanzil revelation order
+tafsir_refs:
+- book: Al-Mukhtasar fi Tafsir
+  ayah: 3:85

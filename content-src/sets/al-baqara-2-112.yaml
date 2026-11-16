@@ -1,0 +1,20 @@
+id: al-baqara-2-112
+topics:
+- submission
+ayah: 2:112
+context:
+  before:
+  - 2:110
+  - 2:111
+  after:
+  - 2:113
+  - 2:114
+when:
+  place: madinah
+  order: 87
+  approx: true
+  refs:
+  - book: Tanzil revelation order
+tafsir_refs:
+- book: Al-Mukhtasar fi Tafsir
+  ayah: 2:112

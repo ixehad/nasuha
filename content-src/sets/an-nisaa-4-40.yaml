@@ -1,0 +1,20 @@
+id: an-nisaa-4-40
+topics:
+- allah-just
+ayah: '4:40'
+context:
+  before:
+  - '4:38'
+  - '4:39'
+  after:
+  - '4:41'
+  - '4:42'
+when:
+  place: madinah
+  order: 92
+  approx: true
+  refs:
+  - book: Tanzil revelation order
+tafsir_refs:
+- book: Al-Mukhtasar fi Tafsir
+  ayah: '4:40'

@@ -1,0 +1,20 @@
+id: aal-i-imraan-3-164
+topics:
+- blessing-islam
+ayah: 3:164
+context:
+  before:
+  - 3:162
+  - 3:163
+  after:
+  - 3:165
+  - 3:166
+when:
+  place: madinah
+  order: 89
+  approx: true
+  refs:
+  - book: Tanzil revelation order
+tafsir_refs:
+- book: Al-Mukhtasar fi Tafsir
+  ayah: 3:164

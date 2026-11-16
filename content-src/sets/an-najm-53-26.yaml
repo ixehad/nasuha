@@ -1,0 +1,20 @@
+id: an-najm-53-26
+topics:
+- intercession
+ayah: '53:26'
+context:
+  before:
+  - '53:24'
+  - '53:25'
+  after:
+  - '53:27'
+  - '53:28'
+when:
+  place: makkah
+  order: 23
+  approx: true
+  refs:
+  - book: Tanzil revelation order
+tafsir_refs:
+- book: Al-Mukhtasar fi Tafsir
+  ayah: '53:26'

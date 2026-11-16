@@ -1,0 +1,19 @@
+id: al-hujuraat-49-17
+topics:
+- blessing-islam
+ayah: '49:17'
+context:
+  before:
+  - '49:15'
+  - '49:16'
+  after:
+  - '49:18'
+when:
+  place: madinah
+  order: 106
+  approx: true
+  refs:
+  - book: Tanzil revelation order
+tafsir_refs:
+- book: Al-Mukhtasar fi Tafsir
+  ayah: '49:17'

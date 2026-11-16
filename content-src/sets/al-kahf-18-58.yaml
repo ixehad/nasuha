@@ -1,0 +1,20 @@
+id: al-kahf-18-58
+topics:
+- forbearance
+ayah: '18:58'
+context:
+  before:
+  - '18:56'
+  - '18:57'
+  after:
+  - '18:59'
+  - 18:60
+when:
+  place: makkah
+  order: 69
+  approx: true
+  refs:
+  - book: Tanzil revelation order
+tafsir_refs:
+- book: Al-Mukhtasar fi Tafsir
+  ayah: '18:58'

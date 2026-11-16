@@ -1,0 +1,21 @@
+id: al-baqara-2-255
+topics:
+- knowledge-of-allah
+- intercession
+ayah: 2:255
+context:
+  before:
+  - 2:253
+  - 2:254
+  after:
+  - 2:256
+  - 2:257
+when:
+  place: madinah
+  order: 87
+  approx: true
+  refs:
+  - book: Tanzil revelation order
+tafsir_refs:
+- book: Al-Mukhtasar fi Tafsir
+  ayah: 2:255

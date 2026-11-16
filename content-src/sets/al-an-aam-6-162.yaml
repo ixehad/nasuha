@@ -1,0 +1,21 @@
+id: al-an-aam-6-162
+topics:
+- sincerity
+- submission
+ayah: 6:162
+context:
+  before:
+  - 6:160
+  - 6:161
+  after:
+  - 6:163
+  - 6:164
+when:
+  place: makkah
+  order: 55
+  approx: true
+  refs:
+  - book: Tanzil revelation order
+tafsir_refs:
+- book: Al-Mukhtasar fi Tafsir
+  ayah: 6:162

@@ -1,0 +1,20 @@
+id: al-baqara-2-168
+topics:
+- shaytan
+ayah: 2:168
+context:
+  before:
+  - 2:166
+  - 2:167
+  after:
+  - 2:169
+  - 2:170
+when:
+  place: madinah
+  order: 87
+  approx: true
+  refs:
+  - book: Tanzil revelation order
+tafsir_refs:
+- book: Al-Mukhtasar fi Tafsir
+  ayah: 2:168

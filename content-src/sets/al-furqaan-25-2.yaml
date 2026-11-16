@@ -1,0 +1,19 @@
+id: al-furqaan-25-2
+topics:
+- divine-decree
+ayah: '25:2'
+context:
+  before:
+  - '25:1'
+  after:
+  - '25:3'
+  - '25:4'
+when:
+  place: makkah
+  order: 42
+  approx: true
+  refs:
+  - book: Tanzil revelation order
+tafsir_refs:
+- book: Al-Mukhtasar fi Tafsir
+  ayah: '25:2'

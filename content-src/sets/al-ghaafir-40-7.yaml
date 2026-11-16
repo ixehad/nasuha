@@ -1,0 +1,20 @@
+id: al-ghaafir-40-7
+topics:
+- angels-forgiveness
+ayah: '40:7'
+context:
+  before:
+  - '40:5'
+  - '40:6'
+  after:
+  - '40:8'
+  - '40:9'
+when:
+  place: makkah
+  order: 60
+  approx: true
+  refs:
+  - book: Tanzil revelation order
+tafsir_refs:
+- book: Al-Mukhtasar fi Tafsir
+  ayah: '40:7'

@@ -1,0 +1,20 @@
+id: al-baqara-2-97
+topics:
+- jibril
+ayah: 2:97
+context:
+  before:
+  - 2:95
+  - 2:96
+  after:
+  - 2:98
+  - 2:99
+when:
+  place: madinah
+  order: 87
+  approx: true
+  refs:
+  - book: Tanzil revelation order
+tafsir_refs:
+- book: Al-Mukhtasar fi Tafsir
+  ayah: 2:97

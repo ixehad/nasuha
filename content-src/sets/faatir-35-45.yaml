@@ -1,0 +1,18 @@
+id: faatir-35-45
+topics:
+- forbearance
+ayah: '35:45'
+context:
+  before:
+  - '35:43'
+  - '35:44'
+  after: []
+when:
+  place: makkah
+  order: 43
+  approx: true
+  refs:
+  - book: Tanzil revelation order
+tafsir_refs:
+- book: Al-Mukhtasar fi Tafsir
+  ayah: '35:45'

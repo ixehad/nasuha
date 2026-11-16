@@ -1,0 +1,20 @@
+id: al-an-aam-6-57
+topics:
+- authority-of-allah
+ayah: '6:57'
+context:
+  before:
+  - '6:55'
+  - '6:56'
+  after:
+  - '6:58'
+  - '6:59'
+when:
+  place: makkah
+  order: 55
+  approx: true
+  refs:
+  - book: Tanzil revelation order
+tafsir_refs:
+- book: Al-Mukhtasar fi Tafsir
+  ayah: '6:57'

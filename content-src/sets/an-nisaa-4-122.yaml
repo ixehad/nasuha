@@ -1,0 +1,20 @@
+id: an-nisaa-4-122
+topics:
+- promise-threat
+ayah: 4:122
+context:
+  before:
+  - 4:120
+  - 4:121
+  after:
+  - 4:123
+  - 4:124
+when:
+  place: madinah
+  order: 92
+  approx: true
+  refs:
+  - book: Tanzil revelation order
+tafsir_refs:
+- book: Al-Mukhtasar fi Tafsir
+  ayah: 4:122

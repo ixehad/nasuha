@@ -1,0 +1,20 @@
+id: al-anfaal-8-24
+topics:
+- responding
+ayah: '8:24'
+context:
+  before:
+  - '8:22'
+  - '8:23'
+  after:
+  - '8:25'
+  - '8:26'
+when:
+  place: madinah
+  order: 88
+  approx: true
+  refs:
+  - book: Tanzil revelation order
+tafsir_refs:
+- book: Al-Mukhtasar fi Tafsir
+  ayah: '8:24'

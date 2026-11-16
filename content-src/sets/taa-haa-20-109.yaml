@@ -1,0 +1,20 @@
+id: taa-haa-20-109
+topics:
+- intercession
+ayah: 20:109
+context:
+  before:
+  - 20:107
+  - 20:108
+  after:
+  - 20:110
+  - 20:111
+when:
+  place: makkah
+  order: 45
+  approx: true
+  refs:
+  - book: Tanzil revelation order
+tafsir_refs:
+- book: Al-Mukhtasar fi Tafsir
+  ayah: 20:109

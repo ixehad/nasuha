@@ -1,0 +1,18 @@
+id: faatir-35-1
+topics:
+- angels
+ayah: '35:1'
+context:
+  before: []
+  after:
+  - '35:2'
+  - '35:3'
+when:
+  place: makkah
+  order: 43
+  approx: true
+  refs:
+  - book: Tanzil revelation order
+tafsir_refs:
+- book: Al-Mukhtasar fi Tafsir
+  ayah: '35:1'

@@ -1,0 +1,18 @@
+id: al-bayyina-98-8
+topics:
+- pleasure-of-allah
+ayah: '98:8'
+context:
+  before:
+  - '98:6'
+  - '98:7'
+  after: []
+when:
+  place: madinah
+  order: 100
+  approx: true
+  refs:
+  - book: Tanzil revelation order
+tafsir_refs:
+- book: Al-Mukhtasar fi Tafsir
+  ayah: '98:8'

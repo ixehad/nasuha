@@ -1,0 +1,18 @@
+id: an-naas-114-1
+topics:
+- protection-shaytan
+ayah: '114:1'
+context:
+  before: []
+  after:
+  - '114:2'
+  - '114:3'
+when:
+  place: makkah
+  order: 21
+  approx: true
+  refs:
+  - book: Tanzil revelation order
+tafsir_refs:
+- book: Al-Mukhtasar fi Tafsir
+  ayah: '114:1'

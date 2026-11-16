@@ -1,0 +1,20 @@
+id: al-baqara-2-131
+topics:
+- submission
+ayah: 2:131
+context:
+  before:
+  - 2:129
+  - 2:130
+  after:
+  - 2:132
+  - 2:133
+when:
+  place: madinah
+  order: 87
+  approx: true
+  refs:
+  - book: Tanzil revelation order
+tafsir_refs:
+- book: Al-Mukhtasar fi Tafsir
+  ayah: 2:131

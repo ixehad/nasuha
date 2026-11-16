@@ -4833,6 +4833,479 @@
           }
         }
       }
+    },
+    "Allah and belief": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "আল্লাহ ও ঈমান"
+          }
+        }
+      }
+    },
+    "Oneness of Allah (Tawheed)": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "আল্লাহর একত্ব (তাওহীদ)"
+          }
+        }
+      }
+    },
+    "Allah's names and attributes": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "আল্লাহর নাম ও গুণাবলি"
+          }
+        }
+      }
+    },
+    "The will of Allah": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "আল্লাহর ইচ্ছা"
+          }
+        }
+      }
+    },
+    "All authority belongs to Allah": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "সব ক্ষমতা আল্লাহর"
+          }
+        }
+      }
+    },
+    "Allah is never unjust": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "আল্লাহ কখনো জুলুম করেন না"
+          }
+        }
+      }
+    },
+    "Love of Allah": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "আল্লাহর ভালোবাসা"
+          }
+        }
+      }
+    },
+    "Allah's forbearance with His servants": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "বান্দার প্রতি আল্লাহর সহনশীলতা"
+          }
+        }
+      }
+    },
+    "The pleasure of Allah": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "আল্লাহর সন্তুষ্টি"
+          }
+        }
+      }
+    },
+    "Allah's all-encompassing knowledge": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "আল্লাহর সর্বব্যাপী জ্ঞান"
+          }
+        }
+      }
+    },
+    "The anger of Allah": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "আল্লাহর ক্রোধ"
+          }
+        }
+      }
+    },
+    "People need Allah; He needs no one": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "মানুষ আল্লাহর মুখাপেক্ষী, তিনি অমুখাপেক্ষী"
+          }
+        }
+      }
+    },
+    "Allah's blessings on His servants": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "বান্দার প্রতি আল্লাহর নিয়ামত"
+          }
+        }
+      }
+    },
+    "The existence of Allah": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "আল্লাহর অস্তিত্ব"
+          }
+        }
+      }
+    },
+    "Promise and warning": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "প্রতিশ্রুতি ও সতর্কবাণী"
+          }
+        }
+      }
+    },
+    "Allah has no child or partner": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "আল্লাহর কোনো সন্তান বা শরিক নেই"
+          }
+        }
+      }
+    },
+    "Shirk (associating partners with Allah)": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "শিরক"
+          }
+        }
+      }
+    },
+    "Sincerity to Allah (Ikhlas)": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "আল্লাহর জন্য একনিষ্ঠতা (ইখলাস)"
+          }
+        }
+      }
+    },
+    "Faith in Allah (Iman)": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "আল্লাহর প্রতি ঈমান"
+          }
+        }
+      }
+    },
+    "Fruits of faith": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "ঈমানের ফল"
+          }
+        }
+      }
+    },
+    "Certainty (Yaqeen)": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "দৃঢ় বিশ্বাস (ইয়াকীন)"
+          }
+        }
+      }
+    },
+    "Doubt": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "সন্দেহ"
+          }
+        }
+      }
+    },
+    "Guidance to faith": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "হেদায়াত"
+          }
+        }
+      }
+    },
+    "Submission to Allah": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "আল্লাহর কাছে আত্মসমর্পণ"
+          }
+        }
+      }
+    },
+    "Humility in worship (Khushu')": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "ইবাদতে বিনয় (খুশু)"
+          }
+        }
+      }
+    },
+    "Responding to Allah's call": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "আল্লাহর ডাকে সাড়া দেওয়া"
+          }
+        }
+      }
+    },
+    "Divine decree (Qadar)": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "তাকদীর"
+          }
+        }
+      }
+    },
+    "The unseen (Al-Ghayb)": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "অদৃশ্য জগত (গায়েব)"
+          }
+        }
+      }
+    },
+    "Angels": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "ফেরেশতা"
+          }
+        }
+      }
+    },
+    "Angels and their duties": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "ফেরেশতাদের দায়িত্ব"
+          }
+        }
+      }
+    },
+    "Angels pray for the believers": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "মুমিনদের জন্য ফেরেশতাদের দোয়া"
+          }
+        }
+      }
+    },
+    "Jibril, the angel of revelation": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "জিবরীল, ওহীর ফেরেশতা"
+          }
+        }
+      }
+    },
+    "Jinn": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "জিন"
+          }
+        }
+      }
+    },
+    "Shaytan": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "শয়তান"
+          }
+        }
+      }
+    },
+    "Shaytan's whispers and how to resist": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "শয়তানের কুমন্ত্রণা ও তা প্রতিরোধ"
+          }
+        }
+      }
+    },
+    "Protection from Shaytan": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "শয়তান থেকে আশ্রয়"
+          }
+        }
+      }
+    },
+    "The revealed books": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "আসমানি কিতাব"
+          }
+        }
+      }
+    },
+    "Revelation (Wahy)": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "ওহী"
+          }
+        }
+      }
+    },
+    "Islam, the religion of truth": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "ইসলাম, সত্য দ্বীন"
+          }
+        }
+      }
+    },
+    "The blessing of Islam": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "ইসলামের নিয়ামত"
+          }
+        }
+      }
+    },
+    "No compulsion in religion": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "দ্বীনে কোনো জোরজবরদস্তি নেই"
+          }
+        }
+      }
+    },
+    "Natural disposition (Fitrah)": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "স্বভাবধর্ম (ফিতরাত)"
+          }
+        }
+      }
+    },
+    "Intercession (Shafa'ah)": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "সুপারিশ (শাফাআত)"
+          }
+        }
+      }
     }
   },
   "version": "1.0"

@@ -1,0 +1,20 @@
+id: yunus-10-99
+topics:
+- freedom-belief
+ayah: 10:99
+context:
+  before:
+  - 10:97
+  - 10:98
+  after:
+  - 10:100
+  - 10:101
+when:
+  place: makkah
+  order: 51
+  approx: true
+  refs:
+  - book: Tanzil revelation order
+tafsir_refs:
+- book: Al-Mukhtasar fi Tafsir
+  ayah: 10:99

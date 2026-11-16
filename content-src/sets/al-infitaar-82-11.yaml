@@ -1,0 +1,20 @@
+id: al-infitaar-82-11
+topics:
+- angels-roles
+ayah: '82:11'
+context:
+  before:
+  - '82:9'
+  - '82:10'
+  after:
+  - '82:12'
+  - '82:13'
+when:
+  place: makkah
+  order: 82
+  approx: true
+  refs:
+  - book: Tanzil revelation order
+tafsir_refs:
+- book: Al-Mukhtasar fi Tafsir
+  ayah: '82:11'

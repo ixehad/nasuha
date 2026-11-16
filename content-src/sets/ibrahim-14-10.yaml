@@ -1,0 +1,20 @@
+id: ibrahim-14-10
+topics:
+- existence-of-allah
+ayah: '14:10'
+context:
+  before:
+  - '14:8'
+  - '14:9'
+  after:
+  - '14:11'
+  - '14:12'
+when:
+  place: makkah
+  order: 72
+  approx: true
+  refs:
+  - book: Tanzil revelation order
+tafsir_refs:
+- book: Al-Mukhtasar fi Tafsir
+  ayah: '14:10'

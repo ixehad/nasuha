@@ -1,0 +1,21 @@
+id: an-nisaa-4-136
+topics:
+- iman
+- scriptures
+ayah: 4:136
+context:
+  before:
+  - 4:134
+  - 4:135
+  after:
+  - 4:137
+  - 4:138
+when:
+  place: madinah
+  order: 92
+  approx: true
+  refs:
+  - book: Tanzil revelation order
+tafsir_refs:
+- book: Al-Mukhtasar fi Tafsir
+  ayah: 4:136

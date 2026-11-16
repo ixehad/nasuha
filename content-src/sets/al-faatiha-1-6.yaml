@@ -1,0 +1,19 @@
+id: al-faatiha-1-6
+topics:
+- guidance
+ayah: '1:6'
+context:
+  before:
+  - '1:4'
+  - '1:5'
+  after:
+  - '1:7'
+when:
+  place: makkah
+  order: 5
+  approx: true
+  refs:
+  - book: Tanzil revelation order
+tafsir_refs:
+- book: Al-Mukhtasar fi Tafsir
+  ayah: '1:6'

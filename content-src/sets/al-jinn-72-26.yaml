@@ -1,0 +1,20 @@
+id: al-jinn-72-26
+topics:
+- unseen
+ayah: '72:26'
+context:
+  before:
+  - '72:24'
+  - '72:25'
+  after:
+  - '72:27'
+  - '72:28'
+when:
+  place: makkah
+  order: 40
+  approx: true
+  refs:
+  - book: Tanzil revelation order
+tafsir_refs:
+- book: Al-Mukhtasar fi Tafsir
+  ayah: '72:26'

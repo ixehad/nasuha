@@ -1,0 +1,20 @@
+id: taa-haa-20-8
+topics:
+- names-attributes
+ayah: '20:8'
+context:
+  before:
+  - '20:6'
+  - '20:7'
+  after:
+  - '20:9'
+  - '20:10'
+when:
+  place: makkah
+  order: 45
+  approx: true
+  refs:
+  - book: Tanzil revelation order
+tafsir_refs:
+- book: Al-Mukhtasar fi Tafsir
+  ayah: '20:8'

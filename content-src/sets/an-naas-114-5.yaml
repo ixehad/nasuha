@@ -1,0 +1,19 @@
+id: an-naas-114-5
+topics:
+- whispers
+ayah: '114:5'
+context:
+  before:
+  - '114:3'
+  - '114:4'
+  after:
+  - '114:6'
+when:
+  place: makkah
+  order: 21
+  approx: true
+  refs:
+  - book: Tanzil revelation order
+tafsir_refs:
+- book: Al-Mukhtasar fi Tafsir
+  ayah: '114:5'

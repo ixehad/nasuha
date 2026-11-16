@@ -1,0 +1,20 @@
+id: luqman-31-20
+topics:
+- blessings
+ayah: '31:20'
+context:
+  before:
+  - '31:18'
+  - '31:19'
+  after:
+  - '31:21'
+  - '31:22'
+when:
+  place: makkah
+  order: 57
+  approx: true
+  refs:
+  - book: Tanzil revelation order
+tafsir_refs:
+- book: Al-Mukhtasar fi Tafsir
+  ayah: '31:20'

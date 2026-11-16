@@ -1,0 +1,20 @@
+id: luqman-31-13
+topics:
+- shirk
+ayah: '31:13'
+context:
+  before:
+  - '31:11'
+  - '31:12'
+  after:
+  - '31:14'
+  - '31:15'
+when:
+  place: makkah
+  order: 57
+  approx: true
+  refs:
+  - book: Tanzil revelation order
+tafsir_refs:
+- book: Al-Mukhtasar fi Tafsir
+  ayah: '31:13'

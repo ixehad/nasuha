@@ -1,0 +1,20 @@
+id: as-saff-61-9
+topics:
+- islam-truth
+ayah: '61:9'
+context:
+  before:
+  - '61:7'
+  - '61:8'
+  after:
+  - '61:10'
+  - '61:11'
+when:
+  place: madinah
+  order: 109
+  approx: true
+  refs:
+  - book: Tanzil revelation order
+tafsir_refs:
+- book: Al-Mukhtasar fi Tafsir
+  ayah: '61:9'

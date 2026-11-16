@@ -1,0 +1,20 @@
+id: an-najm-53-4
+topics:
+- revelation
+ayah: '53:4'
+context:
+  before:
+  - '53:2'
+  - '53:3'
+  after:
+  - '53:5'
+  - '53:6'
+when:
+  place: makkah
+  order: 23
+  approx: true
+  refs:
+  - book: Tanzil revelation order
+tafsir_refs:
+- book: Al-Mukhtasar fi Tafsir
+  ayah: '53:4'

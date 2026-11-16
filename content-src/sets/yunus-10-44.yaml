@@ -1,0 +1,20 @@
+id: yunus-10-44
+topics:
+- allah-just
+ayah: '10:44'
+context:
+  before:
+  - '10:42'
+  - '10:43'
+  after:
+  - '10:45'
+  - '10:46'
+when:
+  place: makkah
+  order: 51
+  approx: true
+  refs:
+  - book: Tanzil revelation order
+tafsir_refs:
+- book: Al-Mukhtasar fi Tafsir
+  ayah: '10:44'

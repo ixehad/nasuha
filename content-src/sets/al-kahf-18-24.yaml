@@ -1,0 +1,20 @@
+id: al-kahf-18-24
+topics:
+- will-of-allah
+ayah: '18:24'
+context:
+  before:
+  - '18:22'
+  - '18:23'
+  after:
+  - '18:25'
+  - '18:26'
+when:
+  place: makkah
+  order: 69
+  approx: true
+  refs:
+  - book: Tanzil revelation order
+tafsir_refs:
+- book: Al-Mukhtasar fi Tafsir
+  ayah: '18:24'

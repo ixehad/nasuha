@@ -1,0 +1,20 @@
+id: az-zumar-39-65
+topics:
+- shirk
+ayah: 39:65
+context:
+  before:
+  - 39:63
+  - 39:64
+  after:
+  - 39:66
+  - 39:67
+when:
+  place: makkah
+  order: 59
+  approx: true
+  refs:
+  - book: Tanzil revelation order
+tafsir_refs:
+- book: Al-Mukhtasar fi Tafsir
+  ayah: 39:65

@@ -1,0 +1,20 @@
+id: yunus-10-62
+topics:
+- fruits-of-faith
+ayah: 10:62
+context:
+  before:
+  - 10:60
+  - 10:61
+  after:
+  - 10:63
+  - 10:64
+when:
+  place: makkah
+  order: 51
+  approx: true
+  refs:
+  - book: Tanzil revelation order
+tafsir_refs:
+- book: Al-Mukhtasar fi Tafsir
+  ayah: 10:62

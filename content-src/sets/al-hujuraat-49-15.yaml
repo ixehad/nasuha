@@ -1,0 +1,21 @@
+id: al-hujuraat-49-15
+topics:
+- iman
+- doubt
+ayah: '49:15'
+context:
+  before:
+  - '49:13'
+  - '49:14'
+  after:
+  - '49:16'
+  - '49:17'
+when:
+  place: madinah
+  order: 106
+  approx: true
+  refs:
+  - book: Tanzil revelation order
+tafsir_refs:
+- book: Al-Mukhtasar fi Tafsir
+  ayah: '49:15'

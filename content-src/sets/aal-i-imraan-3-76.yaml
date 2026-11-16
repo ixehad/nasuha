@@ -1,0 +1,20 @@
+id: aal-i-imraan-3-76
+topics:
+- love-of-allah
+ayah: 3:76
+context:
+  before:
+  - 3:74
+  - 3:75
+  after:
+  - 3:77
+  - 3:78
+when:
+  place: madinah
+  order: 89
+  approx: true
+  refs:
+  - book: Tanzil revelation order
+tafsir_refs:
+- book: Al-Mukhtasar fi Tafsir
+  ayah: 3:76

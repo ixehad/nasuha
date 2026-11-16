@@ -1,0 +1,20 @@
+id: ar-rahmaan-55-15
+topics:
+- jinn
+ayah: '55:15'
+context:
+  before:
+  - '55:13'
+  - '55:14'
+  after:
+  - '55:16'
+  - '55:17'
+when:
+  place: madinah
+  order: 97
+  approx: true
+  refs:
+  - book: Tanzil revelation order
+tafsir_refs:
+- book: Al-Mukhtasar fi Tafsir
+  ayah: '55:15'

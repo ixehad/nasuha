@@ -1,0 +1,20 @@
+id: aal-i-imraan-3-19
+topics:
+- islam-truth
+ayah: '3:19'
+context:
+  before:
+  - '3:17'
+  - '3:18'
+  after:
+  - '3:20'
+  - '3:21'
+when:
+  place: madinah
+  order: 89
+  approx: true
+  refs:
+  - book: Tanzil revelation order
+tafsir_refs:
+- book: Al-Mukhtasar fi Tafsir
+  ayah: '3:19'

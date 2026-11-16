@@ -1,0 +1,18 @@
+id: al-ikhlaas-112-1
+topics:
+- tawheed
+ayah: '112:1'
+context:
+  before: []
+  after:
+  - '112:2'
+  - '112:3'
+when:
+  place: makkah
+  order: 22
+  approx: true
+  refs:
+  - book: Tanzil revelation order
+tafsir_refs:
+- book: Al-Mukhtasar fi Tafsir
+  ayah: '112:1'

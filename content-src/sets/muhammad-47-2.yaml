@@ -1,0 +1,19 @@
+id: muhammad-47-2
+topics:
+- fruits-of-faith
+ayah: '47:2'
+context:
+  before:
+  - '47:1'
+  after:
+  - '47:3'
+  - '47:4'
+when:
+  place: madinah
+  order: 95
+  approx: true
+  refs:
+  - book: Tanzil revelation order
+tafsir_refs:
+- book: Al-Mukhtasar fi Tafsir
+  ayah: '47:2'

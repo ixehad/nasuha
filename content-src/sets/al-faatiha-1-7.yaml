@@ -1,0 +1,18 @@
+id: al-faatiha-1-7
+topics:
+- anger-of-allah
+ayah: '1:7'
+context:
+  before:
+  - '1:5'
+  - '1:6'
+  after: []
+when:
+  place: makkah
+  order: 5
+  approx: true
+  refs:
+  - book: Tanzil revelation order
+tafsir_refs:
+- book: Al-Mukhtasar fi Tafsir
+  ayah: '1:7'

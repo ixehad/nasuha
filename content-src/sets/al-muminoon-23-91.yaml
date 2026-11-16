@@ -1,0 +1,20 @@
+id: al-muminoon-23-91
+topics:
+- no-partner
+ayah: 23:91
+context:
+  before:
+  - 23:89
+  - 23:90
+  after:
+  - 23:92
+  - 23:93
+when:
+  place: makkah
+  order: 74
+  approx: true
+  refs:
+  - book: Tanzil revelation order
+tafsir_refs:
+- book: Al-Mukhtasar fi Tafsir
+  ayah: 23:91

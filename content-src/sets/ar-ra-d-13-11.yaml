@@ -1,0 +1,20 @@
+id: ar-ra-d-13-11
+topics:
+- angels-roles
+ayah: '13:11'
+context:
+  before:
+  - '13:9'
+  - '13:10'
+  after:
+  - '13:12'
+  - '13:13'
+when:
+  place: madinah
+  order: 96
+  approx: true
+  refs:
+  - book: Tanzil revelation order
+tafsir_refs:
+- book: Al-Mukhtasar fi Tafsir
+  ayah: '13:11'

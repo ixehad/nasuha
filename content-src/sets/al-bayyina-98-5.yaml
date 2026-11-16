@@ -1,0 +1,20 @@
+id: al-bayyina-98-5
+topics:
+- sincerity
+ayah: '98:5'
+context:
+  before:
+  - '98:3'
+  - '98:4'
+  after:
+  - '98:6'
+  - '98:7'
+when:
+  place: madinah
+  order: 100
+  approx: true
+  refs:
+  - book: Tanzil revelation order
+tafsir_refs:
+- book: Al-Mukhtasar fi Tafsir
+  ayah: '98:5'

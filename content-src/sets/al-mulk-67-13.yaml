@@ -1,0 +1,20 @@
+id: al-mulk-67-13
+topics:
+- knowledge-of-allah
+ayah: '67:13'
+context:
+  before:
+  - '67:11'
+  - '67:12'
+  after:
+  - '67:14'
+  - '67:15'
+when:
+  place: makkah
+  order: 77
+  approx: true
+  refs:
+  - book: Tanzil revelation order
+tafsir_refs:
+- book: Al-Mukhtasar fi Tafsir
+  ayah: '67:13'

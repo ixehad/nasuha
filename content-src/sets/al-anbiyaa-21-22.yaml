@@ -1,0 +1,20 @@
+id: al-anbiyaa-21-22
+topics:
+- tawheed
+ayah: '21:22'
+context:
+  before:
+  - '21:20'
+  - '21:21'
+  after:
+  - '21:23'
+  - '21:24'
+when:
+  place: makkah
+  order: 73
+  approx: true
+  refs:
+  - book: Tanzil revelation order
+tafsir_refs:
+- book: Al-Mukhtasar fi Tafsir
+  ayah: '21:22'

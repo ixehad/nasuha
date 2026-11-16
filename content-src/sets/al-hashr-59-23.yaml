@@ -1,0 +1,19 @@
+id: al-hashr-59-23
+topics:
+- names-attributes
+ayah: '59:23'
+context:
+  before:
+  - '59:21'
+  - '59:22'
+  after:
+  - '59:24'
+when:
+  place: madinah
+  order: 101
+  approx: true
+  refs:
+  - book: Tanzil revelation order
+tafsir_refs:
+- book: Al-Mukhtasar fi Tafsir
+  ayah: '59:23'

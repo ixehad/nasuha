@@ -1,0 +1,19 @@
+id: az-zumar-39-2
+topics:
+- sincerity
+ayah: '39:2'
+context:
+  before:
+  - '39:1'
+  after:
+  - '39:3'
+  - '39:4'
+when:
+  place: makkah
+  order: 59
+  approx: true
+  refs:
+  - book: Tanzil revelation order
+tafsir_refs:
+- book: Al-Mukhtasar fi Tafsir
+  ayah: '39:2'

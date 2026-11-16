@@ -1,0 +1,19 @@
+id: al-ikhlaas-112-3
+topics:
+- no-partner
+ayah: '112:3'
+context:
+  before:
+  - '112:1'
+  - '112:2'
+  after:
+  - '112:4'
+when:
+  place: makkah
+  order: 22
+  approx: true
+  refs:
+  - book: Tanzil revelation order
+tafsir_refs:
+- book: Al-Mukhtasar fi Tafsir
+  ayah: '112:3'

@@ -1,0 +1,20 @@
+id: al-a-raaf-7-200
+topics:
+- whispers
+ayah: 7:200
+context:
+  before:
+  - 7:198
+  - 7:199
+  after:
+  - 7:201
+  - 7:202
+when:
+  place: makkah
+  order: 39
+  approx: true
+  refs:
+  - book: Tanzil revelation order
+tafsir_refs:
+- book: Al-Mukhtasar fi Tafsir
+  ayah: 7:200

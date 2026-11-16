@@ -1,0 +1,20 @@
+id: ash-shura-42-5
+topics:
+- angels-forgiveness
+ayah: '42:5'
+context:
+  before:
+  - '42:3'
+  - '42:4'
+  after:
+  - '42:6'
+  - '42:7'
+when:
+  place: makkah
+  order: 62
+  approx: true
+  refs:
+  - book: Tanzil revelation order
+tafsir_refs:
+- book: Al-Mukhtasar fi Tafsir
+  ayah: '42:5'

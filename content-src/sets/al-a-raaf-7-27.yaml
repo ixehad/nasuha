@@ -1,0 +1,20 @@
+id: al-a-raaf-7-27
+topics:
+- shaytan
+ayah: '7:27'
+context:
+  before:
+  - '7:25'
+  - '7:26'
+  after:
+  - '7:28'
+  - '7:29'
+when:
+  place: makkah
+  order: 39
+  approx: true
+  refs:
+  - book: Tanzil revelation order
+tafsir_refs:
+- book: Al-Mukhtasar fi Tafsir
+  ayah: '7:27'

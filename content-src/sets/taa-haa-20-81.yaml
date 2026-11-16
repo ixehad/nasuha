@@ -1,0 +1,20 @@
+id: taa-haa-20-81
+topics:
+- anger-of-allah
+ayah: 20:81
+context:
+  before:
+  - 20:79
+  - 20:80
+  after:
+  - 20:82
+  - 20:83
+when:
+  place: makkah
+  order: 45
+  approx: true
+  refs:
+  - book: Tanzil revelation order
+tafsir_refs:
+- book: Al-Mukhtasar fi Tafsir
+  ayah: 20:81

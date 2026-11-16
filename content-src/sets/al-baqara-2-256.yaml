@@ -1,0 +1,20 @@
+id: al-baqara-2-256
+topics:
+- freedom-belief
+ayah: 2:256
+context:
+  before:
+  - 2:254
+  - 2:255
+  after:
+  - 2:257
+  - 2:258
+when:
+  place: madinah
+  order: 87
+  approx: true
+  refs:
+  - book: Tanzil revelation order
+tafsir_refs:
+- book: Al-Mukhtasar fi Tafsir
+  ayah: 2:256

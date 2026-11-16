@@ -1,0 +1,20 @@
+id: aal-i-imraan-3-26
+topics:
+- authority-of-allah
+ayah: '3:26'
+context:
+  before:
+  - '3:24'
+  - '3:25'
+  after:
+  - '3:27'
+  - '3:28'
+when:
+  place: madinah
+  order: 89
+  approx: true
+  refs:
+  - book: Tanzil revelation order
+tafsir_refs:
+- book: Al-Mukhtasar fi Tafsir
+  ayah: '3:26'

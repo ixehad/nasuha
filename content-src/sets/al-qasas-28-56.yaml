@@ -1,0 +1,20 @@
+id: al-qasas-28-56
+topics:
+- guidance
+ayah: '28:56'
+context:
+  before:
+  - '28:54'
+  - '28:55'
+  after:
+  - '28:57'
+  - '28:58'
+when:
+  place: makkah
+  order: 49
+  approx: true
+  refs:
+  - book: Tanzil revelation order
+tafsir_refs:
+- book: Al-Mukhtasar fi Tafsir
+  ayah: '28:56'

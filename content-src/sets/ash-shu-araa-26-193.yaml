@@ -1,0 +1,20 @@
+id: ash-shu-araa-26-193
+topics:
+- jibril
+ayah: 26:193
+context:
+  before:
+  - 26:191
+  - 26:192
+  after:
+  - 26:194
+  - 26:195
+when:
+  place: makkah
+  order: 47
+  approx: true
+  refs:
+  - book: Tanzil revelation order
+tafsir_refs:
+- book: Al-Mukhtasar fi Tafsir
+  ayah: 26:193

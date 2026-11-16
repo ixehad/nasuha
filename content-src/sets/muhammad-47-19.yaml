@@ -1,0 +1,20 @@
+id: muhammad-47-19
+topics:
+- tawheed
+ayah: '47:19'
+context:
+  before:
+  - '47:17'
+  - '47:18'
+  after:
+  - '47:20'
+  - '47:21'
+when:
+  place: madinah
+  order: 95
+  approx: true
+  refs:
+  - book: Tanzil revelation order
+tafsir_refs:
+- book: Al-Mukhtasar fi Tafsir
+  ayah: '47:19'

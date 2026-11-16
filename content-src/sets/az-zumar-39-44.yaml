@@ -1,0 +1,20 @@
+id: az-zumar-39-44
+topics:
+- intercession
+ayah: '39:44'
+context:
+  before:
+  - '39:42'
+  - '39:43'
+  after:
+  - '39:45'
+  - '39:46'
+when:
+  place: makkah
+  order: 59
+  approx: true
+  refs:
+  - book: Tanzil revelation order
+tafsir_refs:
+- book: Al-Mukhtasar fi Tafsir
+  ayah: '39:44'

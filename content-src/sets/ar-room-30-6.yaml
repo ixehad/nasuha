@@ -1,0 +1,20 @@
+id: ar-room-30-6
+topics:
+- promise-threat
+ayah: '30:6'
+context:
+  before:
+  - '30:4'
+  - '30:5'
+  after:
+  - '30:7'
+  - '30:8'
+when:
+  place: makkah
+  order: 84
+  approx: true
+  refs:
+  - book: Tanzil revelation order
+tafsir_refs:
+- book: Al-Mukhtasar fi Tafsir
+  ayah: '30:6'

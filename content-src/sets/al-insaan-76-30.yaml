@@ -1,0 +1,19 @@
+id: al-insaan-76-30
+topics:
+- will-of-allah
+ayah: '76:30'
+context:
+  before:
+  - '76:28'
+  - '76:29'
+  after:
+  - '76:31'
+when:
+  place: madinah
+  order: 98
+  approx: true
+  refs:
+  - book: Tanzil revelation order
+tafsir_refs:
+- book: Al-Mukhtasar fi Tafsir
+  ayah: '76:30'

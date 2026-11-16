@@ -1,0 +1,18 @@
+id: luqman-31-34
+topics:
+- knowledge-of-allah
+ayah: '31:34'
+context:
+  before:
+  - '31:32'
+  - '31:33'
+  after: []
+when:
+  place: makkah
+  order: 57
+  approx: true
+  refs:
+  - book: Tanzil revelation order
+tafsir_refs:
+- book: Al-Mukhtasar fi Tafsir
+  ayah: '31:34'

@@ -1,0 +1,20 @@
+id: an-nisaa-4-116
+topics:
+- shirk
+ayah: 4:116
+context:
+  before:
+  - 4:114
+  - 4:115
+  after:
+  - 4:117
+  - 4:118
+when:
+  place: madinah
+  order: 92
+  approx: true
+  refs:
+  - book: Tanzil revelation order
+tafsir_refs:
+- book: Al-Mukhtasar fi Tafsir
+  ayah: 4:116

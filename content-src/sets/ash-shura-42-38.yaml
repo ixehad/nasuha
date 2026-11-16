@@ -1,0 +1,20 @@
+id: ash-shura-42-38
+topics:
+- responding
+ayah: '42:38'
+context:
+  before:
+  - '42:36'
+  - '42:37'
+  after:
+  - '42:39'
+  - '42:40'
+when:
+  place: makkah
+  order: 62
+  approx: true
+  refs:
+  - book: Tanzil revelation order
+tafsir_refs:
+- book: Al-Mukhtasar fi Tafsir
+  ayah: '42:38'

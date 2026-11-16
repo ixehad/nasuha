@@ -1,0 +1,20 @@
+id: al-ahzaab-33-43
+topics:
+- angels-forgiveness
+ayah: '33:43'
+context:
+  before:
+  - '33:41'
+  - '33:42'
+  after:
+  - '33:44'
+  - '33:45'
+when:
+  place: madinah
+  order: 90
+  approx: true
+  refs:
+  - book: Tanzil revelation order
+tafsir_refs:
+- book: Al-Mukhtasar fi Tafsir
+  ayah: '33:43'

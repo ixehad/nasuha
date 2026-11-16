@@ -1,0 +1,20 @@
+id: at-tur-52-35
+topics:
+- existence-of-allah
+ayah: '52:35'
+context:
+  before:
+  - '52:33'
+  - '52:34'
+  after:
+  - '52:36'
+  - '52:37'
+when:
+  place: makkah
+  order: 76
+  approx: true
+  refs:
+  - book: Tanzil revelation order
+tafsir_refs:
+- book: Al-Mukhtasar fi Tafsir
+  ayah: '52:35'

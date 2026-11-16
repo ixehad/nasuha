@@ -1,0 +1,20 @@
+id: al-qamar-54-49
+topics:
+- divine-decree
+ayah: '54:49'
+context:
+  before:
+  - '54:47'
+  - '54:48'
+  after:
+  - '54:50'
+  - '54:51'
+when:
+  place: makkah
+  order: 37
+  approx: true
+  refs:
+  - book: Tanzil revelation order
+tafsir_refs:
+- book: Al-Mukhtasar fi Tafsir
+  ayah: '54:49'

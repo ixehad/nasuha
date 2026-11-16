@@ -1,0 +1,18 @@
+id: al-israa-17-111
+topics:
+- no-partner
+ayah: 17:111
+context:
+  before:
+  - 17:109
+  - 17:110
+  after: []
+when:
+  place: makkah
+  order: 50
+  approx: true
+  refs:
+  - book: Tanzil revelation order
+tafsir_refs:
+- book: Al-Mukhtasar fi Tafsir
+  ayah: 17:111

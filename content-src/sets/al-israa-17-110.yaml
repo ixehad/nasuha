@@ -1,0 +1,19 @@
+id: al-israa-17-110
+topics:
+- names-attributes
+ayah: 17:110
+context:
+  before:
+  - 17:108
+  - 17:109
+  after:
+  - 17:111
+when:
+  place: makkah
+  order: 50
+  approx: true
+  refs:
+  - book: Tanzil revelation order
+tafsir_refs:
+- book: Al-Mukhtasar fi Tafsir
+  ayah: 17:110

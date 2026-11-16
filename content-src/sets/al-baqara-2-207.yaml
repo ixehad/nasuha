@@ -1,0 +1,20 @@
+id: al-baqara-2-207
+topics:
+- pleasure-of-allah
+ayah: 2:207
+context:
+  before:
+  - 2:205
+  - 2:206
+  after:
+  - 2:208
+  - 2:209
+when:
+  place: madinah
+  order: 87
+  approx: true
+  refs:
+  - book: Tanzil revelation order
+tafsir_refs:
+- book: Al-Mukhtasar fi Tafsir
+  ayah: 2:207
