@@ -1,0 +1,20 @@
+id: al-fajr-89-20
+topics:
+- greed
+ayah: '89:20'
+context:
+  before:
+  - '89:18'
+  - '89:19'
+  after:
+  - '89:21'
+  - '89:22'
+when:
+  place: makkah
+  order: 10
+  approx: true
+  refs:
+  - book: Tanzil revelation order
+tafsir_refs:
+- book: Al-Mukhtasar fi Tafsir
+  ayah: '89:20'

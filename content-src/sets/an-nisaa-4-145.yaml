@@ -1,0 +1,20 @@
+id: an-nisaa-4-145
+topics:
+- hypocrisy
+ayah: 4:145
+context:
+  before:
+  - 4:143
+  - 4:144
+  after:
+  - 4:146
+  - 4:147
+when:
+  place: madinah
+  order: 92
+  approx: true
+  refs:
+  - book: Tanzil revelation order
+tafsir_refs:
+- book: Al-Mukhtasar fi Tafsir
+  ayah: 4:145

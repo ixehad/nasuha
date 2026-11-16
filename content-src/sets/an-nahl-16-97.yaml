@@ -1,0 +1,21 @@
+id: an-nahl-16-97
+topics:
+- doing-good
+- happiness
+ayah: 16:97
+context:
+  before:
+  - 16:95
+  - 16:96
+  after:
+  - 16:98
+  - 16:99
+when:
+  place: makkah
+  order: 70
+  approx: true
+  refs:
+  - book: Tanzil revelation order
+tafsir_refs:
+- book: Al-Mukhtasar fi Tafsir
+  ayah: 16:97

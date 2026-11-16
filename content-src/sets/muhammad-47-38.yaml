@@ -1,0 +1,18 @@
+id: muhammad-47-38
+topics:
+- stinginess
+ayah: '47:38'
+context:
+  before:
+  - '47:36'
+  - '47:37'
+  after: []
+when:
+  place: madinah
+  order: 95
+  approx: true
+  refs:
+  - book: Tanzil revelation order
+tafsir_refs:
+- book: Al-Mukhtasar fi Tafsir
+  ayah: '47:38'

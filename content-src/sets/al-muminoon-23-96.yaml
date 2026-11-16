@@ -1,0 +1,20 @@
+id: al-muminoon-23-96
+topics:
+- repel-evil-good
+ayah: 23:96
+context:
+  before:
+  - 23:94
+  - 23:95
+  after:
+  - 23:97
+  - 23:98
+when:
+  place: makkah
+  order: 74
+  approx: true
+  refs:
+  - book: Tanzil revelation order
+tafsir_refs:
+- book: Al-Mukhtasar fi Tafsir
+  ayah: 23:96

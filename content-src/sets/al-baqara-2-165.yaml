@@ -1,0 +1,20 @@
+id: al-baqara-2-165
+topics:
+- love
+ayah: 2:165
+context:
+  before:
+  - 2:163
+  - 2:164
+  after:
+  - 2:166
+  - 2:167
+when:
+  place: madinah
+  order: 87
+  approx: true
+  refs:
+  - book: Tanzil revelation order
+tafsir_refs:
+- book: Al-Mukhtasar fi Tafsir
+  ayah: 2:165

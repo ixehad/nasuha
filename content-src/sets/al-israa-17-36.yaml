@@ -1,0 +1,20 @@
+id: al-israa-17-36
+topics:
+- speaking-without-knowledge
+ayah: '17:36'
+context:
+  before:
+  - '17:34'
+  - '17:35'
+  after:
+  - '17:37'
+  - '17:38'
+when:
+  place: makkah
+  order: 50
+  approx: true
+  refs:
+  - book: Tanzil revelation order
+tafsir_refs:
+- book: Al-Mukhtasar fi Tafsir
+  ayah: '17:36'

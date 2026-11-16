@@ -1,0 +1,20 @@
+id: an-nisaa-4-107
+topics:
+- betrayal
+ayah: 4:107
+context:
+  before:
+  - 4:105
+  - 4:106
+  after:
+  - 4:108
+  - 4:109
+when:
+  place: madinah
+  order: 92
+  approx: true
+  refs:
+  - book: Tanzil revelation order
+tafsir_refs:
+- book: Al-Mukhtasar fi Tafsir
+  ayah: 4:107

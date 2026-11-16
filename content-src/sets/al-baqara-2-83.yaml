@@ -1,0 +1,20 @@
+id: al-baqara-2-83
+topics:
+- good-speech
+ayah: 2:83
+context:
+  before:
+  - 2:81
+  - 2:82
+  after:
+  - 2:84
+  - 2:85
+when:
+  place: madinah
+  order: 87
+  approx: true
+  refs:
+  - book: Tanzil revelation order
+tafsir_refs:
+- book: Al-Mukhtasar fi Tafsir
+  ayah: 2:83

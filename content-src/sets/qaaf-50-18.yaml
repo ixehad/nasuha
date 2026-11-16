@@ -1,0 +1,20 @@
+id: qaaf-50-18
+topics:
+- afflictions-of-tongue
+ayah: '50:18'
+context:
+  before:
+  - '50:16'
+  - '50:17'
+  after:
+  - '50:19'
+  - '50:20'
+when:
+  place: makkah
+  order: 34
+  approx: true
+  refs:
+  - book: Tanzil revelation order
+tafsir_refs:
+- book: Al-Mukhtasar fi Tafsir
+  ayah: '50:18'

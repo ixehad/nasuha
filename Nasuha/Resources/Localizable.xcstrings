@@ -4151,6 +4151,688 @@
           }
         }
       }
+    },
+    "Search topics": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "বিষয় খুঁজুন"
+          }
+        }
+      }
+    },
+    "More topics": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "আরও বিষয়"
+          }
+        }
+      }
+    },
+    "Clear search": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "খোঁজা মুছুন"
+          }
+        }
+      }
+    },
+    "No topic matches “%@”.": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "“%@” নামে কোনো বিষয় পাওয়া যায়নি।"
+          }
+        }
+      }
+    },
+    "The heart and good character": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "অন্তর ও উত্তম চরিত্র"
+          }
+        }
+      }
+    },
+    "Excellence (Ihsan)": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "ইহসান (উত্তম আমল)"
+          }
+        }
+      }
+    },
+    "Brotherhood": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "ভ্রাতৃত্ব"
+          }
+        }
+      }
+    },
+    "Steadfastness (Istiqamah)": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "অবিচলতা (ইস্তিকামাহ)"
+          }
+        }
+      }
+    },
+    "Making peace between people": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "মানুষের মাঝে মীমাংসা"
+          }
+        }
+      }
+    },
+    "Moderation": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "মধ্যপন্থা"
+          }
+        }
+      }
+    },
+    "Turning away from idle talk": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "অনর্থক কথা থেকে দূরে থাকা"
+          }
+        }
+      }
+    },
+    "Putting others first (Ithar)": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "অন্যকে অগ্রাধিকার দেওয়া (ঈসার)"
+          }
+        }
+      }
+    },
+    "Gentleness": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "কোমলতা"
+          }
+        }
+      }
+    },
+    "Helping one another in good": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "ভালো কাজে সহযোগিতা"
+          }
+        }
+      }
+    },
+    "Humility": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "বিনয়"
+          }
+        }
+      }
+    },
+    "Wisdom": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "প্রজ্ঞা"
+          }
+        }
+      }
+    },
+    "Repelling evil with good": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "ভালো দিয়ে মন্দ প্রতিহত করা"
+          }
+        }
+      }
+    },
+    "Being merciful": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "দয়ালু হওয়া"
+          }
+        }
+      }
+    },
+    "Tranquillity (Sakinah)": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "প্রশান্তি (সাকিনাহ)"
+          }
+        }
+      }
+    },
+    "Truthfulness": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "সত্যবাদিতা"
+          }
+        }
+      }
+    },
+    "Chastity": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "পবিত্রতা ও সংযম"
+          }
+        }
+      }
+    },
+    "Forgiving others": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "অন্যকে ক্ষমা করা"
+          }
+        }
+      }
+    },
+    "Doing good": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "সৎকাজ"
+          }
+        }
+      }
+    },
+    "Walking humbly and lowering the voice": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "নম্রভাবে চলা ও নিচু স্বরে কথা বলা"
+          }
+        }
+      }
+    },
+    "Speaking well": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "উত্তম কথা বলা"
+          }
+        }
+      }
+    },
+    "Controlling anger": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "রাগ নিয়ন্ত্রণ"
+          }
+        }
+      }
+    },
+    "Racing to do good": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "ভালো কাজে প্রতিযোগিতা"
+          }
+        }
+      }
+    },
+    "Keeping promises": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "প্রতিশ্রুতি রক্ষা"
+          }
+        }
+      }
+    },
+    "The heart": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "অন্তর"
+          }
+        }
+      }
+    },
+    "The self and its desires": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "নফস ও তার কামনা"
+          }
+        }
+      }
+    },
+    "Happiness": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "আনন্দ"
+          }
+        }
+      }
+    },
+    "Love": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "ভালোবাসা"
+          }
+        }
+      }
+    },
+    "Safety and security": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "নিরাপত্তা"
+          }
+        }
+      }
+    },
+    "Matching words with deeds": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "কথা ও কাজে মিল"
+          }
+        }
+      }
+    },
+    "Allah wants ease for you": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "আল্লাহ তোমাদের জন্য সহজ চান"
+          }
+        }
+      }
+    },
+    "Deeds that lead to success": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "সফলতার পথ"
+          }
+        }
+      }
+    },
+    "Striving and good work": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "চেষ্টা ও কাজ"
+          }
+        }
+      }
+    },
+    "Arrogance": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "অহংকার"
+          }
+        }
+      }
+    },
+    "Envy": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "হিংসা"
+          }
+        }
+      }
+    },
+    "Backbiting and gossip": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "গীবত ও পরনিন্দা"
+          }
+        }
+      }
+    },
+    "Lying": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "মিথ্যা"
+          }
+        }
+      }
+    },
+    "Mocking others": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "অন্যকে উপহাস করা"
+          }
+        }
+      }
+    },
+    "Suspicion": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "কুধারণা"
+          }
+        }
+      }
+    },
+    "Slander": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "অপবাদ"
+          }
+        }
+      }
+    },
+    "Spreading rumours": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "গুজব ছড়ানো"
+          }
+        }
+      }
+    },
+    "Stinginess": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "কৃপণতা"
+          }
+        }
+      }
+    },
+    "Greed": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "লোভ"
+          }
+        }
+      }
+    },
+    "Extravagance": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "অপচয়"
+          }
+        }
+      }
+    },
+    "Showing off": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "লোক দেখানো"
+          }
+        }
+      }
+    },
+    "Betrayal": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "বিশ্বাসঘাতকতা"
+          }
+        }
+      }
+    },
+    "Heedlessness": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "উদাসীনতা"
+          }
+        }
+      }
+    },
+    "Hardness of heart": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "অন্তরের কঠোরতা"
+          }
+        }
+      }
+    },
+    "Ingratitude": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "অকৃতজ্ঞতা"
+          }
+        }
+      }
+    },
+    "Speaking without knowledge": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "না জেনে কথা বলা"
+          }
+        }
+      }
+    },
+    "Injustice (Zulm)": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "জুলুম"
+          }
+        }
+      }
+    },
+    "Spreading corruption": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "বিপর্যয় সৃষ্টি"
+          }
+        }
+      }
+    },
+    "Trials and tests (Fitnah)": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "পরীক্ষা (ফিতনা)"
+          }
+        }
+      }
+    },
+    "The trial of wealth and children": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "সম্পদ ও সন্তানের পরীক্ষা"
+          }
+        }
+      }
+    },
+    "Hypocrisy": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "মুনাফিকি"
+          }
+        }
+      }
+    },
+    "Sins of the tongue": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "জিহ্বার গুনাহ"
+          }
+        }
+      }
+    },
+    "Arguing and disputes": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "বিবাদ ও ঝগড়া"
+          }
+        }
+      }
+    },
+    "Distraction and play": {
+      "extractionState": "manual",
+      "localizations": {
+        "bn": {
+          "stringUnit": {
+            "state": "needs_review",
+            "value": "অনর্থক খেলা ও বিনোদন"
+          }
+        }
+      }
     }
   },
   "version": "1.0"

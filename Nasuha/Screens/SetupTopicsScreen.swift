@@ -9,6 +9,9 @@ struct SetupTopicsScreen: View {
     let onBack: () -> Void
 
     @State private var groups: [TopicGroup] = []
+    @State private var query = ""
+    @State private var showsMore = false
+    @FocusState private var isSearching: Bool
 
     var body: some View {
         ScrollView {
@@ -28,19 +31,34 @@ struct SetupTopicsScreen: View {
                         .foregroundStyle(Palette.muted)
                         .padding(.top, 8)
                 }
-                ForEach(groups) { group in
-                    VStack(alignment: .leading, spacing: 8) {
-                        GroupLabel(text: group.localizedTitle)
-                        if let note = group.localizedNote {
-                            Text(note)
-                                .font(.footnote)
-                                .foregroundStyle(Palette.muted)
+                if !groups.isEmpty {
+                    searchField
+                }
+                if !TopicSearch.words(query).isEmpty {
+                    searchResults
+                } else {
+                    ForEach(groups.compactMap { $0.keeping(\.isFeatured) }) { group in
+                        groupView(group)
+                    }
+                    let more = groups.compactMap { $0.keeping { !$0.isFeatured } }
+                    if !more.isEmpty {
+                        Button {
+                            withAnimation(.snappy(duration: 0.2)) { showsMore.toggle() }
+                        } label: {
+                            HStack(spacing: 6) {
+                                Text("More topics")
+                                Image(systemName: showsMore ? "chevron.up" : "chevron.down")
+                                    .accessibilityHidden(true)
+                            }
+                            .font(.subheadline.weight(.semibold))
+                            .foregroundStyle(Palette.accent)
+                            .frame(minHeight: 44)
+                            .contentShape(Rectangle())
                         }
-                        FlowLayout(spacing: 8) {
-                            ForEach(group.topics) { topic in
-                                Pill(title: topic.localizedLabel, isOn: draft.topics.contains(topic.id)) {
-                                    draft.toggle(topic: topic.id)
-                                }
+                        .buttonStyle(.plain)
+                        if showsMore {
+                            ForEach(more) { group in
+                                groupView(group)
                             }
                         }
                     }
@@ -71,6 +89,72 @@ struct SetupTopicsScreen: View {
             .background(Palette.bg)
         }
         .task { loadGroups() }
+    }
+
+    private var searchField: some View {
+        HStack(spacing: 8) {
+            Image(systemName: "magnifyingglass")
+                .foregroundStyle(Palette.muted)
+                .accessibilityHidden(true)
+            TextField("Search topics", text: $query)
+                .textInputAutocapitalization(.never)
+                .autocorrectionDisabled()
+                .submitLabel(.search)
+                .focused($isSearching)
+                .foregroundStyle(Palette.ink)
+            if !query.isEmpty {
+                Button {
+                    query = ""
+                } label: {
+                    Image(systemName: "xmark.circle.fill")
+                        .foregroundStyle(Palette.muted)
+                        .frame(width: 44, height: 44)
+                        .contentShape(Rectangle())
+                }
+                .buttonStyle(.plain)
+                .accessibilityLabel("Clear search")
+            }
+        }
+        .padding(.leading, 12)
+        .padding(.trailing, query.isEmpty ? 12 : 0)
+        .frame(minHeight: 48)
+        .background(Palette.fill, in: RoundedRectangle(cornerRadius: 14, style: .continuous))
+        // The whole box starts the search, not only the text inside it.
+        .contentShape(Rectangle())
+        .onTapGesture { isSearching = true }
+    }
+
+    @ViewBuilder private var searchResults: some View {
+        let found = TopicSearch.matches(query, in: groups) { $0.localizedLabel }
+        if found.isEmpty {
+            Text("No topic matches “\(query.trimmingCharacters(in: .whitespaces))”.")
+                .font(.subheadline)
+                .foregroundStyle(Palette.muted)
+        } else {
+            pills(found)
+        }
+    }
+
+    private func groupView(_ group: TopicGroup) -> some View {
+        VStack(alignment: .leading, spacing: 8) {
+            GroupLabel(text: group.localizedTitle)
+            if let note = group.localizedNote {
+                Text(note)
+                    .font(.footnote)
+                    .foregroundStyle(Palette.muted)
+            }
+            pills(group.topics)
+        }
+    }
+
+    private func pills(_ topics: [Topic]) -> some View {
+        FlowLayout(spacing: 8) {
+            ForEach(topics) { topic in
+                Pill(title: topic.localizedLabel, isOn: draft.topics.contains(topic.id)) {
+                    draft.toggle(topic: topic.id)
+                }
+            }
+        }
     }
 
     private var summary: String {

@@ -1,0 +1,20 @@
+id: al-baqara-2-264
+topics:
+- showing-off
+ayah: 2:264
+context:
+  before:
+  - 2:262
+  - 2:263
+  after:
+  - 2:265
+  - 2:266
+when:
+  place: madinah
+  order: 87
+  approx: true
+  refs:
+  - book: Tanzil revelation order
+tafsir_refs:
+- book: Al-Mukhtasar fi Tafsir
+  ayah: 2:264

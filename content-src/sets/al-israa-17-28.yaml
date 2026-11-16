@@ -1,0 +1,20 @@
+id: al-israa-17-28
+topics:
+- gentleness
+ayah: '17:28'
+context:
+  before:
+  - '17:26'
+  - '17:27'
+  after:
+  - '17:29'
+  - '17:30'
+when:
+  place: makkah
+  order: 50
+  approx: true
+  refs:
+  - book: Tanzil revelation order
+tafsir_refs:
+- book: Al-Mukhtasar fi Tafsir
+  ayah: '17:28'

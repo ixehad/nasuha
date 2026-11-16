@@ -1,0 +1,21 @@
+id: al-furqaan-25-67
+topics:
+- moderation
+- extravagance
+ayah: 25:67
+context:
+  before:
+  - 25:65
+  - 25:66
+  after:
+  - 25:68
+  - 25:69
+when:
+  place: makkah
+  order: 42
+  approx: true
+  refs:
+  - book: Tanzil revelation order
+tafsir_refs:
+- book: Al-Mukhtasar fi Tafsir
+  ayah: 25:67

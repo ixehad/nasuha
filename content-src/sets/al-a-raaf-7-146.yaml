@@ -1,0 +1,20 @@
+id: al-a-raaf-7-146
+topics:
+- arrogance
+ayah: 7:146
+context:
+  before:
+  - 7:144
+  - 7:145
+  after:
+  - 7:147
+  - 7:148
+when:
+  place: makkah
+  order: 39
+  approx: true
+  refs:
+  - book: Tanzil revelation order
+tafsir_refs:
+- book: Al-Mukhtasar fi Tafsir
+  ayah: 7:146

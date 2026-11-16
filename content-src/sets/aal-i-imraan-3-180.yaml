@@ -1,0 +1,20 @@
+id: aal-i-imraan-3-180
+topics:
+- stinginess
+ayah: 3:180
+context:
+  before:
+  - 3:178
+  - 3:179
+  after:
+  - 3:181
+  - 3:182
+when:
+  place: madinah
+  order: 89
+  approx: true
+  refs:
+  - book: Tanzil revelation order
+tafsir_refs:
+- book: Al-Mukhtasar fi Tafsir
+  ayah: 3:180

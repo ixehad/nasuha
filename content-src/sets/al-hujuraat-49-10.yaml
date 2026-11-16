@@ -1,0 +1,20 @@
+id: al-hujuraat-49-10
+topics:
+- brotherhood
+ayah: '49:10'
+context:
+  before:
+  - '49:8'
+  - '49:9'
+  after:
+  - '49:11'
+  - '49:12'
+when:
+  place: madinah
+  order: 106
+  approx: true
+  refs:
+  - book: Tanzil revelation order
+tafsir_refs:
+- book: Al-Mukhtasar fi Tafsir
+  ayah: '49:10'

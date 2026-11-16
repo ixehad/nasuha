@@ -1,0 +1,18 @@
+id: al-muminoon-23-1
+topics:
+- success
+ayah: '23:1'
+context:
+  before: []
+  after:
+  - '23:2'
+  - '23:3'
+when:
+  place: makkah
+  order: 74
+  approx: true
+  refs:
+  - book: Tanzil revelation order
+tafsir_refs:
+- book: Al-Mukhtasar fi Tafsir
+  ayah: '23:1'

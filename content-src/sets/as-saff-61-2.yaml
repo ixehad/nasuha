@@ -1,0 +1,19 @@
+id: as-saff-61-2
+topics:
+- consistency
+ayah: '61:2'
+context:
+  before:
+  - '61:1'
+  after:
+  - '61:3'
+  - '61:4'
+when:
+  place: madinah
+  order: 109
+  approx: true
+  refs:
+  - book: Tanzil revelation order
+tafsir_refs:
+- book: Al-Mukhtasar fi Tafsir
+  ayah: '61:2'

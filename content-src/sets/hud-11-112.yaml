@@ -1,0 +1,20 @@
+id: hud-11-112
+topics:
+- istiqamah
+ayah: 11:112
+context:
+  before:
+  - 11:110
+  - 11:111
+  after:
+  - 11:113
+  - 11:114
+when:
+  place: makkah
+  order: 52
+  approx: true
+  refs:
+  - book: Tanzil revelation order
+tafsir_refs:
+- book: Al-Mukhtasar fi Tafsir
+  ayah: 11:112

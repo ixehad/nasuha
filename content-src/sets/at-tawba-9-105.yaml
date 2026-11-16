@@ -1,0 +1,20 @@
+id: at-tawba-9-105
+topics:
+- urging-action
+ayah: 9:105
+context:
+  before:
+  - 9:103
+  - 9:104
+  after:
+  - 9:106
+  - 9:107
+when:
+  place: madinah
+  order: 113
+  approx: true
+  refs:
+  - book: Tanzil revelation order
+tafsir_refs:
+- book: Al-Mukhtasar fi Tafsir
+  ayah: 9:105

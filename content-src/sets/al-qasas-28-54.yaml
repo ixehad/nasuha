@@ -1,0 +1,19 @@
+id: al-qasas-28-54
+topics:
+- repel-evil-good
+ayah: '28:54'
+context:
+  before:
+  - '28:52'
+  - '28:53'
+  after:
+  - '28:55'
+  - '28:56'
+when:
+  place: madinah
+  approx: true
+  refs:
+  - book: Tanzil revelation order
+tafsir_refs:
+- book: Al-Mukhtasar fi Tafsir
+  ayah: '28:54'

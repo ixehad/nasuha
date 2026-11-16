@@ -1,0 +1,20 @@
+id: ibrahim-14-24
+topics:
+- good-speech
+ayah: '14:24'
+context:
+  before:
+  - '14:22'
+  - '14:23'
+  after:
+  - '14:25'
+  - '14:26'
+when:
+  place: makkah
+  order: 72
+  approx: true
+  refs:
+  - book: Tanzil revelation order
+tafsir_refs:
+- book: Al-Mukhtasar fi Tafsir
+  ayah: '14:24'

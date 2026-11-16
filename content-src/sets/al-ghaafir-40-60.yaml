@@ -1,0 +1,20 @@
+id: al-ghaafir-40-60
+topics:
+- arrogance
+ayah: 40:60
+context:
+  before:
+  - '40:58'
+  - '40:59'
+  after:
+  - 40:61
+  - 40:62
+when:
+  place: makkah
+  order: 60
+  approx: true
+  refs:
+  - book: Tanzil revelation order
+tafsir_refs:
+- book: Al-Mukhtasar fi Tafsir
+  ayah: 40:60

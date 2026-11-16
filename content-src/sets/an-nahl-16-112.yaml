@@ -1,0 +1,20 @@
+id: an-nahl-16-112
+topics:
+- ingratitude
+ayah: 16:112
+context:
+  before:
+  - 16:110
+  - 16:111
+  after:
+  - 16:113
+  - 16:114
+when:
+  place: makkah
+  order: 70
+  approx: true
+  refs:
+  - book: Tanzil revelation order
+tafsir_refs:
+- book: Al-Mukhtasar fi Tafsir
+  ayah: 16:112

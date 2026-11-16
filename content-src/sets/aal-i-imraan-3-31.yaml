@@ -1,0 +1,20 @@
+id: aal-i-imraan-3-31
+topics:
+- love
+ayah: '3:31'
+context:
+  before:
+  - '3:29'
+  - '3:30'
+  after:
+  - '3:32'
+  - '3:33'
+when:
+  place: madinah
+  order: 89
+  approx: true
+  refs:
+  - book: Tanzil revelation order
+tafsir_refs:
+- book: Al-Mukhtasar fi Tafsir
+  ayah: '3:31'

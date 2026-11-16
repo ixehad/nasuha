@@ -1,0 +1,18 @@
+id: al-falaq-113-5
+topics:
+- envy
+ayah: '113:5'
+context:
+  before:
+  - '113:3'
+  - '113:4'
+  after: []
+when:
+  place: makkah
+  order: 20
+  approx: true
+  refs:
+  - book: Tanzil revelation order
+tafsir_refs:
+- book: Al-Mukhtasar fi Tafsir
+  ayah: '113:5'

@@ -1,0 +1,20 @@
+id: al-a-raaf-7-31
+topics:
+- extravagance
+ayah: '7:31'
+context:
+  before:
+  - '7:29'
+  - '7:30'
+  after:
+  - '7:32'
+  - '7:33'
+when:
+  place: makkah
+  order: 39
+  approx: true
+  refs:
+  - book: Tanzil revelation order
+tafsir_refs:
+- book: Al-Mukhtasar fi Tafsir
+  ayah: '7:31'

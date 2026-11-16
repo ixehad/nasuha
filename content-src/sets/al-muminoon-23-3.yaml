@@ -1,0 +1,20 @@
+id: al-muminoon-23-3
+topics:
+- vain-talk
+ayah: '23:3'
+context:
+  before:
+  - '23:1'
+  - '23:2'
+  after:
+  - '23:4'
+  - '23:5'
+when:
+  place: makkah
+  order: 74
+  approx: true
+  refs:
+  - book: Tanzil revelation order
+tafsir_refs:
+- book: Al-Mukhtasar fi Tafsir
+  ayah: '23:3'

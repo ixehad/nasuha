@@ -1,0 +1,19 @@
+id: al-humaza-104-1
+topics:
+- backbiting
+- afflictions-of-tongue
+ayah: '104:1'
+context:
+  before: []
+  after:
+  - '104:2'
+  - '104:3'
+when:
+  place: makkah
+  order: 32
+  approx: true
+  refs:
+  - book: Tanzil revelation order
+tafsir_refs:
+- book: Al-Mukhtasar fi Tafsir
+  ayah: '104:1'

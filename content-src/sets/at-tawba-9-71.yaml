@@ -1,0 +1,20 @@
+id: at-tawba-9-71
+topics:
+- brotherhood
+ayah: 9:71
+context:
+  before:
+  - 9:69
+  - 9:70
+  after:
+  - 9:72
+  - 9:73
+when:
+  place: madinah
+  order: 113
+  approx: true
+  refs:
+  - book: Tanzil revelation order
+tafsir_refs:
+- book: Al-Mukhtasar fi Tafsir
+  ayah: 9:71

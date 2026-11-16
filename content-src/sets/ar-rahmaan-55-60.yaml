@@ -1,0 +1,20 @@
+id: ar-rahmaan-55-60
+topics:
+- excellence
+ayah: 55:60
+context:
+  before:
+  - '55:58'
+  - '55:59'
+  after:
+  - 55:61
+  - 55:62
+when:
+  place: madinah
+  order: 97
+  approx: true
+  refs:
+  - book: Tanzil revelation order
+tafsir_refs:
+- book: Al-Mukhtasar fi Tafsir
+  ayah: 55:60

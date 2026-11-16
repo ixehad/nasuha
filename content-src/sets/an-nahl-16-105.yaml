@@ -1,0 +1,20 @@
+id: an-nahl-16-105
+topics:
+- lying
+ayah: 16:105
+context:
+  before:
+  - 16:103
+  - 16:104
+  after:
+  - 16:106
+  - 16:107
+when:
+  place: makkah
+  order: 70
+  approx: true
+  refs:
+  - book: Tanzil revelation order
+tafsir_refs:
+- book: Al-Mukhtasar fi Tafsir
+  ayah: 16:105

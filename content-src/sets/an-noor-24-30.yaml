@@ -1,0 +1,20 @@
+id: an-noor-24-30
+topics:
+- chastity
+ayah: '24:30'
+context:
+  before:
+  - '24:28'
+  - '24:29'
+  after:
+  - '24:31'
+  - '24:32'
+when:
+  place: madinah
+  order: 102
+  approx: true
+  refs:
+  - book: Tanzil revelation order
+tafsir_refs:
+- book: Al-Mukhtasar fi Tafsir
+  ayah: '24:30'

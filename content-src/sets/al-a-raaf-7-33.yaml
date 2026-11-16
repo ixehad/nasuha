@@ -1,0 +1,20 @@
+id: al-a-raaf-7-33
+topics:
+- speaking-without-knowledge
+ayah: '7:33'
+context:
+  before:
+  - '7:31'
+  - '7:32'
+  after:
+  - '7:34'
+  - '7:35'
+when:
+  place: makkah
+  order: 39
+  approx: true
+  refs:
+  - book: Tanzil revelation order
+tafsir_refs:
+- book: Al-Mukhtasar fi Tafsir
+  ayah: '7:33'

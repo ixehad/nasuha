@@ -19,10 +19,12 @@ final class AyahKeyTests: XCTestCase {
 }
 
 final class TopicCatalogTests: XCTestCase {
-    func testTwentyNineTopicsInSixGroups() {
-        XCTAssertEqual(TopicCatalog.groups.count, 6)
-        XCTAssertEqual(TopicCatalog.all.count, 29)
-        XCTAssertEqual(Set(TopicCatalog.all.map(\.id)).count, 29, "ids are unique")
+    func testTwentyNineFeaturedTopicsInSixGroups() {
+        let featured = TopicCatalog.all.filter(\.isFeatured)
+        XCTAssertEqual(featured.count, 29)
+        XCTAssertEqual(TopicCatalog.groups.filter { $0.topics.contains(where: \.isFeatured) }.count, 6)
+        XCTAssertEqual(Set(TopicCatalog.all.map(\.id)).count, TopicCatalog.all.count, "ids are unique")
+        XCTAssertEqual(Set(TopicCatalog.groups.map(\.id)).count, TopicCatalog.groups.count, "group ids are unique")
         XCTAssertNotNil(TopicCatalog.topic(TopicCatalog.ramadanTopicID))
         XCTAssertEqual(TopicCatalog.groups.filter { $0.note != nil }.map(\.id), ["special"])
     }

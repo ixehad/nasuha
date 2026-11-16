@@ -1,0 +1,20 @@
+id: al-anfaal-8-27
+topics:
+- betrayal
+ayah: '8:27'
+context:
+  before:
+  - '8:25'
+  - '8:26'
+  after:
+  - '8:28'
+  - '8:29'
+when:
+  place: madinah
+  order: 88
+  approx: true
+  refs:
+  - book: Tanzil revelation order
+tafsir_refs:
+- book: Al-Mukhtasar fi Tafsir
+  ayah: '8:27'

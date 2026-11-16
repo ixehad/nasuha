@@ -1,0 +1,20 @@
+id: yusuf-12-53
+topics:
+- inner-self
+ayah: '12:53'
+context:
+  before:
+  - '12:51'
+  - '12:52'
+  after:
+  - '12:54'
+  - '12:55'
+when:
+  place: makkah
+  order: 53
+  approx: true
+  refs:
+  - book: Tanzil revelation order
+tafsir_refs:
+- book: Al-Mukhtasar fi Tafsir
+  ayah: '12:53'

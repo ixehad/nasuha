@@ -1,0 +1,20 @@
+id: yunus-10-58
+topics:
+- happiness
+ayah: '10:58'
+context:
+  before:
+  - '10:56'
+  - '10:57'
+  after:
+  - '10:59'
+  - 10:60
+when:
+  place: makkah
+  order: 51
+  approx: true
+  refs:
+  - book: Tanzil revelation order
+tafsir_refs:
+- book: Al-Mukhtasar fi Tafsir
+  ayah: '10:58'

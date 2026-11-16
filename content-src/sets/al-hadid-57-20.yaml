@@ -1,0 +1,20 @@
+id: al-hadid-57-20
+topics:
+- lahw
+ayah: '57:20'
+context:
+  before:
+  - '57:18'
+  - '57:19'
+  after:
+  - '57:21'
+  - '57:22'
+when:
+  place: madinah
+  order: 94
+  approx: true
+  refs:
+  - book: Tanzil revelation order
+tafsir_refs:
+- book: Al-Mukhtasar fi Tafsir
+  ayah: '57:20'

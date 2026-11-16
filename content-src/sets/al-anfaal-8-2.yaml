@@ -1,0 +1,19 @@
+id: al-anfaal-8-2
+topics:
+- heart
+ayah: '8:2'
+context:
+  before:
+  - '8:1'
+  after:
+  - '8:3'
+  - '8:4'
+when:
+  place: madinah
+  order: 88
+  approx: true
+  refs:
+  - book: Tanzil revelation order
+tafsir_refs:
+- book: Al-Mukhtasar fi Tafsir
+  ayah: '8:2'

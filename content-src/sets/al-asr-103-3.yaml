@@ -1,0 +1,18 @@
+id: al-asr-103-3
+topics:
+- cooperation
+ayah: '103:3'
+context:
+  before:
+  - '103:1'
+  - '103:2'
+  after: []
+when:
+  place: makkah
+  order: 13
+  approx: true
+  refs:
+  - book: Tanzil revelation order
+tafsir_refs:
+- book: Al-Mukhtasar fi Tafsir
+  ayah: '103:3'

@@ -1,0 +1,20 @@
+id: fussilat-41-30
+topics:
+- istiqamah
+ayah: '41:30'
+context:
+  before:
+  - '41:28'
+  - '41:29'
+  after:
+  - '41:31'
+  - '41:32'
+when:
+  place: makkah
+  order: 61
+  approx: true
+  refs:
+  - book: Tanzil revelation order
+tafsir_refs:
+- book: Al-Mukhtasar fi Tafsir
+  ayah: '41:30'

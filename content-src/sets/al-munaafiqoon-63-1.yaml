@@ -1,0 +1,18 @@
+id: al-munaafiqoon-63-1
+topics:
+- hypocrisy
+ayah: '63:1'
+context:
+  before: []
+  after:
+  - '63:2'
+  - '63:3'
+when:
+  place: madinah
+  order: 104
+  approx: true
+  refs:
+  - book: Tanzil revelation order
+tafsir_refs:
+- book: Al-Mukhtasar fi Tafsir
+  ayah: '63:1'

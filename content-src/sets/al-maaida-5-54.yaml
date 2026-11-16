@@ -1,0 +1,21 @@
+id: al-maaida-5-54
+topics:
+- humility
+- love
+ayah: '5:54'
+context:
+  before:
+  - '5:52'
+  - '5:53'
+  after:
+  - '5:55'
+  - '5:56'
+when:
+  place: madinah
+  order: 112
+  approx: true
+  refs:
+  - book: Tanzil revelation order
+tafsir_refs:
+- book: Al-Mukhtasar fi Tafsir
+  ayah: '5:54'

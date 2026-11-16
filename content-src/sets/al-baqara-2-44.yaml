@@ -1,0 +1,20 @@
+id: al-baqara-2-44
+topics:
+- consistency
+ayah: '2:44'
+context:
+  before:
+  - '2:42'
+  - '2:43'
+  after:
+  - '2:45'
+  - '2:46'
+when:
+  place: madinah
+  order: 87
+  approx: true
+  refs:
+  - book: Tanzil revelation order
+tafsir_refs:
+- book: Al-Mukhtasar fi Tafsir
+  ayah: '2:44'

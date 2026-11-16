@@ -1,0 +1,20 @@
+id: an-noor-24-23
+topics:
+- slander
+ayah: '24:23'
+context:
+  before:
+  - '24:21'
+  - '24:22'
+  after:
+  - '24:24'
+  - '24:25'
+when:
+  place: madinah
+  order: 102
+  approx: true
+  refs:
+  - book: Tanzil revelation order
+tafsir_refs:
+- book: Al-Mukhtasar fi Tafsir
+  ayah: '24:23'

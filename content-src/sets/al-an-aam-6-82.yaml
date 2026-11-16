@@ -1,0 +1,20 @@
+id: al-an-aam-6-82
+topics:
+- security
+ayah: 6:82
+context:
+  before:
+  - 6:80
+  - 6:81
+  after:
+  - 6:83
+  - 6:84
+when:
+  place: makkah
+  order: 55
+  approx: true
+  refs:
+  - book: Tanzil revelation order
+tafsir_refs:
+- book: Al-Mukhtasar fi Tafsir
+  ayah: 6:82

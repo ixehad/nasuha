@@ -1,0 +1,19 @@
+id: al-maaida-5-2
+topics:
+- cooperation
+ayah: '5:2'
+context:
+  before:
+  - '5:1'
+  after:
+  - '5:3'
+  - '5:4'
+when:
+  place: madinah
+  order: 112
+  approx: true
+  refs:
+  - book: Tanzil revelation order
+tafsir_refs:
+- book: Al-Mukhtasar fi Tafsir
+  ayah: '5:2'

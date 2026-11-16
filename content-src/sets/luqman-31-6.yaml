@@ -1,0 +1,20 @@
+id: luqman-31-6
+topics:
+- lahw
+ayah: '31:6'
+context:
+  before:
+  - '31:4'
+  - '31:5'
+  after:
+  - '31:7'
+  - '31:8'
+when:
+  place: makkah
+  order: 57
+  approx: true
+  refs:
+  - book: Tanzil revelation order
+tafsir_refs:
+- book: Al-Mukhtasar fi Tafsir
+  ayah: '31:6'

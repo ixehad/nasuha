@@ -227,8 +227,8 @@ class Allowlist(unittest.TestCase):
 
     def test_topic_ids_match_swift_catalog(self):
         swift = (ROOT / "Packages/NasuhaCore/Sources/NasuhaCore/Topics/TopicCatalog.swift").read_text()
-        ids = re.findall(r'Topic\(id: "([a-z]+)"', swift)
-        self.assertEqual(len(ids), 29)
+        ids = re.findall(r'Topic\(id: "([a-z-]+)"', swift)
+        self.assertEqual(len(ids), len(set(ids)), "topic ids are unique")
         self.assertEqual(set(ids), build_content.TOPIC_IDS)
 
 

@@ -1,0 +1,20 @@
+id: al-muminoon-23-5
+topics:
+- chastity
+ayah: '23:5'
+context:
+  before:
+  - '23:3'
+  - '23:4'
+  after:
+  - '23:6'
+  - '23:7'
+when:
+  place: makkah
+  order: 74
+  approx: true
+  refs:
+  - book: Tanzil revelation order
+tafsir_refs:
+- book: Al-Mukhtasar fi Tafsir
+  ayah: '23:5'

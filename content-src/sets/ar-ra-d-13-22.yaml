@@ -1,0 +1,20 @@
+id: ar-ra-d-13-22
+topics:
+- repel-evil-good
+ayah: '13:22'
+context:
+  before:
+  - '13:20'
+  - '13:21'
+  after:
+  - '13:23'
+  - '13:24'
+when:
+  place: madinah
+  order: 96
+  approx: true
+  refs:
+  - book: Tanzil revelation order
+tafsir_refs:
+- book: Al-Mukhtasar fi Tafsir
+  ayah: '13:22'

@@ -1,0 +1,20 @@
+id: al-israa-17-29
+topics:
+- moderation
+ayah: '17:29'
+context:
+  before:
+  - '17:27'
+  - '17:28'
+  after:
+  - '17:30'
+  - '17:31'
+when:
+  place: makkah
+  order: 50
+  approx: true
+  refs:
+  - book: Tanzil revelation order
+tafsir_refs:
+- book: Al-Mukhtasar fi Tafsir
+  ayah: '17:29'

@@ -1,0 +1,20 @@
+id: az-zumar-39-22
+topics:
+- hard-heart
+ayah: '39:22'
+context:
+  before:
+  - '39:20'
+  - '39:21'
+  after:
+  - '39:23'
+  - '39:24'
+when:
+  place: makkah
+  order: 59
+  approx: true
+  refs:
+  - book: Tanzil revelation order
+tafsir_refs:
+- book: Al-Mukhtasar fi Tafsir
+  ayah: '39:22'

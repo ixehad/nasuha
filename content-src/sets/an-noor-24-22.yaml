@@ -1,0 +1,20 @@
+id: an-noor-24-22
+topics:
+- forgiving-others
+ayah: '24:22'
+context:
+  before:
+  - '24:20'
+  - '24:21'
+  after:
+  - '24:23'
+  - '24:24'
+when:
+  place: madinah
+  order: 102
+  approx: true
+  refs:
+  - book: Tanzil revelation order
+tafsir_refs:
+- book: Al-Mukhtasar fi Tafsir
+  ayah: '24:22'

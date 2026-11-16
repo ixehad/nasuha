@@ -1,0 +1,20 @@
+id: al-hadid-57-21
+topics:
+- racing-good
+ayah: '57:21'
+context:
+  before:
+  - '57:19'
+  - '57:20'
+  after:
+  - '57:22'
+  - '57:23'
+when:
+  place: madinah
+  order: 94
+  approx: true
+  refs:
+  - book: Tanzil revelation order
+tafsir_refs:
+- book: Al-Mukhtasar fi Tafsir
+  ayah: '57:21'

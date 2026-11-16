@@ -1,0 +1,20 @@
+id: ash-shams-91-8
+topics:
+- inner-self
+ayah: '91:8'
+context:
+  before:
+  - '91:6'
+  - '91:7'
+  after:
+  - '91:9'
+  - '91:10'
+when:
+  place: makkah
+  order: 26
+  approx: true
+  refs:
+  - book: Tanzil revelation order
+tafsir_refs:
+- book: Al-Mukhtasar fi Tafsir
+  ayah: '91:8'

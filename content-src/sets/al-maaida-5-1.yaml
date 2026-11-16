@@ -1,0 +1,18 @@
+id: al-maaida-5-1
+topics:
+- keeping-promises
+ayah: '5:1'
+context:
+  before: []
+  after:
+  - '5:2'
+  - '5:3'
+when:
+  place: madinah
+  order: 112
+  approx: true
+  refs:
+  - book: Tanzil revelation order
+tafsir_refs:
+- book: Al-Mukhtasar fi Tafsir
+  ayah: '5:1'

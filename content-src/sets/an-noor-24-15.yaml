@@ -1,0 +1,21 @@
+id: an-noor-24-15
+topics:
+- rumours
+- afflictions-of-tongue
+ayah: '24:15'
+context:
+  before:
+  - '24:13'
+  - '24:14'
+  after:
+  - '24:16'
+  - '24:17'
+when:
+  place: madinah
+  order: 102
+  approx: true
+  refs:
+  - book: Tanzil revelation order
+tafsir_refs:
+- book: Al-Mukhtasar fi Tafsir
+  ayah: '24:15'

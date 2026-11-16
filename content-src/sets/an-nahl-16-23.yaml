@@ -1,0 +1,20 @@
+id: an-nahl-16-23
+topics:
+- arrogance
+ayah: '16:23'
+context:
+  before:
+  - '16:21'
+  - '16:22'
+  after:
+  - '16:24'
+  - '16:25'
+when:
+  place: makkah
+  order: 70
+  approx: true
+  refs:
+  - book: Tanzil revelation order
+tafsir_refs:
+- book: Al-Mukhtasar fi Tafsir
+  ayah: '16:23'

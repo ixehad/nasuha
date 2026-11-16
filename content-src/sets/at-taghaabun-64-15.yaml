@@ -1,0 +1,20 @@
+id: at-taghaabun-64-15
+topics:
+- wealth-trial
+ayah: '64:15'
+context:
+  before:
+  - '64:13'
+  - '64:14'
+  after:
+  - '64:16'
+  - '64:17'
+when:
+  place: madinah
+  order: 108
+  approx: true
+  refs:
+  - book: Tanzil revelation order
+tafsir_refs:
+- book: Al-Mukhtasar fi Tafsir
+  ayah: '64:15'

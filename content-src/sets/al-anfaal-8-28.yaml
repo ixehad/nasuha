@@ -1,0 +1,20 @@
+id: al-anfaal-8-28
+topics:
+- wealth-trial
+ayah: '8:28'
+context:
+  before:
+  - '8:26'
+  - '8:27'
+  after:
+  - '8:29'
+  - '8:30'
+when:
+  place: madinah
+  order: 88
+  approx: true
+  refs:
+  - book: Tanzil revelation order
+tafsir_refs:
+- book: Al-Mukhtasar fi Tafsir
+  ayah: '8:28'

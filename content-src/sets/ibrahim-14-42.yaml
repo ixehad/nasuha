@@ -1,0 +1,20 @@
+id: ibrahim-14-42
+topics:
+- injustice
+ayah: '14:42'
+context:
+  before:
+  - '14:40'
+  - '14:41'
+  after:
+  - '14:43'
+  - '14:44'
+when:
+  place: makkah
+  order: 72
+  approx: true
+  refs:
+  - book: Tanzil revelation order
+tafsir_refs:
+- book: Al-Mukhtasar fi Tafsir
+  ayah: '14:42'

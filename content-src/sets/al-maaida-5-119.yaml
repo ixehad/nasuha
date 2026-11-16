@@ -1,0 +1,19 @@
+id: al-maaida-5-119
+topics:
+- truthfulness
+ayah: 5:119
+context:
+  before:
+  - 5:117
+  - 5:118
+  after:
+  - 5:120
+when:
+  place: madinah
+  order: 112
+  approx: true
+  refs:
+  - book: Tanzil revelation order
+tafsir_refs:
+- book: Al-Mukhtasar fi Tafsir
+  ayah: 5:119

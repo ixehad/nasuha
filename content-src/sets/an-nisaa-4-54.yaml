@@ -1,0 +1,20 @@
+id: an-nisaa-4-54
+topics:
+- envy
+ayah: '4:54'
+context:
+  before:
+  - '4:52'
+  - '4:53'
+  after:
+  - '4:55'
+  - '4:56'
+when:
+  place: madinah
+  order: 92
+  approx: true
+  refs:
+  - book: Tanzil revelation order
+tafsir_refs:
+- book: Al-Mukhtasar fi Tafsir
+  ayah: '4:54'

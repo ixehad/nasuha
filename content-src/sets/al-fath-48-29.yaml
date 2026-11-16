@@ -1,0 +1,18 @@
+id: al-fath-48-29
+topics:
+- human-mercy
+ayah: '48:29'
+context:
+  before:
+  - '48:27'
+  - '48:28'
+  after: []
+when:
+  place: madinah
+  order: 111
+  approx: true
+  refs:
+  - book: Tanzil revelation order
+tafsir_refs:
+- book: Al-Mukhtasar fi Tafsir
+  ayah: '48:29'

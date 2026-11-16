@@ -1,0 +1,21 @@
+id: al-israa-17-37
+topics:
+- humility
+- walking-voice
+ayah: '17:37'
+context:
+  before:
+  - '17:35'
+  - '17:36'
+  after:
+  - '17:38'
+  - '17:39'
+when:
+  place: makkah
+  order: 50
+  approx: true
+  refs:
+  - book: Tanzil revelation order
+tafsir_refs:
+- book: Al-Mukhtasar fi Tafsir
+  ayah: '17:37'

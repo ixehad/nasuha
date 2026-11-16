@@ -1,0 +1,20 @@
+id: al-mutaffifin-83-29
+topics:
+- mockery
+ayah: '83:29'
+context:
+  before:
+  - '83:27'
+  - '83:28'
+  after:
+  - '83:30'
+  - '83:31'
+when:
+  place: makkah
+  order: 86
+  approx: true
+  refs:
+  - book: Tanzil revelation order
+tafsir_refs:
+- book: Al-Mukhtasar fi Tafsir
+  ayah: '83:29'

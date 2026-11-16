@@ -1,0 +1,19 @@
+id: al-a-raaf-7-205
+topics:
+- heedlessness
+ayah: 7:205
+context:
+  before:
+  - 7:203
+  - 7:204
+  after:
+  - 7:206
+when:
+  place: makkah
+  order: 39
+  approx: true
+  refs:
+  - book: Tanzil revelation order
+tafsir_refs:
+- book: Al-Mukhtasar fi Tafsir
+  ayah: 7:205

@@ -1,0 +1,20 @@
+id: at-taghaabun-64-14
+topics:
+- forgiving-others
+ayah: '64:14'
+context:
+  before:
+  - '64:12'
+  - '64:13'
+  after:
+  - '64:15'
+  - '64:16'
+when:
+  place: madinah
+  order: 108
+  approx: true
+  refs:
+  - book: Tanzil revelation order
+tafsir_refs:
+- book: Al-Mukhtasar fi Tafsir
+  ayah: '64:14'

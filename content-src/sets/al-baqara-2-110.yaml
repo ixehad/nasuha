@@ -1,0 +1,20 @@
+id: al-baqara-2-110
+topics:
+- doing-good
+ayah: 2:110
+context:
+  before:
+  - 2:108
+  - 2:109
+  after:
+  - 2:111
+  - 2:112
+when:
+  place: madinah
+  order: 87
+  approx: true
+  refs:
+  - book: Tanzil revelation order
+tafsir_refs:
+- book: Al-Mukhtasar fi Tafsir
+  ayah: 2:110

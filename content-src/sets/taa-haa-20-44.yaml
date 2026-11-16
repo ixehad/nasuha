@@ -1,0 +1,20 @@
+id: taa-haa-20-44
+topics:
+- gentleness
+ayah: '20:44'
+context:
+  before:
+  - '20:42'
+  - '20:43'
+  after:
+  - '20:45'
+  - '20:46'
+when:
+  place: makkah
+  order: 45
+  approx: true
+  refs:
+  - book: Tanzil revelation order
+tafsir_refs:
+- book: Al-Mukhtasar fi Tafsir
+  ayah: '20:44'

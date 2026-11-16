@@ -1,0 +1,20 @@
+id: al-israa-17-34
+topics:
+- keeping-promises
+ayah: '17:34'
+context:
+  before:
+  - '17:32'
+  - '17:33'
+  after:
+  - '17:35'
+  - '17:36'
+when:
+  place: makkah
+  order: 50
+  approx: true
+  refs:
+  - book: Tanzil revelation order
+tafsir_refs:
+- book: Al-Mukhtasar fi Tafsir
+  ayah: '17:34'

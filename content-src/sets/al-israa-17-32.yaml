@@ -1,0 +1,19 @@
+id: al-israa-17-32
+topics:
+- chastity
+ayah: '17:32'
+context:
+  before:
+  - '17:30'
+  - '17:31'
+  after:
+  - '17:33'
+  - '17:34'
+when:
+  place: madinah
+  approx: true
+  refs:
+  - book: Tanzil revelation order
+tafsir_refs:
+- book: Al-Mukhtasar fi Tafsir
+  ayah: '17:32'

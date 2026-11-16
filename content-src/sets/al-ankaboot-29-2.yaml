@@ -1,0 +1,18 @@
+id: al-ankaboot-29-2
+topics:
+- fitnah
+ayah: '29:2'
+context:
+  before:
+  - '29:1'
+  after:
+  - '29:3'
+  - '29:4'
+when:
+  place: madinah
+  approx: true
+  refs:
+  - book: Tanzil revelation order
+tafsir_refs:
+- book: Al-Mukhtasar fi Tafsir
+  ayah: '29:2'

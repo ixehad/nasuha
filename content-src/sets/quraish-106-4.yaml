@@ -1,0 +1,18 @@
+id: quraish-106-4
+topics:
+- security
+ayah: '106:4'
+context:
+  before:
+  - '106:2'
+  - '106:3'
+  after: []
+when:
+  place: makkah
+  order: 29
+  approx: true
+  refs:
+  - book: Tanzil revelation order
+tafsir_refs:
+- book: Al-Mukhtasar fi Tafsir
+  ayah: '106:4'

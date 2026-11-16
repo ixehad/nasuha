@@ -1,0 +1,20 @@
+id: al-a-raaf-7-179
+topics:
+- heedlessness
+ayah: 7:179
+context:
+  before:
+  - 7:177
+  - 7:178
+  after:
+  - 7:180
+  - 7:181
+when:
+  place: makkah
+  order: 39
+  approx: true
+  refs:
+  - book: Tanzil revelation order
+tafsir_refs:
+- book: Al-Mukhtasar fi Tafsir
+  ayah: 7:179

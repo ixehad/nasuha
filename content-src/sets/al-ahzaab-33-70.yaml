@@ -1,0 +1,20 @@
+id: al-ahzaab-33-70
+topics:
+- good-speech
+ayah: 33:70
+context:
+  before:
+  - 33:68
+  - 33:69
+  after:
+  - 33:71
+  - 33:72
+when:
+  place: madinah
+  order: 90
+  approx: true
+  refs:
+  - book: Tanzil revelation order
+tafsir_refs:
+- book: Al-Mukhtasar fi Tafsir
+  ayah: 33:70

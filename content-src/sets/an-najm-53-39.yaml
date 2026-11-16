@@ -1,0 +1,20 @@
+id: an-najm-53-39
+topics:
+- urging-action
+ayah: '53:39'
+context:
+  before:
+  - '53:37'
+  - '53:38'
+  after:
+  - '53:40'
+  - '53:41'
+when:
+  place: makkah
+  order: 23
+  approx: true
+  refs:
+  - book: Tanzil revelation order
+tafsir_refs:
+- book: Al-Mukhtasar fi Tafsir
+  ayah: '53:39'

@@ -1,0 +1,20 @@
+id: al-fath-48-18
+topics:
+- tranquility
+ayah: '48:18'
+context:
+  before:
+  - '48:16'
+  - '48:17'
+  after:
+  - '48:19'
+  - '48:20'
+when:
+  place: madinah
+  order: 111
+  approx: true
+  refs:
+  - book: Tanzil revelation order
+tafsir_refs:
+- book: Al-Mukhtasar fi Tafsir
+  ayah: '48:18'

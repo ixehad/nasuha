@@ -1,0 +1,20 @@
+id: al-anfaal-8-46
+topics:
+- mutual-quarrel
+ayah: '8:46'
+context:
+  before:
+  - '8:44'
+  - '8:45'
+  after:
+  - '8:47'
+  - '8:48'
+when:
+  place: madinah
+  order: 88
+  approx: true
+  refs:
+  - book: Tanzil revelation order
+tafsir_refs:
+- book: Al-Mukhtasar fi Tafsir
+  ayah: '8:46'
